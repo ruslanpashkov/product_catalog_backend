@@ -2,7 +2,15 @@
   "singleQuote": true,
   "tabWidth": 2,
   "semi": true,
-  "jsxSingleQuote": false,
-  "bracketSpacing": false,
-  "bracketSameLine": true
+  "bracketSpacing": true,
+  "bracketSameLine": true,
+  "overrides": [
+    {
+      "files": "*.json",
+      "options": {
+        "printWidth": 200,
+        "singleQuote": false
+      }
+    }
+  ]
 }

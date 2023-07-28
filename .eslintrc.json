@@ -10,15 +10,15 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "ignorePatterns": ["build/"],
+  "ignorePatterns": ["dist/"],
   "plugins": ["@typescript-eslint"],
   "rules": {
     "indent": ["error", 2],
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
     "semi": ["error", "always"],
-    "max-len": ["error", {"code": 140}],
-    "no-self-assign": ["error", {"props": true}],
+    "max-len": ["error", { "code": 140 }],
+    "no-self-assign": ["error", { "props": true }],
     "no-var": "error",
     "no-empty-function": "error",
     "for-direction": "error",
