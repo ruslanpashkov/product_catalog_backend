@@ -1,13 +1,9 @@
 'use strict';
 
 import express from 'express';
-import {
-  getAllPhonesController,
-  getPhoneByIdController,
-} from '../controllers/phones.controller.js';
+import { phoneController } from '../controllers/phones.controller.js';
 
 export const phonesRouter = express.Router();
 
-phonesRouter.get('/', getAllPhonesController);
-
-phonesRouter.get('/:phoneId', getPhoneByIdController);
+phonesRouter.get('/', phoneController.getPhones);
+phonesRouter.get('/:phoneId', phoneController.getPhoneById);

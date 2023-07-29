@@ -12,7 +12,20 @@ async function read() {
   return JSON.parse(data);
 }
 
-export class PhonesService {
+class PhoneService {
+  private static instance: PhoneService | null = null;
+
+  // eslint-disable-next-line no-empty-function
+  private constructor() {}
+
+  static getInstance(): PhoneService {
+    if (!PhoneService.instance) {
+      PhoneService.instance = new PhoneService();
+    }
+
+    return PhoneService.instance;
+  }
+
   async getAll() {
     const result = await read();
 
@@ -27,3 +40,5 @@ export class PhonesService {
     return foundPhone || null;
   }
 }
+
+export const phoneService = PhoneService.getInstance();

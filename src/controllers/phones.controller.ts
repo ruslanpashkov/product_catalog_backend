@@ -1,27 +1,40 @@
 'use strict';
 
-import { PhonesService } from '../services/phones.service.js';
+import { phoneService } from '../services/phone.service.js';
 import { Controller } from '../types.js';
 
-export const getAllPhonesController: Controller = async (_, res) => {
-  const phoneService = new PhonesService();
+class PhoneController {
+  private static instance: PhoneController | null = null;
 
-  const phones = await phoneService.getAll();
+  // eslint-disable-next-line no-empty-function
+  private constructor() {}
 
-  res.send(phones);
-};
+  static getInstance() {
+    if (!PhoneController.instance) {
+      PhoneController.instance = new PhoneController();
+    }
 
-export const getPhoneByIdController: Controller = async (req, res) => {
-  const phoneService = new PhonesService();
-
-  const { phoneId } = req.params;
-  const foundPhone = await phoneService.getById(phoneId);
-
-  if (!foundPhone) {
-    res.status(404).json({ error: 'Phone not found' });
-
-    return;
+    return PhoneController.instance;
   }
 
-  res.send(foundPhone);
-};
+  getPhones: Controller = async (req, res) => {
+    const phones = await phoneService.getAll();
+
+    res.status(200).json(phones);
+  };
+
+  getPhoneById: Controller = async (req, res) => {
+    const { phoneId } = req.params;
+    const foundPhone = await phoneService.getById(phoneId);
+
+    if (!foundPhone) {
+      res.status(404).json({ error: 'Phone not found' });
+
+      return;
+    }
+
+    res.status(200).json(foundPhone);
+  };
+}
+
+export const phoneController = PhoneController.getInstance();
