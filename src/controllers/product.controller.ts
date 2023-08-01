@@ -25,15 +25,15 @@ class ProductController {
 
   getProductById: Controller = async (req, res) => {
     const { productId } = req.params;
-    const foundProduct = await productService.getById(+productId);
+    const product = await productService.getById(Number(productId));
 
-    if (!foundProduct) {
+    if (!product) {
       res.status(404).json({ error: 'Phone not found' });
 
       return;
     }
 
-    res.status(200).json(foundProduct);
+    res.status(200).json(product);
   };
 }
 

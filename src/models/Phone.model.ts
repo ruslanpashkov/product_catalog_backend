@@ -23,45 +23,45 @@ export class Phone extends Model {
   @Column({
     type: DataType.DATE,
   })
-  createdAt: Date;
+    createdAt: Date;
 
   @AllowNull(false)
   @PrimaryKey
   @Column({
     type: DataType.STRING,
   })
-  id: string;
+    id: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-  resolution: string;
+    resolution: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-  processor: string;
+    processor: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-  camera: string;
+    camera: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-  zoom: string;
+    zoom: string;
 
   @AllowNull(false)
   @ForeignKey(() => Namespace)
   @Column({
     type: DataType.INTEGER,
   })
-  namespaceId: number;
+    namespaceId: number;
 
   @AllowNull(false)
   @Unique
@@ -69,19 +69,19 @@ export class Phone extends Model {
   @Column({
     type: DataType.INTEGER,
   })
-  productId: number;
+    productId: number;
 
   @BelongsTo(() => Product, {
     onDelete: 'CASCADE',
     foreignKey: 'productId',
     targetKey: 'id',
   })
-  product: Product | null;
+    product: Product | null;
 
   @BelongsTo(() => Namespace, {
     onDelete: 'RESTRICT',
     foreignKey: 'namespaceId',
     targetKey: 'id',
   })
-  namespace: Namespace | null;
+    namespace: Namespace | null;
 }
