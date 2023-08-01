@@ -9,7 +9,6 @@
   "scripts": {
     "format": "prettier --write . --ignore-path .gitignore",
     "lint": "eslint --ext .ts --ignore-path .gitignore .",
-    "fix": "npm run format && npm run lint",
     "build": "swc src -d dist",
     "build-dev": "cross-env NODE_ENV=development npm run build && node --inspect dist/index.js",
     "dev": "nodemon --ext ts --exec \"npm run build-dev\"",
@@ -54,6 +53,6 @@
     "url": "https://github.com/html-hooliganz/product_catalog_backend/issues"
   },
   "lint-staged": {
-    "*.{ts}": "prettier --write"
+    "*.{ts}": "npm run lint"
   }
 }
