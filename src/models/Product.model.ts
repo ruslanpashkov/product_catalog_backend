@@ -23,86 +23,86 @@ export class Product extends Model {
   @Column({
     type: DataType.DATE,
   })
-  createdAt: Date;
+    createdAt: Date;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-  name: string;
+    name: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.FLOAT,
   })
-  fullPrice: number;
+    fullPrice: number;
 
   @AllowNull(false)
   @Column({
     type: DataType.FLOAT,
   })
-  price: number;
+    price: number;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-  screen: string;
+    screen: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-  capacity: string;
+    capacity: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-  ram: string;
+    ram: string;
 
   @AllowNull(false)
   @Column({
     type: DataType.INTEGER,
   })
-  year: number;
+    year: number;
 
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
   })
-  image: string;
+    image: string;
 
   @AllowNull(false)
   @ForeignKey(() => Category)
   @Column({
     type: DataType.INTEGER,
   })
-  categoryId: number;
+    categoryId: number;
 
   @AllowNull(false)
   @ForeignKey(() => Color)
   @Column({
     type: DataType.INTEGER,
   })
-  colorId: number;
+    colorId: number;
 
   @BelongsTo(() => Category, {
     onDelete: 'RESTRICT',
     foreignKey: 'categoryId',
     targetKey: 'id',
   })
-  category: Category | null;
+    category: Category | null;
 
   @BelongsTo(() => Color, {
     onDelete: 'RESTRICT',
     foreignKey: 'colorId',
     targetKey: 'id',
   })
-  color: Color | null;
+    color: Color | null;
 
   @HasOne(() => Phone, {
     onDelete: 'CASCADE',
   })
-  item: Phone | null;
+    item: Phone | null;
 }

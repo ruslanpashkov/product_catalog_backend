@@ -18,12 +18,12 @@ export class Color extends Model {
   @Column({
     type: DataType.DATE,
   })
-  createdAt: Date;
+    createdAt: Date;
 
   @AllowNull(false)
   @Unique
   @Column({
     type: DataType.STRING,
   })
-  title: string;
+    title: string;
 }
