@@ -57,32 +57,30 @@ export class Phone extends Model {
   zoom: string;
 
   @AllowNull(false)
-  @Unique
   @ForeignKey(() => Namespace)
   @Column({
     type: DataType.INTEGER,
-    field: 'namespace_id',
   })
   namespaceId: number;
 
   @AllowNull(false)
+  @Unique
   @ForeignKey(() => Product)
   @Column({
     type: DataType.INTEGER,
-    field: 'product_id',
   })
   productId: number;
 
   @BelongsTo(() => Product, {
     onDelete: 'CASCADE',
-    foreignKey: 'product_id',
+    foreignKey: 'productId',
     targetKey: 'id',
   })
-  item: Product | null;
+  product: Product | null;
 
   @BelongsTo(() => Namespace, {
     onDelete: 'RESTRICT',
-    foreignKey: 'namespace_id',
+    foreignKey: 'namespaceId',
     targetKey: 'id',
   })
   namespace: Namespace | null;
