@@ -104,5 +104,5 @@ export class Product extends Model {
   @HasOne(() => Phone, {
     onDelete: 'CASCADE',
   })
-  products: Phone | null;
+  item: Phone | null;
 }

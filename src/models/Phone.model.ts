@@ -27,7 +27,6 @@ export class Phone extends Model {
 
   @AllowNull(false)
   @PrimaryKey
-  @Unique
   @Column({
     type: DataType.STRING,
   })
@@ -58,6 +57,7 @@ export class Phone extends Model {
   zoom: string;
 
   @AllowNull(false)
+  @Unique
   @ForeignKey(() => Namespace)
   @Column({
     type: DataType.INTEGER,

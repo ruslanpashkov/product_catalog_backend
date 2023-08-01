@@ -11,7 +11,6 @@ module.exports = {
           type: Sequelize.STRING,
           primaryKey: true,
           allowNull: false,
-          unique: true,
         },
         resolution: {
           type: Sequelize.STRING,
@@ -42,6 +41,7 @@ module.exports = {
         productId: {
           type: Sequelize.INTEGER,
           allowNull: false,
+          unique: true,
           references: {
             model: 'products',
             key: 'id',
