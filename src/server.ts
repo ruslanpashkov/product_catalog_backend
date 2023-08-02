@@ -11,7 +11,7 @@ export const createServer = () => {
 
   initDB();
   app.use(cors());
-  app.use('/uploads', express.static(path.join('uploads')));
+  app.use('/img', express.static(path.join('img')));
   app.use('/products', express.json(), phonesRouter);
 
   app.use('/', (_, res) => {

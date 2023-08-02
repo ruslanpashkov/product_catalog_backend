@@ -1,0 +1,1109 @@
+[
+  {
+    "productId": 38,
+    "id": "apple-iphone-11-128gb-black",
+    "namespaceId": 1,
+    "resolution": "1792x828",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 51,
+    "id": "apple-iphone-11-128gb-green",
+    "namespaceId": 1,
+    "resolution": "1792x828",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 22,
+    "id": "apple-iphone-11-128gb-purple",
+    "namespaceId": 1,
+    "resolution": "1792x828",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 67,
+    "id": "apple-iphone-11-128gb-red",
+    "namespaceId": 1,
+    "resolution": "1792x828",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 52,
+    "id": "apple-iphone-11-128gb-white",
+    "namespaceId": 1,
+    "resolution": "1792x828",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 5,
+    "id": "apple-iphone-11-128gb-yellow",
+    "namespaceId": 1,
+    "resolution": "1792x828",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 53,
+    "id": "apple-iphone-11-256gb-black",
+    "namespaceId": 1,
+    "resolution": "1792x828",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 6,
+    "id": "apple-iphone-11-256gb-green",
+    "namespaceId": 1,
+    "resolution": "1792x828",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 62,
+    "id": "apple-iphone-11-256gb-purple",
+    "namespaceId": 1,
+    "resolution": "1792x828",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 39,
+    "id": "apple-iphone-11-256gb-red",
+    "namespaceId": 1,
+    "resolution": "1792x828",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 54,
+    "id": "apple-iphone-11-256gb-white",
+    "namespaceId": 1,
+    "resolution": "1792x828",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 23,
+    "id": "apple-iphone-11-256gb-yellow",
+    "namespaceId": 1,
+    "resolution": "1792x828",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 4,
+    "id": "apple-iphone-11-64gb-black",
+    "namespaceId": 1,
+    "resolution": "1792x828",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 21,
+    "id": "apple-iphone-11-64gb-green",
+    "namespaceId": 1,
+    "resolution": "1792x828",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 36,
+    "id": "apple-iphone-11-64gb-purple",
+    "namespaceId": 1,
+    "resolution": "1792x828",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 37,
+    "id": "apple-iphone-11-64gb-red",
+    "namespaceId": 1,
+    "resolution": "1792x828",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 50,
+    "id": "apple-iphone-11-64gb-white",
+    "namespaceId": 1,
+    "resolution": "1792x828",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 64,
+    "id": "apple-iphone-11-64gb-yellow",
+    "namespaceId": 1,
+    "resolution": "1792x828",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 24,
+    "id": "apple-iphone-11-pro-256gb-gold",
+    "namespaceId": 2,
+    "resolution": "2436х1125",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 8,
+    "id": "apple-iphone-11-pro-256gb-midnightgreen",
+    "namespaceId": 2,
+    "resolution": "2436х1125",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 41,
+    "id": "apple-iphone-11-pro-256gb-silver",
+    "namespaceId": 2,
+    "resolution": "2436х1125",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 65,
+    "id": "apple-iphone-11-pro-256gb-spacegray",
+    "namespaceId": 2,
+    "resolution": "2436х1125",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 42,
+    "id": "apple-iphone-11-pro-512gb-gold",
+    "namespaceId": 2,
+    "resolution": "2436х1125",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 56,
+    "id": "apple-iphone-11-pro-512gb-midnightgreen",
+    "namespaceId": 2,
+    "resolution": "2436х1125",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 9,
+    "id": "apple-iphone-11-pro-512gb-silver",
+    "namespaceId": 2,
+    "resolution": "2436х1125",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 25,
+    "id": "apple-iphone-11-pro-512gb-spacegray",
+    "namespaceId": 2,
+    "resolution": "2436х1125",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 7,
+    "id": "apple-iphone-11-pro-64gb-gold",
+    "namespaceId": 2,
+    "resolution": "2436х1125",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 40,
+    "id": "apple-iphone-11-pro-64gb-midnightgreen",
+    "namespaceId": 2,
+    "resolution": "2436х1125",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 70,
+    "id": "apple-iphone-11-pro-64gb-silver",
+    "namespaceId": 2,
+    "resolution": "2436х1125",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 55,
+    "id": "apple-iphone-11-pro-64gb-spacegray",
+    "namespaceId": 2,
+    "resolution": "2436х1125",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 11,
+    "id": "apple-iphone-11-pro-max-256gb-gold",
+    "namespaceId": 3,
+    "resolution": "2688х1242",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 27,
+    "id": "apple-iphone-11-pro-max-256gb-midnightgreen",
+    "namespaceId": 3,
+    "resolution": "2688х1242",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 58,
+    "id": "apple-iphone-11-pro-max-256gb-silver",
+    "namespaceId": 3,
+    "resolution": "2688х1242",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 44,
+    "id": "apple-iphone-11-pro-max-256gb-spacegray",
+    "namespaceId": 3,
+    "resolution": "2688х1242",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 63,
+    "id": "apple-iphone-11-pro-max-512gb-gold",
+    "namespaceId": 3,
+    "resolution": "2688х1242",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 59,
+    "id": "apple-iphone-11-pro-max-512gb-midnightgreen",
+    "namespaceId": 3,
+    "resolution": "2688х1242",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 28,
+    "id": "apple-iphone-11-pro-max-512gb-silver",
+    "namespaceId": 3,
+    "resolution": "2688х1242",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 12,
+    "id": "apple-iphone-11-pro-max-512gb-spacegray",
+    "namespaceId": 3,
+    "resolution": "2688х1242",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 57,
+    "id": "apple-iphone-11-pro-max-64gb-gold",
+    "namespaceId": 3,
+    "resolution": "2688х1242",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 43,
+    "id": "apple-iphone-11-pro-max-64gb-midnightgreen",
+    "namespaceId": 3,
+    "resolution": "2688х1242",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 26,
+    "id": "apple-iphone-11-pro-max-64gb-silver",
+    "namespaceId": 3,
+    "resolution": "2688х1242",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 10,
+    "id": "apple-iphone-11-pro-max-64gb-spacegray",
+    "namespaceId": 3,
+    "resolution": "2688х1242",
+    "processor": "Apple A13 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 1,
+    "id": "apple-iphone-7-32gb-black",
+    "namespaceId": 4,
+    "resolution": "1334x750",
+    "processor": "Apple A10",
+    "camera": "12 Mp + 7 Mp",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 18,
+    "id": "apple-iphone-7-32gb-gold",
+    "namespaceId": 4,
+    "resolution": "1334x750",
+    "processor": "Apple A10",
+    "camera": "12 Mp + 7 Mp",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 35,
+    "id": "apple-iphone-7-32gb-rosegold",
+    "namespaceId": 4,
+    "resolution": "1334x750",
+    "processor": "Apple A10",
+    "camera": "12 Mp + 7 Mp",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 61,
+    "id": "apple-iphone-7-32gb-silver",
+    "namespaceId": 4,
+    "resolution": "1334x750",
+    "processor": "Apple A10",
+    "camera": "12 Mp + 7 Mp",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 2,
+    "id": "apple-iphone-7-plus-32gb-black",
+    "namespaceId": 5,
+    "resolution": "1920x1080",
+    "processor": "Apple A10",
+    "camera": "12 Mp + 7 Mp",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 69,
+    "id": "apple-iphone-7-plus-32gb-gold",
+    "namespaceId": 5,
+    "resolution": "1920x1080",
+    "processor": "Apple A10",
+    "camera": "12 Mp + 7 Mp",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 49,
+    "id": "apple-iphone-7-plus-32gb-rosegold",
+    "namespaceId": 5,
+    "resolution": "1920x1080",
+    "processor": "Apple A10",
+    "camera": "12 Mp + 7 Mp",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 19,
+    "id": "apple-iphone-7-plus-32gb-silver",
+    "namespaceId": 5,
+    "resolution": "1920x1080",
+    "processor": "Apple A10",
+    "camera": "12 Mp + 7 Mp",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 3,
+    "id": "apple-iphone-8-64gb-gold",
+    "namespaceId": 6,
+    "resolution": "1334x750",
+    "processor": "Apple A11 Bionic",
+    "camera": "12 Mp + 7 Mp",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 66,
+    "id": "apple-iphone-8-64gb-silver",
+    "namespaceId": 6,
+    "resolution": "1334x750",
+    "processor": "Apple A11 Bionic",
+    "camera": "12 Mp + 7 Mp",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 20,
+    "id": "apple-iphone-8-64gb-spacegray",
+    "namespaceId": 6,
+    "resolution": "1334x750",
+    "processor": "Apple A11 Bionic",
+    "camera": "12 Mp + 7 Mp",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 30,
+    "id": "apple-iphone-xr-128gb-coral",
+    "namespaceId": 7,
+    "resolution": "1792х828",
+    "processor": "Apple A12 Bionic",
+    "camera": "12 Mp + 7 MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 46,
+    "id": "apple-iphone-xr-128gb-red",
+    "namespaceId": 7,
+    "resolution": "1792х828",
+    "processor": "Apple A12 Bionic",
+    "camera": "12 Mp + 7 MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 14,
+    "id": "apple-iphone-xr-128gb-white",
+    "namespaceId": 7,
+    "resolution": "1792х828",
+    "processor": "Apple A12 Bionic",
+    "camera": "12 Mp + 7 MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 60,
+    "id": "apple-iphone-xr-128gb-yellow",
+    "namespaceId": 7,
+    "resolution": "1792х828",
+    "processor": "Apple A12 Bionic",
+    "camera": "12 Mp + 7 MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 45,
+    "id": "apple-iphone-xr-64gb-coral",
+    "namespaceId": 7,
+    "resolution": "1792х828",
+    "processor": "Apple A12 Bionic",
+    "camera": "12 Mp + 7 MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 13,
+    "id": "apple-iphone-xr-64gb-red",
+    "namespaceId": 7,
+    "resolution": "1792х828",
+    "processor": "Apple A12 Bionic",
+    "camera": "12 Mp + 7 MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 29,
+    "id": "apple-iphone-xr-64gb-white",
+    "namespaceId": 7,
+    "resolution": "1792х828",
+    "processor": "Apple A12 Bionic",
+    "camera": "12 Mp + 7 MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 71,
+    "id": "apple-iphone-xr-64gb-yellow",
+    "namespaceId": 7,
+    "resolution": "1792х828",
+    "processor": "Apple A12 Bionic",
+    "camera": "12 Mp + 7 MP",
+    "zoom": "Digital, 5x"
+  },
+  {
+    "productId": 47,
+    "id": "apple-iphone-xs-256gb-gold",
+    "namespaceId": 8,
+    "resolution": "2436х1125",
+    "processor": "Apple A12 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 32,
+    "id": "apple-iphone-xs-256gb-spacegray",
+    "namespaceId": 8,
+    "resolution": "2436х1125",
+    "processor": "Apple A12 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 31,
+    "id": "apple-iphone-xs-64gb-gold",
+    "namespaceId": 8,
+    "resolution": "2436х1125",
+    "processor": "Apple A12 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 15,
+    "id": "apple-iphone-xs-64gb-spacegray",
+    "namespaceId": 8,
+    "resolution": "2436х1125",
+    "processor": "Apple A12 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 34,
+    "id": "apple-iphone-xs-max-256gb-gold",
+    "namespaceId": 9,
+    "resolution": "2688х1242",
+    "processor": "Apple A12 Bionic",
+    "camera": "12 Mp + 12 Mp + 7MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 17,
+    "id": "apple-iphone-xs-max-256gb-silver",
+    "namespaceId": 9,
+    "resolution": "2688х1242",
+    "processor": "Apple A12 Bionic",
+    "camera": "12 Mp + 12 Mp + 7MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 68,
+    "id": "apple-iphone-xs-max-256gb-spacegray",
+    "namespaceId": 9,
+    "resolution": "2688х1242",
+    "processor": "Apple A12 Bionic",
+    "camera": "12 Mp + 12 Mp + 7MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 16,
+    "id": "apple-iphone-xs-max-64gb-gold",
+    "namespaceId": 9,
+    "resolution": "2688х1242",
+    "processor": "Apple A12 Bionic",
+    "camera": "12 Mp + 12 Mp + 7MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 33,
+    "id": "apple-iphone-xs-max-64gb-silver",
+    "namespaceId": 9,
+    "resolution": "2688х1242",
+    "processor": "Apple A12 Bionic",
+    "camera": "12 Mp + 12 Mp + 7MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 48,
+    "id": "apple-iphone-xs-max-64gb-spacegray",
+    "namespaceId": 9,
+    "resolution": "2688х1242",
+    "processor": "Apple A12 Bionic",
+    "camera": "12 Mp + 12 Mp + 7MP",
+    "zoom": "Digital, 10x / Optical, 2x"
+  },
+  {
+    "productId": 72,
+    "id": "apple-iphone-14-128gb-midnight",
+    "namespaceId": 10,
+    "resolution": "2532x1170",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital 5x, Optical 2x"
+  },
+  {
+    "productId": 73,
+    "id": "apple-iphone-14-256gb-midnight",
+    "namespaceId": 10,
+    "resolution": "2532x1170",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital 5x, Optical 2x"
+  },
+  {
+    "productId": 74,
+    "id": "apple-iphone-14-512gb-midnight",
+    "namespaceId": 10,
+    "resolution": "2532x1170",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital 5x, Optical 2x"
+  },
+  {
+    "productId": 75,
+    "id": "apple-iphone-14-128gb-yellow",
+    "namespaceId": 10,
+    "resolution": "2532x1170",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital 5x, Optical 2x"
+  },
+  {
+    "productId": 76,
+    "id": "apple-iphone-14-256gb-yellow",
+    "namespaceId": 10,
+    "resolution": "2532x1170",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital 5x, Optical 2x"
+  },
+  {
+    "productId": 77,
+    "id": "apple-iphone-14-512gb-yellow",
+    "namespaceId": 10,
+    "resolution": "2532x1170",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital 5x, Optical 2x"
+  },
+  {
+    "productId": 78,
+    "id": "apple-iphone-14-128gb-purple",
+    "namespaceId": 10,
+    "resolution": "2532x1170",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital 5x, Optical 2x"
+  },
+  {
+    "productId": 79,
+    "id": "apple-iphone-14-256gb-purple",
+    "namespaceId": 10,
+    "resolution": "2532x1170",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital 5x, Optical 2x"
+  },
+  {
+    "productId": 80,
+    "id": "apple-iphone-14-512gb-purple",
+    "namespaceId": 10,
+    "resolution": "2532x1170",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital 5x, Optical 2x"
+  },
+  {
+    "productId": 81,
+    "id": "apple-iphone-14-pro-128gb-spaceblack",
+    "namespaceId": 11,
+    "resolution": "2556x1179",
+    "processor": "Apple A16 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital 5x, Optical 2x"
+  },
+  {
+    "productId": 82,
+    "id": "apple-iphone-14-pro-256gb-spaceblack",
+    "namespaceId": 11,
+    "resolution": "2556x1179",
+    "processor": "Apple A16 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital 5x, Optical 2x"
+  },
+  {
+    "productId": 83,
+    "id": "apple-iphone-14-pro-512gb-spaceblack",
+    "namespaceId": 11,
+    "resolution": "2556x1179",
+    "processor": "Apple A16 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital 5x, Optical 2x"
+  },
+  {
+    "productId": 84,
+    "id": "apple-iphone-14-pro-1tb-spaceblack",
+    "namespaceId": 11,
+    "resolution": "2556x1179",
+    "processor": "Apple A16 Bionic",
+    "camera": "48 Mp + 12 Mp + 12MP + 12Mp",
+    "zoom": "Digital 5x, Optical 2x"
+  },
+  {
+    "productId": 94,
+    "id": "apple-iphone-12-64gb-black",
+    "namespaceId": 12,
+    "resolution": "2532x1170",
+    "processor": "Apple A14 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 95,
+    "id": "apple-iphone-12-128gb-black",
+    "namespaceId": 12,
+    "resolution": "2532x1170",
+    "processor": "Apple A14 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 96,
+    "id": "apple-iphone-12-256gb-black",
+    "namespaceId": 12,
+    "resolution": "2532x1170",
+    "processor": "Apple A14 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 85,
+    "id": "apple-iphone-12-64gb-purple",
+    "namespaceId": 12,
+    "resolution": "2532x1170",
+    "processor": "Apple A14 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 86,
+    "id": "apple-iphone-12-128gb-purple",
+    "namespaceId": 12,
+    "resolution": "2532x1170",
+    "processor": "Apple A14 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 87,
+    "id": "apple-iphone-12-256gb-purple",
+    "namespaceId": 12,
+    "resolution": "2532x1170",
+    "processor": "Apple A14 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 91,
+    "id": "apple-iphone-12-64gb-red",
+    "namespaceId": 12,
+    "resolution": "2532x1170",
+    "processor": "Apple A14 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 92,
+    "id": "apple-iphone-12-128gb-red",
+    "namespaceId": 12,
+    "resolution": "2532x1170",
+    "processor": "Apple A14 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 93,
+    "id": "apple-iphone-12-256gb-red",
+    "namespaceId": 12,
+    "resolution": "2532x1170",
+    "processor": "Apple A14 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 88,
+    "id": "apple-iphone-12-64gb-white",
+    "namespaceId": 12,
+    "resolution": "2532x1170",
+    "processor": "Apple A14 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 89,
+    "id": "apple-iphone-12-128gb-white",
+    "namespaceId": 12,
+    "resolution": "2532x1170",
+    "processor": "Apple A14 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 90,
+    "id": "apple-iphone-12-256gb-white",
+    "namespaceId": 12,
+    "resolution": "2532x1170",
+    "processor": "Apple A14 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 106,
+    "id": "apple-iphone-13-mini-64gb-midnight",
+    "namespaceId": 13,
+    "resolution": "2532x1170",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 107,
+    "id": "apple-iphone-13-mini-128gb-midnight",
+    "namespaceId": 13,
+    "resolution": "2532x1170",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 108,
+    "id": "apple-iphone-13-mini-256gb-midnight",
+    "namespaceId": 13,
+    "resolution": "2532x1170",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 103,
+    "id": "apple-iphone-13-mini-64gb-pink",
+    "namespaceId": 13,
+    "resolution": "2532x1170",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 104,
+    "id": "apple-iphone-13-mini-128gb-pink",
+    "namespaceId": 13,
+    "resolution": "2532x1170",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 105,
+    "id": "apple-iphone-13-mini-256gb-pink",
+    "namespaceId": 13,
+    "resolution": "2532x1170",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 100,
+    "id": "apple-iphone-13-mini-64gb-white",
+    "namespaceId": 13,
+    "resolution": "2532x1170",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 101,
+    "id": "apple-iphone-13-mini-128gb-white",
+    "namespaceId": 13,
+    "resolution": "2532x1170",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 102,
+    "id": "apple-iphone-13-mini-256gb-white",
+    "namespaceId": 13,
+    "resolution": "2532x1170",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 97,
+    "id": "apple-iphone-13-mini-64gb-blue",
+    "namespaceId": 13,
+    "resolution": "2532x1170",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 98,
+    "id": "apple-iphone-13-mini-128gb-blue",
+    "namespaceId": 13,
+    "resolution": "2532x1170",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 99,
+    "id": "apple-iphone-13-mini-256gb-blue",
+    "namespaceId": 13,
+    "resolution": "2532x1170",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp",
+    "zoom": "Optical, 2x; Digital, 5x"
+  },
+  {
+    "productId": 109,
+    "id": "apple-iphone-13-pro-max-128gb-sierrablue",
+    "namespaceId": 14,
+    "resolution": "2778x1284",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp + 12 Mp",
+    "zoom": "Optical, 3x; Digital, up to 15x"
+  },
+  {
+    "productId": 110,
+    "id": "apple-iphone-13-pro-max-256gb-sierrablue",
+    "namespaceId": 14,
+    "resolution": "2778x1284",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp + 12 Mp",
+    "zoom": "Optical, 3x; Digital, up to 15x"
+  },
+  {
+    "productId": 111,
+    "id": "apple-iphone-13-pro-max-512gb-sierrablue",
+    "namespaceId": 14,
+    "resolution": "2778x1284",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp + 12 Mp",
+    "zoom": "Optical, 3x; Digital, up to 15x"
+  },
+  {
+    "productId": 112,
+    "id": "apple-iphone-13-pro-max-1tb-sierrablue",
+    "namespaceId": 14,
+    "resolution": "2556x1179",
+    "processor": "Apple A16 Bionic",
+    "camera": "48 Mp + 12 Mp + 12MP + 12Mp",
+    "zoom": "Digital 5x, Optical 2x"
+  },
+  {
+    "productId": 117,
+    "id": "apple-iphone-13-pro-max-128gb-graphite",
+    "namespaceId": 14,
+    "resolution": "2778x1284",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp + 12 Mp",
+    "zoom": "Optical, 3x; Digital, up to 15x"
+  },
+  {
+    "productId": 118,
+    "id": "apple-iphone-13-pro-max-256gb-graphite",
+    "namespaceId": 14,
+    "resolution": "2778x1284",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp + 12 Mp",
+    "zoom": "Optical, 3x; Digital, up to 15x"
+  },
+  {
+    "productId": 119,
+    "id": "apple-iphone-13-pro-max-512gb-graphite",
+    "namespaceId": 14,
+    "resolution": "2778x1284",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp + 12 Mp",
+    "zoom": "Optical, 3x; Digital, up to 15x"
+  },
+  {
+    "productId": 113,
+    "id": "apple-iphone-13-pro-max-1tb-graphite",
+    "namespaceId": 14,
+    "resolution": "2556x1179",
+    "processor": "Apple A16 Bionic",
+    "camera": "48 Mp + 12 Mp + 12MP + 12Mp",
+    "zoom": "Digital 5x, Optical 2x"
+  },
+  {
+    "productId": 114,
+    "id": "apple-iphone-13-pro-max-256gb-gold",
+    "namespaceId": 14,
+    "resolution": "2778x1284",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp + 12 Mp",
+    "zoom": "Optical, 3x; Digital, up to 15x"
+  },
+  {
+    "productId": 115,
+    "id": "apple-iphone-13-pro-max-512gb-gold",
+    "namespaceId": 14,
+    "resolution": "2778x1284",
+    "processor": "Apple A15 Bionic",
+    "camera": "12 Mp + 12 Mp + 12 Mp",
+    "zoom": "Optical, 3x; Digital, up to 15x"
+  },
+  {
+    "productId": 116,
+    "id": "apple-iphone-13-pro-max-1tb-gold",
+    "namespaceId": 14,
+    "resolution": "2556x1179",
+    "processor": "Apple A16 Bionic",
+    "camera": "48 Mp + 12 Mp + 12MP + 12Mp",
+    "zoom": "Digital 5x, Optical 2x"
+  },
+  {
+    "productId": 191,
+    "id": "apple-iphone-14-pro-128gb-gold",
+    "namespaceId": 11,
+    "resolution": "2556x1179",
+    "processor": "Apple A16 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital 5x, Optical 2x"
+  },
+  {
+    "productId": 192,
+    "id": "apple-iphone-14-pro-256gb-gold",
+    "namespaceId": 11,
+    "resolution": "2556x1179",
+    "processor": "Apple A16 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital 5x, Optical 2x"
+  },
+  {
+    "productId": 193,
+    "id": "apple-iphone-14-pro-512gb-gold",
+    "namespaceId": 11,
+    "resolution": "2556x1179",
+    "processor": "Apple A16 Bionic",
+    "camera": "12 Mp + 12 Mp + 12MP",
+    "zoom": "Digital 5x, Optical 2x"
+  },
+  {
+    "productId": 194,
+    "id": "apple-iphone-14-pro-1tb-gold",
+    "namespaceId": 11,
+    "resolution": "2556x1179",
+    "processor": "Apple A16 Bionic",
+    "camera": "48 Mp + 12 Mp + 12MP + 12Mp",
+    "zoom": "Digital 5x, Optical 2x"
+  }
+]
