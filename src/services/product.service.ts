@@ -1,5 +1,7 @@
 'use strict';
 
+import { Category } from '../models/Category.model.js';
+import { Phone } from '../models/Phone.model.js';
 import { Product } from '../models/Product.model.js';
 
 class ProductService {
@@ -17,11 +19,40 @@ class ProductService {
   }
 
   async getAll() {
-    return Product.findAll();
+    return Product.findAll({
+      attributes: {
+        exclude: ['createdAt', 'categoryId', 'colorId']
+      }
+    });
   }
 
   async getById(productId: number) {
-    return Product.findByPk(productId);
+    return Product.findByPk(productId, {
+      include: [
+        { model: Phone,
+          as: 'itemPhone',
+          attributes: { exclude: ['createdAt', 'namespaceId', 'productId'] },
+        },
+      ],
+      attributes: {
+        exclude: ['createdAt', 'categoryId', 'colorId'],
+      },
+    });
+  }
+
+  async getPhones() {
+    const currentCategory = await Category.findOne({
+      where: { title: 'phones' },
+    });
+
+    const phones = await Product.findAll({
+      where: { categoryId: currentCategory?.id },
+      attributes: {
+        exclude: ['createdAt', 'categoryId', 'colorId'],
+      }
+    });
+
+    return phones;
   }
 }
 
