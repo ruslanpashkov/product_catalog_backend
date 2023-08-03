@@ -3,7 +3,8 @@
 import express from 'express';
 import { productController } from '../controllers/product.controller.js';
 
-export const phonesRouter = express.Router();
+export const productRouter = express.Router();
 
-phonesRouter.get('/', productController.getProduct);
-phonesRouter.get('/:productId', productController.getProductById);
+productRouter.get('/', productController.getProducts);
+productRouter.get('/phones', productController.getPhones);
+productRouter.get('/:productId', productController.getProductById);

@@ -3,8 +3,9 @@
 import express from 'express';
 import path from 'path';
 import cors from 'cors';
-import { phonesRouter } from './routes/product.router.js';
+import { productRouter } from './routes/product.router.js';
 import { initDB } from './utils/initDB.js';
+// import { phoneRouter } from './routes/phone.router.js';
 
 export const createServer = () => {
   const app = express();
@@ -12,7 +13,7 @@ export const createServer = () => {
   initDB();
   app.use(cors());
   app.use('/img', express.static(path.join('img')));
-  app.use('/products', express.json(), phonesRouter);
+  app.use('/products', express.json(), productRouter);
 
   app.use('/', (_, res) => {
     res.send('Hello world, it is HTML Hooligans');
