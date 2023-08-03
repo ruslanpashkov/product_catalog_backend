@@ -29,7 +29,8 @@ class ProductService {
   async getById(productId: number) {
     return Product.findByPk(productId, {
       include: [
-        { model: Phone,
+        {
+          model: Phone,
           as: 'itemPhone',
           attributes: { exclude: ['createdAt', 'namespaceId', 'productId'] },
         },

@@ -35,15 +35,15 @@ class ProductController {
 
     const { itemPhone, ...rest } = product.toJSON();
 
-    const includeItems = {
+    const itemType = {
       item: {}
     };
 
     if (itemPhone) {
-      includeItems.item = itemPhone;
+      itemType.item = itemPhone;
     }
 
-    const result = { ...rest, ...includeItems };
+    const result = { ...rest, ...itemType };
 
     res.status(200).json(result);
   };
