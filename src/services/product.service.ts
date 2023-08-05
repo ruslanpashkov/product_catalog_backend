@@ -20,41 +20,22 @@ class ProductService {
 
   async getAll() {
     return Product.findAll({
-      attributes: {
-        exclude: ['createdAt', 'categoryId', 'colorId']
-      }
-    });
-  }
-
-  async getById(productId: number) {
-    return Product.findByPk(productId, {
       include: [
         {
           model: Phone,
           as: 'itemPhone',
-          attributes: { exclude: ['createdAt', 'namespaceId', 'productId'] },
+          attributes: ['id']
+        },
+        {
+          model: Category,
+          as: 'category',
+          attributes: ['title']
         },
       ],
-      attributes: {
-        exclude: ['createdAt', 'categoryId', 'colorId'],
-      },
+      attributes: { exclude: ['createdAt', 'year', 'colorId', 'categoryId'] }
     });
   }
 
-  async getPhones() {
-    const currentCategory = await Category.findOne({
-      where: { title: 'phones' },
-    });
-
-    const phones = await Product.findAll({
-      where: { categoryId: currentCategory?.id },
-      attributes: {
-        exclude: ['createdAt', 'categoryId', 'colorId'],
-      }
-    });
-
-    return phones;
-  }
 }
 
 export const productService = ProductService.getInstance();

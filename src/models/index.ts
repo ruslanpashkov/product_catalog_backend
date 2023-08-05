@@ -1,7 +1,21 @@
+import { Capacity } from './Capacity.model.js';
 import { Category } from './Category.model.js';
 import { Color } from './Color.model.js';
+import { Description } from './Description.model.js';
+import { ImagesColor } from './ImagesColor.model.js';
 import { Namespace } from './Namespace.model.js';
+import { NamespaceCapacity } from './NamespaceCapacity.model.js';
 import { Phone } from './Phone.model.js';
 import { Product } from './Product.model.js';
 
-export const models = [Category, Color, Namespace, Phone, Product];
+export const models = [
+  Category,
+  Color,
+  Namespace,
+  Phone,
+  Product,
+  Capacity,
+  Description,
+  ImagesColor,
+  NamespaceCapacity,
+];

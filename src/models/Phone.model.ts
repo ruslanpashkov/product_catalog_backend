@@ -57,6 +57,12 @@ export class Phone extends Model {
     zoom: string;
 
   @AllowNull(false)
+  @Column({
+    type: DataType.ARRAY(DataType.STRING)
+  })
+    cell: string[];
+
+  @AllowNull(false)
   @ForeignKey(() => Namespace)
   @Column({
     type: DataType.INTEGER,
