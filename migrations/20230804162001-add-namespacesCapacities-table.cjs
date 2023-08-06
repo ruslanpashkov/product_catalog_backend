@@ -1,53 +1,34 @@
 'use strict';
 
-const TABLE_NAME = 'phones';
+const TABLE_NAME = 'namespacesCapacities';
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable(
-      TABLE_NAME,
-      {
+      TABLE_NAME, {
         id: {
-          type: Sequelize.STRING,
+          type: Sequelize.INTEGER,
           primaryKey: true,
-          allowNull: false,
-        },
-        resolution: {
-          type: Sequelize.STRING,
-          allowNull: false,
-        },
-        processor: {
-          type: Sequelize.STRING,
-          allowNull: false,
-        },
-        camera: {
-          type: Sequelize.STRING,
-          allowNull: false,
-        },
-        zoom: {
-          type: Sequelize.STRING,
+          autoIncrement: true,
           allowNull: false,
         },
         namespaceId: {
           type: Sequelize.INTEGER,
-          allowNull: false,
+          allowNull: true,
           references: {
             model: 'namespaces',
             key: 'id',
           },
-          onUpdate: 'CASCADE',
-          onDelete: 'RESTRICT',
+          onDelete: 'SET NULL',
         },
-        productId: {
+        capacityId: {
           type: Sequelize.INTEGER,
-          allowNull: false,
-          unique: true,
+          allowNull: true,
           references: {
-            model: 'products',
+            model: 'capacities',
             key: 'id',
           },
-          onUpdate: 'CASCADE',
-          onDelete: 'CASCADE',
+          onDelete: 'SET NULL',
         },
         createdAt: {
           type: Sequelize.DATE,

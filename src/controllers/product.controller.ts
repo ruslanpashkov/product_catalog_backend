@@ -20,39 +20,44 @@ class ProductController {
   getProducts: Controller = async (req, res) => {
     const products = await productService.getAll();
 
-    res.status(200).json(products);
-  };
-
-  getProductById: Controller = async (req, res) => {
-    const { productId } = req.params;
-    const product = await productService.getById(Number(productId));
-
-    if (!product) {
-      res.status(404).json({ error: 'Product not found' });
+    if (!products) {
+      res.status(404).json({ message: 'Products not found' });
 
       return;
     }
 
-    const { itemPhone, ...rest } = product.toJSON();
+    const formattedProducts = products.map(product => {
+      const {
+        itemPhone,
+        category,
+        ram: RAM,
+        capacity,
+        screen,
+        ...rest
+      } = product.toJSON();
 
-    const itemType = {
-      item: {}
-    };
+      const itemType = {
+        itemId: '',
+      };
 
-    if (itemPhone) {
-      itemType.item = itemPhone;
-    }
+      if (itemPhone) {
+        itemType.itemId = itemPhone.id;
+      }
 
-    const result = { ...rest, ...itemType };
+      const result = {
+        ...rest,
+        category: category.title,
+        Capacity: capacity,
+        Screen: screen,
+        RAM,
+        ...itemType
+      };
+      return result;
+    });
 
-    res.status(200).json(result);
+    res.status(200).json(formattedProducts);
   };
 
-  getPhones: Controller = async (req, res) => {
-    const phones = await productService.getPhones();
-
-    res.status(200).json(phones);
-  };
 }
 
 export const productController = ProductController.getInstance();

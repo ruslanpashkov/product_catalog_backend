@@ -7,7 +7,11 @@ import {
   AllowNull,
   Table,
   Unique,
+  HasMany,
 } from 'sequelize-typescript';
+import { ImagesColor } from './ImagesColor.model.js';
+import { Description } from './Description.model.js';
+import { NamespaceCapacity } from './NamespaceCapacity.model.js';
 
 @Table({
   tableName: 'namespaces',
@@ -26,4 +30,19 @@ export class Namespace extends Model {
     type: DataType.STRING,
   })
     title: string;
+
+  @HasMany(() => NamespaceCapacity, {
+    onDelete: 'SET NULL',
+  })
+    namespaceCapacities: NamespaceCapacity[] | null;
+
+  @HasMany(() => ImagesColor, {
+    onDelete: 'CASCADE',
+  })
+    images: ImagesColor[] | null;
+
+  @HasMany(() => Description, {
+    onDelete: 'CASCADE',
+  })
+    descriptions: Description[] | null;
 }

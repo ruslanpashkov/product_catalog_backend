@@ -1,0 +1,54 @@
+[
+  {
+    "namespaceId": 20,
+    "capacityId": 1
+  },
+  {
+    "namespaceId": 20,
+    "capacityId": 2
+  },
+  {
+    "namespaceId": 20,
+    "capacityId": 4
+  },
+  {
+    "namespaceId": 20,
+    "capacityId": 6
+  },
+  {
+    "namespaceId": 20,
+    "capacityId": 7
+  },
+  {
+    "namespaceId": 21,
+    "capacityId": 2
+  },
+  {
+    "namespaceId": 21,
+    "capacityId": 3
+  },
+  {
+    "namespaceId": 22,
+    "capacityId": 3
+  },
+  {
+    "namespaceId": 22,
+    "capacityId": 2
+  },
+  {
+    "namespaceId": 23,
+    "capacityId": 1
+  },
+  {
+    "namespaceId": 23,
+    "capacityId": 5
+  },
+  {
+    "namespaceId": 24,
+    "capacityId": 2
+  },
+  {
+    "namespaceId": 24,
+    "capacityId": 3
+  }
+]

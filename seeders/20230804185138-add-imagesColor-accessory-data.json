@@ -1,0 +1,257 @@
+[
+  {
+    "imagePath": "img/accessories/apple-watch-series-3/space-gray/00.webp",
+    "namespaceId": 15,
+    "colorId": 19
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-3/space-gray/01.webp",
+    "namespaceId": 15,
+    "colorId": 19
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-3/space-gray/02.webp",
+    "namespaceId": 15,
+    "colorId": 19
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-3/gold/00.webp",
+    "namespaceId": 15,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-3/gold/01.webp",
+    "namespaceId": 15,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-3/gold/02.webp",
+    "namespaceId": 15,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-3/silver/00.webp",
+    "namespaceId": 15,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-3/silver/01.webp",
+    "namespaceId": 15,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-3/silver/02.webp",
+    "namespaceId": 15,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/space-gray/00.webp",
+    "namespaceId": 16,
+    "colorId": 19
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/space-gray/01.webp",
+    "namespaceId": 16,
+    "colorId": 19
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/space-gray/02.webp",
+    "namespaceId": 16,
+    "colorId": 19
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/silver/00.webp",
+    "namespaceId": 16,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/silver/01.webp",
+    "namespaceId": 16,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/silver/02.webp",
+    "namespaceId": 16,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/gold/00.webp",
+    "namespaceId": 16,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/gold/01.webp",
+    "namespaceId": 16,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/gold/02.webp",
+    "namespaceId": 16,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/blue/00.webp",
+    "namespaceId": 16,
+    "colorId": 15
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/blue/01.webp",
+    "namespaceId": 16,
+    "colorId": 15
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/blue/02.webp",
+    "namespaceId": 16,
+    "colorId": 15
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/red/00.webp",
+    "namespaceId": 16,
+    "colorId": 8
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/red/01.webp",
+    "namespaceId": 16,
+    "colorId": 8
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/red/02.webp",
+    "namespaceId": 16,
+    "colorId": 8
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-5/silver/00.webp",
+    "namespaceId": 17,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-5/silver/01.webp",
+    "namespaceId": 17,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-5/silver/02.webp",
+    "namespaceId": 17,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-5/gold/00.webp",
+    "namespaceId": 17,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-5/gold/01.webp",
+    "namespaceId": 17,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-5/gold/02.webp",
+    "namespaceId": 17,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-5/space-gray/00.webp",
+    "namespaceId": 17,
+    "colorId": 20
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-5/space-gray/01.webp",
+    "namespaceId": 17,
+    "colorId": 20
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-5/space-gray/02.webp",
+    "namespaceId": 17,
+    "colorId": 20
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-4/silver/00.webp",
+    "namespaceId": 18,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-4/silver/01.webp",
+    "namespaceId": 18,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-4/silver/02.webp",
+    "namespaceId": 18,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-4/gold/00.webp",
+    "namespaceId": 18,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-4/gold/01.webp",
+    "namespaceId": 18,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-4/gold/02.webp",
+    "namespaceId": 18,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-4/space-gray/00.webp",
+    "namespaceId": 18,
+    "colorId": 20
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-4/space-gray/01.webp",
+    "namespaceId": 18,
+    "colorId": 20
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-4/space-gray/02.webp",
+    "namespaceId": 18,
+    "colorId": 20
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-se/silver/00.webp",
+    "namespaceId": 19,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-se/silver/01.webp",
+    "namespaceId": 19,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-se/silver/02.webp",
+    "namespaceId": 19,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-se/gold/00.webp",
+    "namespaceId": 19,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-se/gold/01.webp",
+    "namespaceId": 19,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-se/gold/02.webp",
+    "namespaceId": 19,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-se/space-gray/00.webp",
+    "namespaceId": 19,
+    "colorId": 19
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-se/space-gray/01.webp",
+    "namespaceId": 19,
+    "colorId": 19
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-se/space-gray/02.webp",
+    "namespaceId": 19,
+    "colorId": 19
+  }
+]
