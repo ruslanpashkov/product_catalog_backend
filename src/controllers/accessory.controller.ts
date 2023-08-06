@@ -21,7 +21,9 @@ class AccessoryController {
   getAccessories: Controller = async (req, res) => {
     const { initialLimit, offset } = getPaginationInfo(req);
 
-    const accessories = await accessoryService.getAll(offset, initialLimit);
+    const { sortBy } = req.query as { sortBy?: string } || { sortBy: 'Newest' };
+
+    const accessories = await accessoryService.getAll(offset, initialLimit, sortBy);
 
     if (!accessories) {
       res.status(404).json({ message: 'Accessories not found' });
@@ -47,7 +49,7 @@ class AccessoryController {
       return result;
     });
 
-    res.status(200).json(formattedAccessory);
+    res.status(200).json({ count: accessories.count, data: formattedAccessory });
   };
 
   getAccessoryById: Controller = async (req, res) => {

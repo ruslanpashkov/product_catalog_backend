@@ -8,6 +8,7 @@ import { ImagesColor } from '../models/ImagesColor.model.js';
 import { NamespaceCapacity } from '../models/NamespaceCapacity.model.js';
 import { Phone } from '../models/Phone.model.js';
 import { Product } from '../models/Product.model.js';
+import { generateSortingOrder } from '../utils/helpers.js';
 
 class PhoneService {
   private static instance: PhoneService | null = null;
@@ -26,11 +27,13 @@ class PhoneService {
   async getAll(
     offset: number,
     limit: number,
-    sortOption,
+    sortBy: string | undefined,
   ) {
     const currentCategory = await Category.findOne({
       where: { title: 'phones' },
     });
+
+    const sortingOrder = generateSortingOrder(sortBy);
 
     const phones = await Product.findAndCountAll({
       offset,
@@ -43,17 +46,10 @@ class PhoneService {
           attributes: ['id'],
         }
       ],
+      order: sortingOrder,
       attributes: {
-        exclude: ['createdAt', 'categoryId', 'colorId'],
-        // exclude: ['createdAt', 'categoryId', 'colorId', 'year'],
+        exclude: ['createdAt', 'categoryId', 'colorId', 'year'],
       },
-      order: sortOption === 'Newest'
-        ? [['year', 'DESC']]
-        : sortOption === 'HighestPrice'
-          ? [['fullPrice', 'DESC']]
-          : sortOption === 'LowestPrice'
-            ? [['price', 'ASC']]
-            : [],
     });
 
     return phones;
