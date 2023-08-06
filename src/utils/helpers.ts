@@ -110,6 +110,7 @@ export const formatMultipleProducts = (products: Product[]) => {
       category: category.title,
       ...itemType
     };
+
     return result;
   });
 };
