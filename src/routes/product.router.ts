@@ -7,3 +7,4 @@ export const productRouter = express.Router();
 
 productRouter.get('/', productController.getProducts);
 productRouter.get('/discount', productController.getProductsByDiscount);
+productRouter.get('/new', productController.getProducntsByNew);
