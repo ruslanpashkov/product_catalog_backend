@@ -14,6 +14,7 @@ import { Category } from './Category.model.js';
 import { Phone } from './Phone.model.js';
 import { Color } from './Color.model.js';
 import { Tablet } from './Tablet.model.js';
+import { Accessory } from './Accessory.model.js';
 
 @Table({
   tableName: 'products',
@@ -111,4 +112,9 @@ export class Product extends Model {
     onDelete: 'CASCADE',
   })
     itemTablet: Tablet | null;
+
+  @HasOne(() => Accessory, {
+    onDelete: 'CASCADE',
+  })
+    itemAccessory: Accessory | null;
 }

@@ -30,10 +30,8 @@ class ProductController {
       const {
         itemPhone,
         itemTablet,
+        itemAccessory,
         category,
-        ram: RAM,
-        capacity,
-        screen,
         ...rest
       } = product.toJSON();
 
@@ -49,12 +47,13 @@ class ProductController {
         itemType.itemId = itemTablet.id;
       }
 
+      if (itemAccessory) {
+        itemType.itemId = itemAccessory.id;
+      }
+
       const result = {
         ...rest,
         category: category.title,
-        Capacity: capacity,
-        Screen: screen,
-        RAM,
         ...itemType
       };
       return result;

@@ -2,6 +2,7 @@
 
 import { tabletService } from '../services/tablet.service.js';
 import { Controller } from '../types.js';
+import { formatProduct, getPaginationInfo } from '../utils/helpers.js';
 
 class TabletController {
   private static instance: TabletController | null = null;
@@ -18,11 +19,7 @@ class TabletController {
   }
 
   getTablets: Controller = async (req, res) => {
-    const { page, limit } = req.query;
-    const initialPage = +(page || 1);
-    const initialLimit = +(limit || 9);
-
-    const offset = initialLimit * initialPage - initialLimit;
+    const { initialLimit, offset } = getPaginationInfo(req);
 
     const tablets = await tabletService.getAll(offset, initialLimit);
 
@@ -33,9 +30,6 @@ class TabletController {
     const formattedTablets = tablets.rows.map(tablet => {
       const {
         itemTablet,
-        screen: Screen,
-        capacity: Capacity,
-        ram: RAM,
         ...rest
       } = tablet.toJSON();
 
@@ -47,9 +41,6 @@ class TabletController {
 
       const result = {
         ...rest,
-        Screen,
-        Capacity,
-        RAM,
         itemId,
       };
 
@@ -79,39 +70,13 @@ class TabletController {
 
     const tabletJSON = tablet?.toJSON();
 
-    const images = imagesColor.map(imageColor => (
-      imageColor.toJSON().imagePath
-    ));
-
-    const capacityAvailable = capacities.map(capacitySize => (
-      capacitySize.toJSON().capacity
-    ));
-
-    const colorsAvailable = colors.map(colorData => (
-      colorData.toJSON().color.title
-    ));
-
-    const formattedTablet = {
-      id: tabletJSON.id,
-      Resolution: tabletJSON.resolution,
-      Processor: tabletJSON.processor,
-      Camera: tabletJSON.camera,
-      Zoom: tabletJSON.zoom,
-      Cell: tabletJSON.cell,
-      namespaceId: tabletJSON.namespaceId,
-      productId: tabletJSON.productId,
-      name: tabletJSON.product.name,
-      fullPrice: tabletJSON.product.fullPrice,
-      price: tabletJSON.product.price,
-      RAM: tabletJSON.product.ram,
-      Screen: tabletJSON.product.screen,
-      Capacity: tabletJSON.product.capacity,
-      colorId: tabletJSON.product.colorId,
-      images,
-      capacityAvailable,
+    const formattedTablet = formatProduct(
+      tabletJSON,
+      imagesColor,
+      capacities,
       descriptions,
-      colorsAvailable
-    };
+      colors
+    );
 
     res.status(200).json(formattedTablet);
   };

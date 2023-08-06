@@ -1,3 +1,4 @@
+import { Accessory } from './Accessory.model.js';
 import { Capacity } from './Capacity.model.js';
 import { Category } from './Category.model.js';
 import { Color } from './Color.model.js';
@@ -19,5 +20,6 @@ export const models = [
   Description,
   ImagesColor,
   NamespaceCapacity,
-  Tablet
+  Tablet,
+  Accessory
 ];

@@ -2,6 +2,7 @@
 
 import { phoneService } from '../services/phone.service.js';
 import { Controller } from '../types.js';
+import { formatProduct, getPaginationInfo } from '../utils/helpers.js';
 
 class PhoneController {
   private static instance: PhoneController | null = null;
@@ -18,11 +19,7 @@ class PhoneController {
   }
 
   getPhones: Controller = async (req, res) => {
-    const { page, limit } = req.query;
-    const initialPage = Number(page || 1);
-    const initialLimit = Number(limit || 16);
-
-    const offset = initialLimit * initialPage - initialLimit;
+    const { initialLimit, offset } = getPaginationInfo(req);
 
     const phones = await phoneService.getAll(offset, initialLimit);
 
@@ -33,9 +30,6 @@ class PhoneController {
     const formattedPhones = phones.rows.map(phone => {
       const {
         itemPhone,
-        screen: Screen,
-        capacity: Capacity,
-        ram: RAM,
         ...rest
       } = phone.toJSON();
 
@@ -47,9 +41,6 @@ class PhoneController {
 
       const result = {
         ...rest,
-        Screen,
-        Capacity,
-        RAM,
         itemId,
       };
 
@@ -60,6 +51,7 @@ class PhoneController {
   };
 
   getPhoneById: Controller = async (req, res) => {
+
     const { phoneId } = req.params;
     const phoneData = await phoneService.getPhoneById(phoneId);
 
@@ -79,38 +71,13 @@ class PhoneController {
 
     const phoneJSON = phone?.toJSON();
 
-    const images = imagesColor.map(imageColor => (
-      imageColor.toJSON().imagePath
-    ));
-
-    const capacityAvailable = capacities.map(capacitySize => (
-      capacitySize.toJSON().capacity
-    ));
-
-    const colorsAvailable = colors.map(colorData => (
-      colorData.toJSON().color.title
-    ));
-
-    const formattedPhone = {
-      id: phoneJSON.id,
-      Resolution: phoneJSON.resolution,
-      Processor: phoneJSON.processor,
-      Camera: phoneJSON.camera,
-      Zoom: phoneJSON.zoom,
-      Cell: phoneJSON.cell,
-      namespaceId: phoneJSON.namespaceId,
-      name: phoneJSON.product.name,
-      fullPrice: phoneJSON.product.fullPrice,
-      price: phoneJSON.product.price,
-      RAM: phoneJSON.product.ram,
-      Screen: phoneJSON.product.screen,
-      Capacity: phoneJSON.product.capacity,
-      colorId: phoneJSON.product.colorId,
-      images,
-      capacityAvailable,
+    const formattedPhone = formatProduct(
+      phoneJSON,
+      imagesColor,
+      capacities,
       descriptions,
-      colorsAvailable
-    };
+      colors
+    );
 
     res.status(200).json(formattedPhone);
   };
