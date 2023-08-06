@@ -12,11 +12,15 @@ import { accessoryRouter } from './routes/accessory.router.js';
 
 dotenv.config();
 
-const { CLIENT_URL } = process.env;
+// const { CLIENT_URL } = process.env;
+
+// const corsOptions = {
+//   origin: CLIENT_URL,
+//   credentials: true,
+// };
 
 const corsOptions = {
-  origin: CLIENT_URL,
-  credentials: true,
+  origin: '*',
 };
 
 export const createServer = () => {
