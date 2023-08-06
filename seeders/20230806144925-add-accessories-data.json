@@ -1,0 +1,274 @@
+[
+  {
+    "id": "apple-watch-series-3-38mm-space-gray",
+    "namespaceId": 15,
+    "resolution": "272x340",
+    "processor": "Apple S3",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 121
+  },
+  {
+    "id": "apple-watch-series-3-42mm-space-gray",
+    "namespaceId": 15,
+    "resolution": "272x340",
+    "processor": "Apple S3",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 122
+  },
+  {
+    "id": "apple-watch-series-3-38mm-gold",
+    "namespaceId": 15,
+    "resolution": "272x340",
+    "processor": "Apple S3",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 123
+  },
+  {
+    "id": "apple-watch-series-3-42mm-gold",
+    "namespaceId": 15,
+    "resolution": "272x340",
+    "processor": "Apple S3",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 124
+  },
+  {
+    "id": "apple-watch-series-3-38mm-silver",
+    "namespaceId": 15,
+    "resolution": "272x340",
+    "processor": "Apple S3",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 125
+  },
+  {
+    "id": "apple-watch-series-3-42mm-silver",
+    "namespaceId": 15,
+    "resolution": "272x340",
+    "processor": "Apple S3",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 126
+  },
+  {
+    "id": "apple-watch-series-6-40mm-space-gray",
+    "namespaceId": 16,
+    "resolution": "324x394",
+    "processor": "Apple S6",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 127
+  },
+  {
+    "id": "apple-watch-series-6-44mm-space-gray",
+    "namespaceId": 16,
+    "resolution": "324x394",
+    "processor": "Apple S6",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 128
+  },
+  {
+    "id": "apple-watch-series-6-40mm-silver",
+    "namespaceId": 16,
+    "resolution": "324x394",
+    "processor": "Apple S6",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 129
+  },
+  {
+    "id": "apple-watch-series-6-44mm-silver",
+    "namespaceId": 16,
+    "resolution": "324x394",
+    "processor": "Apple S6",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 130
+  },
+  {
+    "id": "apple-watch-series-6-40mm-gold",
+    "namespaceId": 16,
+    "resolution": "324x394",
+    "processor": "Apple S6",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 131
+  },
+  {
+    "id": "apple-watch-series-6-44mm-gold",
+    "namespaceId": 16,
+    "resolution": "324x394",
+    "processor": "Apple S6",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 132
+  },
+  {
+    "id": "apple-watch-series-6-40mm-blue",
+    "namespaceId": 16,
+    "resolution": "324x394",
+    "processor": "Apple S6",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 133
+  },
+  {
+    "id": "apple-watch-series-6-44mm-blue",
+    "namespaceId": 16,
+    "resolution": "324x394",
+    "processor": "Apple S6",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 134
+  },
+  {
+    "id": "apple-watch-series-6-40mm-red",
+    "namespaceId": 16,
+    "resolution": "324x394",
+    "processor": "Apple S6",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 135
+  },
+  {
+    "id": "apple-watch-series-6-44mm-red",
+    "namespaceId": 16,
+    "resolution": "324x394",
+    "processor": "Apple S6",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 136
+  },
+  {
+    "id": "apple-watch-series-5-40mm-silver",
+    "namespaceId": 17,
+    "resolution": "324x394",
+    "processor": "Apple S5",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 137
+  },
+  {
+    "id": "apple-watch-series-5-44mm-silver",
+    "namespaceId": 17,
+    "resolution": "368x448",
+    "processor": "Apple S5",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 138
+  },
+  {
+    "id": "apple-watch-series-5-40mm-gold",
+    "namespaceId": 17,
+    "resolution": "324x394",
+    "processor": "Apple S5",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 139
+  },
+  {
+    "id": "apple-watch-series-5-44mm-gold",
+    "namespaceId": 17,
+    "resolution": "368x448",
+    "processor": "Apple S5",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 140
+  },
+  {
+    "id": "apple-watch-series-5-40mm-space-gray",
+    "namespaceId": 17,
+    "resolution": "324x394",
+    "processor": "Apple S5",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 141
+  },
+  {
+    "id": "apple-watch-series-5-44mm-space-gray",
+    "namespaceId": 17,
+    "resolution": "368x448",
+    "processor": "Apple S5",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 142
+  },
+  {
+    "id": "apple-watch-series-4-40mm-silver",
+    "namespaceId": 18,
+    "resolution": "324x394",
+    "processor": "Apple S4",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 143
+  },
+  {
+    "id": "apple-watch-series-4-44mm-silver",
+    "namespaceId": 18,
+    "resolution": "368x448",
+    "processor": "Apple S4",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 144
+  },
+  {
+    "id": "apple-watch-series-4-40mm-gold",
+    "namespaceId": 18,
+    "resolution": "324x394",
+    "processor": "Apple S4",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 145
+  },
+  {
+    "id": "apple-watch-series-4-44mm-gold",
+    "namespaceId": 18,
+    "resolution": "368x448",
+    "processor": "Apple S4",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 146
+  },
+  {
+    "id": "apple-watch-series-4-40mm-space-gray",
+    "namespaceId": 18,
+    "resolution": "324x394",
+    "processor": "Apple S4",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 147
+  },
+  {
+    "id": "apple-watch-series-4-44mm-space-gray",
+    "namespaceId": 18,
+    "resolution": "368x448",
+    "processor": "Apple S4",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 148
+  },
+  {
+    "id": "apple-watch-se-40mm-silver",
+    "namespaceId": 19,
+    "resolution": "324x394",
+    "processor": "Apple S5",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 149
+  },
+  {
+    "id": "apple-watch-se-44mm-silver",
+    "namespaceId": 19,
+    "resolution": "368x448",
+    "processor": "Apple S5",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 150
+  },
+  {
+    "id": "apple-watch-se-40mm-gold",
+    "namespaceId": 19,
+    "resolution": "324x394",
+    "processor": "Apple S5",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 151
+  },
+  {
+    "id": "apple-watch-se-44mm-gold",
+    "namespaceId": 19,
+    "resolution": "368x448",
+    "processor": "Apple S5",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 152
+  },
+  {
+    "id": "apple-watch-se-40mm-space-gray",
+    "namespaceId": 19,
+    "resolution": "324x394",
+    "processor": "Apple S5",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 153
+  },
+  {
+    "id": "apple-watch-se-44mm-space-gray",
+    "namespaceId": 19,
+    "resolution": "368x448",
+    "processor": "Apple S5",
+    "cell": ["Wi-Fi", "Bluetooth", "LTE"],
+    "productId": 154
+  }
+]

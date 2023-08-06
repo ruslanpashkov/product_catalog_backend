@@ -1,41 +1,41 @@
 'use strict';
 
+import { Accessory } from '../models/Accessory.model.js';
 import { Capacity } from '../models/Capacity.model.js';
 import { Category } from '../models/Category.model.js';
 import { Color } from '../models/Color.model.js';
 import { Description } from '../models/Description.model.js';
 import { ImagesColor } from '../models/ImagesColor.model.js';
 import { NamespaceCapacity } from '../models/NamespaceCapacity.model.js';
-import { Phone } from '../models/Phone.model.js';
 import { Product } from '../models/Product.model.js';
 
-class PhoneService {
-  private static instance: PhoneService | null = null;
+class AccessoryService {
+  private static instance: AccessoryService | null = null;
 
   // eslint-disable-next-line no-empty-function
   private constructor() {}
 
-  static getInstance(): PhoneService {
-    if (!PhoneService.instance) {
-      PhoneService.instance = new PhoneService();
+  static getInstance(): AccessoryService {
+    if (!AccessoryService.instance) {
+      AccessoryService.instance = new AccessoryService();
     }
 
-    return PhoneService.instance;
+    return AccessoryService.instance;
   }
 
   async getAll(offset: number, limit: number) {
     const currentCategory = await Category.findOne({
-      where: { title: 'phones' },
+      where: { title: 'accessories' },
     });
 
-    const phones = await Product.findAndCountAll({
+    const accessories = await Product.findAndCountAll({
       offset,
       limit,
       where: { categoryId: currentCategory?.id },
       include: [
         {
-          model: Phone,
-          as: 'itemPhone',
+          model: Accessory,
+          as: 'itemAccessory',
           attributes: ['id'],
         }
       ],
@@ -44,11 +44,11 @@ class PhoneService {
       }
     });
 
-    return phones;
+    return accessories;
   }
 
-  async getPhoneById(phoneId: string) {
-    const phone = await Phone.findByPk(phoneId, {
+  async getAccessoryById(accessoryId: string) {
+    const accessory = await Accessory.findByPk(accessoryId, {
       include: [
         {
           model: Product,
@@ -59,10 +59,10 @@ class PhoneService {
       attributes: { exclude: ['createdAt'] }
     });
 
-    const { namespaceId, product } = phone?.dataValues || {};
+    const { namespaceId, product } = accessory?.dataValues || {};
     const { colorId } = product.dataValues;
 
-    const imagesColorPromise = ImagesColor.findAll({
+    const imagesColor = await ImagesColor.findAll({
       where: {
         namespaceId,
         colorId,
@@ -70,8 +70,10 @@ class PhoneService {
       attributes: ['imagePath']
     });
 
-    const colorsPromise = ImagesColor.findAll({
-      attributes: ['colorId'],
+    const colors = await ImagesColor.findAll({
+      attributes: [
+        'colorId'
+      ],
       include: [
         {
           model: Color,
@@ -84,7 +86,7 @@ class PhoneService {
       group: ['colorId', 'color.id']
     });
 
-    const capacitiesPromise = Capacity.findAll({
+    const capacities = await Capacity.findAll({
       include: [
         {
           model: NamespaceCapacity,
@@ -98,22 +100,15 @@ class PhoneService {
       attributes: ['capacity'],
     });
 
-    const descriptionsPromise = Description.findAll({
+    const descriptions = await Description.findAll({
       where: {
         namespaceId
       },
       attributes: ['title', 'text']
     });
 
-    const [imagesColor, colors, capacities, descriptions] = await Promise.all([
-      imagesColorPromise,
-      colorsPromise,
-      capacitiesPromise,
-      descriptionsPromise
-    ]);
-
-    return { phone, imagesColor, capacities, descriptions, colors };
+    return { accessory, imagesColor, capacities, descriptions, colors };
   }
 }
 
-export const phoneService = PhoneService.getInstance();
+export const accessoryService = AccessoryService.getInstance();

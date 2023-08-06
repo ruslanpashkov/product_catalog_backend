@@ -30,6 +30,7 @@ class ProductController {
       const {
         itemPhone,
         itemTablet,
+        itemAccessory,
         category,
         ram: RAM,
         capacity,
@@ -47,6 +48,10 @@ class ProductController {
 
       if (itemTablet) {
         itemType.itemId = itemTablet.id;
+      }
+
+      if (itemAccessory) {
+        itemType.itemId = itemAccessory.id;
       }
 
       const result = {

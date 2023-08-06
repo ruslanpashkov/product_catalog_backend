@@ -1,5 +1,6 @@
 'use strict';
 
+import { Accessory } from '../models/Accessory.model.js';
 import { Category } from '../models/Category.model.js';
 import { Phone } from '../models/Phone.model.js';
 import { Product } from '../models/Product.model.js';
@@ -30,6 +31,11 @@ class ProductService {
         {
           model: Tablet,
           as: 'itemTablet',
+          attributes: ['id']
+        },
+        {
+          model: Accessory,
+          as: 'itemAccessory',
           attributes: ['id']
         },
         {

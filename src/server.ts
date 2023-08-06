@@ -8,6 +8,7 @@ import { productRouter } from './routes/product.router.js';
 import { initDB } from './utils/initDB.js';
 import { phoneRouter } from './routes/phone.router.js';
 import { tabletRouter } from './routes/tablet.router.js';
+import { accessoryRouter } from './routes/accessory.router.js';
 
 dotenv.config();
 
@@ -27,6 +28,7 @@ export const createServer = () => {
   app.use('/products', express.json(), productRouter);
   app.use('/phones', express.json(), phoneRouter);
   app.use('/tablets', express.json(), tabletRouter);
+  app.use('/accessories', express.json(), accessoryRouter);
 
   app.use('/', (_, res) => {
     res.send('Hello world, it is HTML Hooligans');
