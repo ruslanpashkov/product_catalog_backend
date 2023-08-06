@@ -2,7 +2,7 @@
 
 import { tabletService } from '../services/tablet.service.js';
 import { Controller } from '../types.js';
-import { formatProduct, getPaginationInfo } from '../utils/helpers.js';
+import { formatSingleProduct, getPaginationInfo } from '../utils/helpers.js';
 
 class TabletController {
   private static instance: TabletController | null = null;
@@ -70,7 +70,7 @@ class TabletController {
 
     const tabletJSON = tablet?.toJSON();
 
-    const formattedTablet = formatProduct(
+    const formattedTablet = formatSingleProduct(
       tabletJSON,
       imagesColor,
       capacities,

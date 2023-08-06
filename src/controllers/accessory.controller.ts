@@ -2,7 +2,7 @@
 
 import { accessoryService } from '../services/accessory.service.js';
 import { Controller } from '../types.js';
-import { formatProduct, getPaginationInfo } from '../utils/helpers.js';
+import { formatSingleProduct, getPaginationInfo } from '../utils/helpers.js';
 
 class AccessoryController {
   private static instance: AccessoryController | null = null;
@@ -70,7 +70,7 @@ class AccessoryController {
 
     const accessoryJSON = accessory?.toJSON();
 
-    const formattedAccessory = formatProduct(
+    const formattedAccessory = formatSingleProduct(
       accessoryJSON,
       imagesColor,
       capacities,

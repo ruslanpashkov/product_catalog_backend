@@ -2,7 +2,7 @@
 
 import { phoneService } from '../services/phone.service.js';
 import { Controller } from '../types.js';
-import { formatProduct, getPaginationInfo } from '../utils/helpers.js';
+import { formatSingleProduct, getPaginationInfo } from '../utils/helpers.js';
 
 class PhoneController {
   private static instance: PhoneController | null = null;
@@ -71,7 +71,7 @@ class PhoneController {
 
     const phoneJSON = phone?.toJSON();
 
-    const formattedPhone = formatProduct(
+    const formattedPhone = formatSingleProduct(
       phoneJSON,
       imagesColor,
       capacities,

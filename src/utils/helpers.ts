@@ -4,6 +4,7 @@ import { Request } from 'express';
 import { ImagesColor } from '../models/ImagesColor.model.js';
 import { Capacity } from '../models/Capacity.model.js';
 import { Description } from '../models/Description.model.js';
+import { Product } from '../models/Product.model.js';
 
 export const getPaginationInfo = (req: Request) => {
   const { page, limit } = req.query;
@@ -16,7 +17,7 @@ export const getPaginationInfo = (req: Request) => {
   return { initialLimit, offset };
 };
 
-interface Product {
+interface ItemProduct {
   name: string;
   fullPrice: number;
   price: number;
@@ -34,10 +35,10 @@ interface ItemJSON {
   zoom: string;
   cell: string;
   namespaceId: number;
-  product: Product
+  product: ItemProduct
 }
 
-export const formatProduct = (
+export const formatSingleProduct = (
   itemJSON: ItemJSON,
   imagesColor: ImagesColor[],
   capacities: Capacity[],
@@ -76,4 +77,39 @@ export const formatProduct = (
     descriptions,
     colorsAvailable
   };
+};
+
+export const formatMultipleProducts = (products: Product[]) => {
+  return products.map(product => {
+    const {
+      itemPhone,
+      itemTablet,
+      itemAccessory,
+      category,
+      ...rest
+    } = product.toJSON();
+
+    const itemType = {
+      itemId: '',
+    };
+
+    if (itemPhone) {
+      itemType.itemId = itemPhone.id;
+    }
+
+    if (itemTablet) {
+      itemType.itemId = itemTablet.id;
+    }
+
+    if (itemAccessory) {
+      itemType.itemId = itemAccessory.id;
+    }
+
+    const result = {
+      ...rest,
+      category: category.title,
+      ...itemType
+    };
+    return result;
+  });
 };
