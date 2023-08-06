@@ -7,6 +7,7 @@ import cors from 'cors';
 import { productRouter } from './routes/product.router.js';
 import { initDB } from './utils/initDB.js';
 import { phoneRouter } from './routes/phone.router.js';
+import { tabletRouter } from './routes/tablet.router.js';
 
 dotenv.config();
 
@@ -25,6 +26,7 @@ export const createServer = () => {
   app.use('/img', express.static(path.join('img')));
   app.use('/products', express.json(), productRouter);
   app.use('/phones', express.json(), phoneRouter);
+  app.use('/tablets', express.json(), tabletRouter);
 
   app.use('/', (_, res) => {
     res.send('Hello world, it is HTML Hooligans');

@@ -13,6 +13,7 @@ import {
 import { Category } from './Category.model.js';
 import { Phone } from './Phone.model.js';
 import { Color } from './Color.model.js';
+import { Tablet } from './Tablet.model.js';
 
 @Table({
   tableName: 'products',
@@ -105,4 +106,9 @@ export class Product extends Model {
     onDelete: 'CASCADE',
   })
     itemPhone: Phone | null;
+
+  @HasOne(() => Tablet, {
+    onDelete: 'CASCADE',
+  })
+    itemTablet: Tablet | null;
 }

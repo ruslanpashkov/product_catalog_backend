@@ -92,7 +92,6 @@ class PhoneController {
     ));
 
     const formattedPhone = {
-      RAM: phoneJSON.ram,
       id: phoneJSON.id,
       Resolution: phoneJSON.resolution,
       Processor: phoneJSON.processor,
@@ -100,10 +99,10 @@ class PhoneController {
       Zoom: phoneJSON.zoom,
       Cell: phoneJSON.cell,
       namespaceId: phoneJSON.namespaceId,
-      productId: phoneJSON.productId,
       name: phoneJSON.product.name,
       fullPrice: phoneJSON.product.fullPrice,
       price: phoneJSON.product.price,
+      RAM: phoneJSON.product.ram,
       Screen: phoneJSON.product.screen,
       Capacity: phoneJSON.product.capacity,
       colorId: phoneJSON.product.colorId,
