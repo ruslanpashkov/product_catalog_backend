@@ -45,8 +45,8 @@ class ProductController {
       const { fullPrice: fullPriceA, price: priceA } = productA.toJSON();
       const { fullPrice: fullPriceB, price: priceB } = productB.toJSON();
 
-      const discountA = ((fullPriceA - priceA) / fullPriceA) * 100;
-      const discountB = ((fullPriceB - priceB) / fullPriceB) * 100;
+      const discountA = (100 / fullPriceA) * priceA;
+      const discountB = (100 / fullPriceB) * priceB;
 
       return discountA - discountB;
     });
@@ -54,6 +54,26 @@ class ProductController {
     const highestDiscountProducts = discountProducts.slice(0, 10);
 
     const formattedProducts = formatMultipleProducts(highestDiscountProducts );
+
+    res.status(200).json(formattedProducts);
+  };
+
+  getProducntsByNew: Controller =async (req, res) => {
+    const newProducts = await productService.getAll();
+
+    if (!newProducts) {
+      res.status(404).json({ message: 'No new products found' });
+
+      return;
+    }
+
+    newProducts.sort((productA, productB) => {
+      return productB.toJSON().year - productA.toJSON().year;
+    });
+
+    const latestProducts = newProducts.slice(0, 10);
+
+    const formattedProducts = formatMultipleProducts(latestProducts);
 
     res.status(200).json(formattedProducts);
   };
