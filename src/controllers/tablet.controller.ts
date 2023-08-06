@@ -21,7 +21,9 @@ class TabletController {
   getTablets: Controller = async (req, res) => {
     const { initialLimit, offset } = getPaginationInfo(req);
 
-    const tablets = await tabletService.getAll(offset, initialLimit);
+    const { sortBy } = req.query as { sortBy?: string } || { sortBy: 'Newest' };
+
+    const tablets = await tabletService.getAll(offset, initialLimit, sortBy);
 
     if (!tablets) {
       res.status(404).json({ message: 'Tablets not found' });
@@ -47,7 +49,7 @@ class TabletController {
       return result;
     });
 
-    res.status(200).json(formattedTablets);
+    res.status(200).json({ count: tablets.count, data: formattedTablets });
   };
 
   getTabletById: Controller = async (req, res) => {

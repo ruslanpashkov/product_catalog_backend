@@ -8,6 +8,7 @@ import { ImagesColor } from '../models/ImagesColor.model.js';
 import { NamespaceCapacity } from '../models/NamespaceCapacity.model.js';
 import { Product } from '../models/Product.model.js';
 import { Tablet } from '../models/Tablet.model.js';
+import { generateSortingOrder } from '../utils/helpers.js';
 
 class TabletService {
   private static instance: TabletService | null = null;
@@ -23,10 +24,16 @@ class TabletService {
     return TabletService.instance;
   }
 
-  async getAll(offset: number, limit: number) {
+  async getAll(
+    offset: number,
+    limit: number,
+    sortBy: string | undefined,
+  ) {
     const currentCategory = await Category.findOne({
       where: { title: 'tablets' },
     });
+
+    const sortingOrder = generateSortingOrder(sortBy);
 
     const tablets = await Product.findAndCountAll({
       offset,
@@ -39,6 +46,7 @@ class TabletService {
           attributes: ['id'],
         }
       ],
+      order: sortingOrder,
       attributes: {
         exclude: ['createdAt', 'categoryId', 'colorId', 'year'],
       }

@@ -5,6 +5,8 @@ import { ImagesColor } from '../models/ImagesColor.model.js';
 import { Capacity } from '../models/Capacity.model.js';
 import { Description } from '../models/Description.model.js';
 import { Product } from '../models/Product.model.js';
+import { OrderItem } from 'sequelize';
+import { ItemJSON } from '../types.js';
 
 export const getPaginationInfo = (req: Request) => {
   const { page, limit } = req.query;
@@ -17,26 +19,21 @@ export const getPaginationInfo = (req: Request) => {
   return { initialLimit, offset };
 };
 
-interface ItemProduct {
-  name: string;
-  fullPrice: number;
-  price: number;
-  ram: string;
-  screen: string;
-  capacity: string;
-  colorId: number;
-}
+export const generateSortingOrder = (sortBy: string | string[] | undefined) => {
+  if (sortBy === 'newest') {
+    return [['year', 'DESC']] as OrderItem[];
+  }
 
-interface ItemJSON {
-  id: number;
-  resolution: string;
-  processor: string;
-  camera: string;
-  zoom: string;
-  cell: string;
-  namespaceId: number;
-  product: ItemProduct
-}
+  if (sortBy === 'highestPrice') {
+    return [['fullPrice', 'DESC']] as OrderItem[];
+  }
+
+  if (sortBy === 'lowestPrice') {
+    return [['fullPrice', 'ASC']] as OrderItem[];
+  }
+
+  return [] as OrderItem[];
+};
 
 export const formatSingleProduct = (
   itemJSON: ItemJSON,
@@ -86,6 +83,8 @@ export const formatMultipleProducts = (products: Product[]) => {
       itemTablet,
       itemAccessory,
       category,
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      year,
       ...rest
     } = product.toJSON();
 

@@ -8,6 +8,7 @@ import { Description } from '../models/Description.model.js';
 import { ImagesColor } from '../models/ImagesColor.model.js';
 import { NamespaceCapacity } from '../models/NamespaceCapacity.model.js';
 import { Product } from '../models/Product.model.js';
+import { generateSortingOrder } from '../utils/helpers.js';
 
 class AccessoryService {
   private static instance: AccessoryService | null = null;
@@ -23,10 +24,16 @@ class AccessoryService {
     return AccessoryService.instance;
   }
 
-  async getAll(offset: number, limit: number) {
+  async getAll(
+    offset: number,
+    limit: number,
+    sortBy: string | undefined,
+  ) {
     const currentCategory = await Category.findOne({
       where: { title: 'accessories' },
     });
+
+    const sortingOrder = generateSortingOrder(sortBy);
 
     const accessories = await Product.findAndCountAll({
       offset,
@@ -39,6 +46,7 @@ class AccessoryService {
           attributes: ['id'],
         }
       ],
+      order: sortingOrder,
       attributes: {
         exclude: ['createdAt', 'categoryId', 'colorId', 'year'],
       }

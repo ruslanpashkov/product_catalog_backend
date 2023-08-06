@@ -58,7 +58,7 @@ class ProductController {
     res.status(200).json(formattedProducts);
   };
 
-  getProducntsByNew: Controller =async (req, res) => {
+  getProducntsByNew: Controller = async (req, res) => {
     const newProducts = await productService.getAll();
 
     if (!newProducts) {

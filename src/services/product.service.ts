@@ -44,7 +44,7 @@ class ProductService {
           attributes: ['title']
         },
       ],
-      attributes: { exclude: ['createdAt', 'year', 'colorId', 'categoryId'] }
+      attributes: { exclude: ['createdAt', 'colorId', 'categoryId'] }
     });
   }
 
