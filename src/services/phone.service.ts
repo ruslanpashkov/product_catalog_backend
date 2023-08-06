@@ -63,10 +63,7 @@ class PhoneService {
     const { colorId } = product.dataValues;
 
     const imagesColorPromise = ImagesColor.findAll({
-      where: {
-        namespaceId,
-        colorId,
-      },
+      where: { namespaceId, colorId },
       attributes: ['imagePath']
     });
 
@@ -78,9 +75,7 @@ class PhoneService {
           as: 'color',
         }
       ],
-      where: {
-        namespaceId,
-      },
+      where: { namespaceId },
       group: ['colorId', 'color.id']
     });
 
@@ -89,9 +84,7 @@ class PhoneService {
         {
           model: NamespaceCapacity,
           as: 'namespaceCapacities',
-          where: {
-            namespaceId
-          },
+          where: { namespaceId },
           attributes: []
         },
       ],
@@ -99,9 +92,7 @@ class PhoneService {
     });
 
     const descriptionsPromise = Description.findAll({
-      where: {
-        namespaceId
-      },
+      where: { namespaceId },
       attributes: ['title', 'text']
     });
 

@@ -30,9 +30,6 @@ class TabletController {
     const formattedTablets = tablets.rows.map(tablet => {
       const {
         itemTablet,
-        screen: Screen,
-        capacity: Capacity,
-        ram: RAM,
         ...rest
       } = tablet.toJSON();
 
@@ -44,9 +41,6 @@ class TabletController {
 
       const result = {
         ...rest,
-        Screen,
-        Capacity,
-        RAM,
         itemId,
       };
 

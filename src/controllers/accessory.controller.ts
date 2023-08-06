@@ -30,9 +30,6 @@ class AccessoryController {
     const formattedAccessory = accessories.rows.map(accessory => {
       const {
         itemAccessory,
-        screen: Screen,
-        capacity: Capacity,
-        ram: RAM,
         ...rest
       } = accessory.toJSON();
 
@@ -44,9 +41,6 @@ class AccessoryController {
 
       const result = {
         ...rest,
-        Screen,
-        Capacity,
-        RAM,
         itemId,
       };
 

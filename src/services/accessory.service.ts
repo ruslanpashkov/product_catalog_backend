@@ -63,10 +63,7 @@ class AccessoryService {
     const { colorId } = product.dataValues;
 
     const imagesColor = await ImagesColor.findAll({
-      where: {
-        namespaceId,
-        colorId,
-      },
+      where: { namespaceId, colorId },
       attributes: ['imagePath']
     });
 
@@ -80,9 +77,7 @@ class AccessoryService {
           as: 'color',
         }
       ],
-      where: {
-        namespaceId,
-      },
+      where: { namespaceId },
       group: ['colorId', 'color.id']
     });
 
@@ -91,9 +86,7 @@ class AccessoryService {
         {
           model: NamespaceCapacity,
           as: 'namespaceCapacities',
-          where: {
-            namespaceId
-          },
+          where: { namespaceId },
           attributes: []
         },
       ],
@@ -101,9 +94,7 @@ class AccessoryService {
     });
 
     const descriptions = await Description.findAll({
-      where: {
-        namespaceId
-      },
+      where: { namespaceId },
       attributes: ['title', 'text']
     });
 

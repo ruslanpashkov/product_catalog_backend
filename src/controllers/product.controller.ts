@@ -32,9 +32,6 @@ class ProductController {
         itemTablet,
         itemAccessory,
         category,
-        ram: RAM,
-        capacity,
-        screen,
         ...rest
       } = product.toJSON();
 
@@ -57,9 +54,6 @@ class ProductController {
       const result = {
         ...rest,
         category: category.title,
-        Capacity: capacity,
-        Screen: screen,
-        RAM,
         ...itemType
       };
       return result;

@@ -11,10 +11,20 @@ export const getPaginationInfo = (req: Request) => {
   const initialPage = Number(page || 1);
   const initialLimit = Number(limit || 16);
 
-  const offset = initialLimit * initialPage - initialLimit;
+  const offset = (initialLimit * initialPage) - initialLimit;
 
   return { initialLimit, offset };
 };
+
+interface Product {
+  name: string;
+  fullPrice: number;
+  price: number;
+  ram: string;
+  screen: string;
+  capacity: string;
+  colorId: number;
+}
 
 interface ItemJSON {
   id: number;
@@ -24,15 +34,7 @@ interface ItemJSON {
   zoom: string;
   cell: string;
   namespaceId: number;
-  product: {
-    name: string;
-    fullPrice: number;
-    price: number;
-    ram: string;
-    screen: string;
-    capacity: string;
-    colorId: number;
-  }
+  product: Product
 }
 
 export const formatProduct = (
