@@ -23,7 +23,11 @@ class PhoneService {
     return PhoneService.instance;
   }
 
-  async getAll(offset: number, limit: number) {
+  async getAll(
+    offset: number,
+    limit: number,
+    sortOption,
+  ) {
     const currentCategory = await Category.findOne({
       where: { title: 'phones' },
     });
@@ -40,8 +44,16 @@ class PhoneService {
         }
       ],
       attributes: {
-        exclude: ['createdAt', 'categoryId', 'colorId', 'year'],
-      }
+        exclude: ['createdAt', 'categoryId', 'colorId'],
+        // exclude: ['createdAt', 'categoryId', 'colorId', 'year'],
+      },
+      order: sortOption === 'Newest'
+        ? [['year', 'DESC']]
+        : sortOption === 'HighestPrice'
+          ? [['fullPrice', 'DESC']]
+          : sortOption === 'LowestPrice'
+            ? [['price', 'ASC']]
+            : [],
     });
 
     return phones;

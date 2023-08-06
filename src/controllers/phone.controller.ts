@@ -21,7 +21,10 @@ class PhoneController {
   getPhones: Controller = async (req, res) => {
     const { initialLimit, offset } = getPaginationInfo(req);
 
-    const phones = await phoneService.getAll(offset, initialLimit);
+    const { sortOption } = req.query || 'Newest';
+    // const sortOption = req.query.sortBy || 'Newest';
+
+    const phones = await phoneService.getAll(offset, initialLimit, sortOption);
 
     if (!phones) {
       res.status(404).json({ message: 'Phones not found' });
@@ -47,7 +50,7 @@ class PhoneController {
       return result;
     });
 
-    res.status(200).json(formattedPhones);
+    res.status(200).json({ count: phones.count, rows: formattedPhones });
   };
 
   getPhoneById: Controller = async (req, res) => {
