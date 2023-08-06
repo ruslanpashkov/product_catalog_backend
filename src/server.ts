@@ -23,8 +23,12 @@ export const createServer = () => {
   initDB();
   app.use(cors(corsOptions));
   app.use('/img', express.static(path.join('img')));
-  app.use('/', express.json(), productRouter);
+  app.use('/products', express.json(), productRouter);
   app.use('/phones', express.json(), phoneRouter);
+
+  app.use('/', (_, res) => {
+    res.send('Hello world, it is HTML Hooligans');
+  });
 
   return app;
 };

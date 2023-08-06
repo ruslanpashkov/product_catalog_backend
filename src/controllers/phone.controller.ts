@@ -19,8 +19,8 @@ class PhoneController {
 
   getPhones: Controller = async (req, res) => {
     const { page, limit } = req.query;
-    const initialPage = +(page || 1);
-    const initialLimit = +(limit || 9);
+    const initialPage = Number(page || 1);
+    const initialLimit = Number(limit || 16);
 
     const offset = initialLimit * initialPage - initialLimit;
 
