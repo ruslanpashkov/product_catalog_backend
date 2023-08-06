@@ -20,10 +20,6 @@ export const getPaginationInfo = (req: Request) => {
 };
 
 export const generateSortingOrder = (sortBy: string | string[] | undefined) => {
-  if (sortBy === 'newest') {
-    return [['year', 'DESC']] as OrderItem[];
-  }
-
   if (sortBy === 'highestPrice') {
     return [['fullPrice', 'DESC']] as OrderItem[];
   }
@@ -32,7 +28,7 @@ export const generateSortingOrder = (sortBy: string | string[] | undefined) => {
     return [['fullPrice', 'ASC']] as OrderItem[];
   }
 
-  return [] as OrderItem[];
+  return [['year', 'DESC']] as OrderItem[];
 };
 
 export const formatSingleProduct = (
