@@ -6,36 +6,36 @@ import { Color } from '../models/Color.model.js';
 import { Description } from '../models/Description.model.js';
 import { ImagesColor } from '../models/ImagesColor.model.js';
 import { NamespaceCapacity } from '../models/NamespaceCapacity.model.js';
-import { Phone } from '../models/Phone.model.js';
 import { Product } from '../models/Product.model.js';
+import { Tablet } from '../models/Tablet.model.js';
 
-class PhoneService {
-  private static instance: PhoneService | null = null;
+class TabletService {
+  private static instance: TabletService | null = null;
 
   // eslint-disable-next-line no-empty-function
   private constructor() {}
 
-  static getInstance(): PhoneService {
-    if (!PhoneService.instance) {
-      PhoneService.instance = new PhoneService();
+  static getInstance(): TabletService {
+    if (!TabletService.instance) {
+      TabletService.instance = new TabletService();
     }
 
-    return PhoneService.instance;
+    return TabletService.instance;
   }
 
   async getAll(offset: number, limit: number) {
     const currentCategory = await Category.findOne({
-      where: { title: 'phones' },
+      where: { title: 'tablets' },
     });
 
-    const phones = await Product.findAndCountAll({
+    const tablets = await Product.findAndCountAll({
       offset,
       limit,
       where: { categoryId: currentCategory?.id },
       include: [
         {
-          model: Phone,
-          as: 'itemPhone',
+          model: Tablet,
+          as: 'itemTablet',
           attributes: ['id'],
         }
       ],
@@ -44,11 +44,11 @@ class PhoneService {
       }
     });
 
-    return phones;
+    return tablets;
   }
 
-  async getPhoneById(phoneId: string) {
-    const phone = await Phone.findByPk(phoneId, {
+  async getTabletById(tabletId: string) {
+    const tablet = await Tablet.findByPk(tabletId, {
       include: [
         {
           model: Product,
@@ -59,7 +59,7 @@ class PhoneService {
       attributes: { exclude: ['createdAt'] }
     });
 
-    const { namespaceId, product } = phone?.dataValues || {};
+    const { namespaceId, product } = tablet?.dataValues || {};
     const { colorId } = product.dataValues;
 
     const imagesColorPromise = ImagesColor.findAll({
@@ -114,8 +114,8 @@ class PhoneService {
       descriptionsPromise
     ]);
 
-    return { phone, imagesColor, capacities, descriptions, colors };
+    return { tablet, imagesColor, capacities, descriptions, colors };
   }
 }
 
-export const phoneService = PhoneService.getInstance();
+export const tabletService = TabletService.getInstance();

@@ -29,6 +29,7 @@ class ProductController {
     const formattedProducts = products.map(product => {
       const {
         itemPhone,
+        itemTablet,
         category,
         ram: RAM,
         capacity,
@@ -42,6 +43,10 @@ class ProductController {
 
       if (itemPhone) {
         itemType.itemId = itemPhone.id;
+      }
+
+      if (itemTablet) {
+        itemType.itemId = itemTablet.id;
       }
 
       const result = {

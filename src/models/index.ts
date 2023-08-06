@@ -7,6 +7,7 @@ import { Namespace } from './Namespace.model.js';
 import { NamespaceCapacity } from './NamespaceCapacity.model.js';
 import { Phone } from './Phone.model.js';
 import { Product } from './Product.model.js';
+import { Tablet } from './Tablet.model.js';
 
 export const models = [
   Category,
@@ -18,4 +19,5 @@ export const models = [
   Description,
   ImagesColor,
   NamespaceCapacity,
+  Tablet
 ];
