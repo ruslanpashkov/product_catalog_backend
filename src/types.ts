@@ -12,6 +12,9 @@ interface ItemProduct {
   capacity: string;
   colorId: number;
   categoryId: number;
+  color: {
+    title: string;
+  }
 }
 
 export interface ItemJSON {

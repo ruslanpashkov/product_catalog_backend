@@ -66,7 +66,14 @@ class TabletService {
         {
           model: Product,
           as: 'product',
-          attributes: { exclude: ['createdAt', 'year', 'image'] }
+          attributes: { exclude: ['createdAt', 'year', 'image'] },
+          include: [
+            {
+              model: Color,
+              as: 'color',
+              attributes: ['title']
+            }
+          ]
         }
       ],
       attributes: { exclude: ['createdAt'] }

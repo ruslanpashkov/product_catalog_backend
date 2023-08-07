@@ -80,6 +80,7 @@ export const formatSingleProduct = (
     screen: itemJSON.product.screen,
     capacity: itemJSON.product.capacity,
     colorId: itemJSON.product.colorId,
+    color: itemJSON.product.color.title,
     categoryId: itemJSON.product.categoryId,
     images,
     capacityAvailable,
