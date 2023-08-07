@@ -22,7 +22,7 @@ class PhoneController {
   getPhones: Controller = async (req, res) => {
     const { initialLimit, offset } = getPaginationInfo(req);
 
-    const { sortBy } = req.query as { sortBy?: string } || { sortBy: 'Newest' };
+    const { sortBy } = req.query as { sortBy?: string } || { sortBy: 'newest' };
 
     const phones = await phoneService.getAll(offset, initialLimit, sortBy);
 

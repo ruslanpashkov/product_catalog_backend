@@ -29,5 +29,5 @@ export const commonProductsIncludeOptions = [
 ];
 
 export const commonProductsAttributesOptions = {
-  exclude: ['createdAt', 'colorId', 'categoryId']
+  exclude: ['createdAt', 'colorId', 'categoryId', 'year']
 };
