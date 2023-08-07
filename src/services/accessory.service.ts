@@ -44,7 +44,12 @@ class AccessoryService {
           model: Accessory,
           as: 'itemAccessory',
           attributes: ['id'],
-        }
+        },
+        {
+          model: Category,
+          as: 'category',
+          attributes: ['title']
+        },
       ],
       order: sortingOrder,
       attributes: {

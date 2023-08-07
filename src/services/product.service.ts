@@ -1,21 +1,9 @@
 'use strict';
 
-// import { FindOptions, Includeable, Order } from 'sequelize';
-import { FindOptions } from 'sequelize';
-import { Accessory } from '../models/Accessory.model.js';
+import { Sequelize } from 'sequelize-typescript';
 import { Category } from '../models/Category.model.js';
-import { Phone } from '../models/Phone.model.js';
 import { Product } from '../models/Product.model.js';
-import { Tablet } from '../models/Tablet.model.js';
-
-// interface QueryOptions {
-//   include: Includeable | Includeable[],
-//   attributes: {
-//     exclude: string[],
-//   },
-//   limit?: number | null,
-//   order?: Order | undefined,
-// }
+import { commonProductsAttributesOptions, commonProductsIncludeOptions } from '../utils/constants.js';
 
 class ProductService {
   private static instance: ProductService | null = null;
@@ -31,74 +19,51 @@ class ProductService {
     return ProductService.instance;
   }
 
-  // async getAll() {
-  //   return Product.findAll({
-  //     include: [
-  //       {
-  //         model: Phone,
-  //         as: 'itemPhone',
-  //         attributes: ['id']
-  //       },
-  //       {
-  //         model: Tablet,
-  //         as: 'itemTablet',
-  //         attributes: ['id']
-  //       },
-  //       {
-  //         model: Accessory,
-  //         as: 'itemAccessory',
-  //         attributes: ['id']
-  //       },
-  //       {
-  //         model: Category,
-  //         as: 'category',
-  //         attributes: ['title']
-  //       },
-  //     ],
-  //     attributes: { exclude: ['createdAt', 'colorId', 'categoryId'] }
-  //   });
-  // }
+  async getAll() {
+    return Product.findAll({
+      include: commonProductsIncludeOptions,
+      attributes: commonProductsAttributesOptions
+    });
+  }
 
-  async getAll(
-    limit: number | null = null,
-    order: [string, string][] | null = null,
-    // order: [string, string][] | null = null,
-  ) {
-    const queryOptions: FindOptions = {
-      include: [
-        {
-          model: Phone,
-          as: 'itemPhone',
-          attributes: ['id']
-        },
-        {
-          model: Tablet,
-          as: 'itemTablet',
-          attributes: ['id']
-        },
-        {
-          model: Accessory,
-          as: 'itemAccessory',
-          attributes: ['id']
-        },
-        {
-          model: Category,
-          as: 'category',
-          attributes: ['title']
-        },
-      ],
-      attributes: { exclude: ['createdAt', 'colorId', 'categoryId'] },
-    };
+  async getDiscountProductsPerCategory(countPerCategory: number) {
+    const categories = await Category.findAll({
+      attributes: ['id'],
+    });
 
-    if (limit !== null) {
-      queryOptions.limit = limit;
-    }
+    const productsPerCategoryPromises = categories.map(async (category) => {
+      const products = await Product.findAll({
+        where: { categoryId: category.id },
+        limit: countPerCategory,
+        include: commonProductsIncludeOptions,
+        attributes: commonProductsAttributesOptions,
+        order: [
+          [
+            Sequelize.literal('100 * ("fullPrice" - "price") / "fullPrice"'),
+            'DESC'
+          ],
+        ],
+      });
 
-    if (order !== null) {
-      queryOptions.order = order;
-    }
+      return products;
+    });
 
-    return Product.findAll(queryOptions);
+    const productsPerCategory = await Promise.all(productsPerCategoryPromises);
+
+    const products = productsPerCategory.flat();
+
+    return products;
+  }
+
+  async getNewProducts(count: number) {
+    const newProducts = await Product.findAll({
+      include: commonProductsIncludeOptions,
+      attributes: commonProductsAttributesOptions,
+      order: [['year', 'DESC']],
+      limit: count,
+    });
+
+    return newProducts;
   }
 }
 

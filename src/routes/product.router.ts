@@ -5,6 +5,6 @@ import { productController } from '../controllers/product.controller.js';
 
 export const productRouter = express.Router();
 
-productRouter.get('/', productController.getProducts);
+productRouter.get('/', productController.getAllProducts);
 productRouter.get('/discount', productController.getProductsByDiscount);
-productRouter.get('/new', productController.getProducntsByNew);
+productRouter.get('/new', productController.getProductsByNew);

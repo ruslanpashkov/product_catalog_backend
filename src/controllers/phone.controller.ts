@@ -32,6 +32,7 @@ class PhoneController {
     const formattedPhones = phones.rows.map(phone => {
       const {
         itemPhone,
+        category,
         ...rest
       } = phone.toJSON();
 
@@ -43,6 +44,7 @@ class PhoneController {
 
       const result = {
         ...rest,
+        category: category.title,
         itemId,
       };
 
