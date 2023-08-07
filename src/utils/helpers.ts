@@ -79,8 +79,6 @@ export const formatMultipleProducts = (products: Product[]) => {
       itemTablet,
       itemAccessory,
       category,
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      year,
       ...rest
     } = product.toJSON();
 

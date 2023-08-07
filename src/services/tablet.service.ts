@@ -44,7 +44,12 @@ class TabletService {
           model: Tablet,
           as: 'itemTablet',
           attributes: ['id'],
-        }
+        },
+        {
+          model: Category,
+          as: 'category',
+          attributes: ['title']
+        },
       ],
       order: sortingOrder,
       attributes: {

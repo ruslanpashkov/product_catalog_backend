@@ -18,7 +18,7 @@ class ProductController {
     return ProductController.instance;
   }
 
-  getProducts: Controller = async (req, res) => {
+  getAllProducts: Controller = async (req, res) => {
     const products = await productService.getAll();
 
     if (!products) {
@@ -33,7 +33,9 @@ class ProductController {
   };
 
   getProductsByDiscount: Controller = async (req, res) => {
-    const discountProducts = await productService.getAll();
+    const countProductsPerCategory = 4;
+
+    const discountProducts = await productService.getDiscountProductsPerCategory(countProductsPerCategory);
 
     if (!discountProducts) {
       res.status(404).json({ message: 'No discounted products found' });
@@ -41,25 +43,15 @@ class ProductController {
       return;
     }
 
-    discountProducts.sort((productA, productB) => {
-      const { fullPrice: fullPriceA, price: priceA } = productA.toJSON();
-      const { fullPrice: fullPriceB, price: priceB } = productB.toJSON();
-
-      const discountA = (100 / fullPriceA) * priceA;
-      const discountB = (100 / fullPriceB) * priceB;
-
-      return discountA - discountB;
-    });
-
-    const highestDiscountProducts = discountProducts.slice(0, 10);
-
-    const formattedProducts = formatMultipleProducts(highestDiscountProducts );
+    const formattedProducts = formatMultipleProducts(discountProducts);
 
     res.status(200).json(formattedProducts);
   };
 
-  getProducntsByNew: Controller = async (req, res) => {
-    const newProducts = await productService.getAll();
+  getProductsByNew: Controller = async (req, res) => {
+    const countProductsPerCategory = 12;
+
+    const newProducts = await productService.getNewProducts(countProductsPerCategory);
 
     if (!newProducts) {
       res.status(404).json({ message: 'No new products found' });
@@ -67,13 +59,7 @@ class ProductController {
       return;
     }
 
-    newProducts.sort((productA, productB) => {
-      return productB.toJSON().year - productA.toJSON().year;
-    });
-
-    const latestProducts = newProducts.slice(0, 10);
-
-    const formattedProducts = formatMultipleProducts(latestProducts);
+    const formattedProducts = formatMultipleProducts(newProducts);
 
     res.status(200).json(formattedProducts);
   };
