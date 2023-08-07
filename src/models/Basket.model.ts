@@ -1,10 +1,10 @@
 'use strict';
 
 import {
+  BelongsTo,
   Column,
   DataType,
   ForeignKey,
-  HasOne,
   Model,
   Table,
   Unique,
@@ -24,8 +24,10 @@ export class Basket extends Model {
   })
     userId: number;
 
-  @HasOne(() => User, {
+  @BelongsTo(() => User, {
     onDelete: 'CASCADE',
+    foreignKey: 'userId',
+    targetKey: 'id'
   })
     user: User | null;
 }

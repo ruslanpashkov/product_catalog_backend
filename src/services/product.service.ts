@@ -108,7 +108,11 @@ class ProductService {
       limit,
     });
 
-    const [recommendedByPrice, recommendedByFullPrice, recommendedByCategory] = await Promise.all([
+    const [
+      recommendedByPrice,
+      recommendedByFullPrice,
+      recommendedByCategory
+    ] = await Promise.all([
       byPricePromise,
       byFullPricePromise,
       byCategoryPromise
