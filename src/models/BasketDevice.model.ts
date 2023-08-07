@@ -9,8 +9,8 @@ import {
   Table,
   Unique,
 } from 'sequelize-typescript';
-import { Basket } from './Basket.model';
-import { Product } from './Product.model';
+import { Basket } from './Basket.model.js';
+import { Product } from './Product.model.js';
 
 @Table({
   tableName: 'basket_devices',
