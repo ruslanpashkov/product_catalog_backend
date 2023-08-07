@@ -9,5 +9,3 @@ productRouter.get('/', productController.getAllProducts);
 productRouter.get('/discount', productController.getProductsByDiscount);
 productRouter.get('/new', productController.getProductsByNew);
 productRouter.get('/recommended', productController.getRecommendedProducts);
-
-// /recommended?price=200&fullPrice=200&namespaceId=1

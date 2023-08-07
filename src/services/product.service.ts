@@ -70,9 +70,9 @@ class ProductService {
   async getRecommended(
     price: number,
     fullPrice: number,
+    categoryId: number,
     priceLimit: number,
     limit: number,
-    categoryId: number,
   ) {
     const byPricePromise = Product.findAll({
       include: commonProductsIncludeOptions,
@@ -108,13 +108,13 @@ class ProductService {
       limit,
     });
 
-    const [recommendedByPrice, recommendedByFullPrice, byCategory] = await Promise.all([
+    const [recommendedByPrice, recommendedByFullPrice, recommendedByCategory] = await Promise.all([
       byPricePromise,
       byFullPricePromise,
       byCategoryPromise
     ]);
 
-    return { recommendedByPrice, recommendedByFullPrice, byCategory };
+    return { recommendedByPrice, recommendedByFullPrice, recommendedByCategory };
   }
 }
 

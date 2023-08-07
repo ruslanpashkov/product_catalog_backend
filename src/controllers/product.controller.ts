@@ -68,9 +68,25 @@ class ProductController {
   getRecommendedProducts: Controller = async (req, res) => {
     const { price, fullPrice, categoryId } = req.query;
 
-    if (!price || !fullPrice || !categoryId) {
+    if (!price) {
       res.status(400).json(
-        { error: 'Missing required parameters: price, fullPrice, categoryId' }
+        { message: 'Missing required price parameter' }
+      );
+
+      return;
+    }
+
+    if (!fullPrice) {
+      res.status(400).json(
+        { message: 'Missing required fullPrice parameter' }
+      );
+
+      return;
+    }
+
+    if (!categoryId) {
+      res.status(400).json(
+        { message: 'Missing required categoryId parameter' }
       );
 
       return;
@@ -85,9 +101,9 @@ class ProductController {
     const recomendedProducts = await productService.getRecommended(
       normalizePrice,
       normalizeFullPrice,
+      normalizeCategoryId,
       priceLimit,
       limit,
-      normalizeCategoryId
     );
 
     if (!recomendedProducts) {
@@ -99,11 +115,10 @@ class ProductController {
     const allRecommendedProducts = [
       ...recomendedProducts.recommendedByPrice,
       ...recomendedProducts.recommendedByFullPrice,
-      ...recomendedProducts.byCategory,
+      ...recomendedProducts.recommendedByCategory,
     ];
 
     const formattedProducts = formatMultipleProducts(allRecommendedProducts);
-
     const uniquesProducts = getUniqueItems<Product>(formattedProducts, 'id');
 
     res.status(200).json(uniquesProducts);
