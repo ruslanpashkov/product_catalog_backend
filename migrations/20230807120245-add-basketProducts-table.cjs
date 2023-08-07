@@ -16,6 +16,9 @@ module.exports = {
           type: Sequelize.INTEGER,
           allowNull: false,
           defaultValue: 1,
+          validate: {
+            min: 1,
+          },
         },
         productId: {
           type: Sequelize.INTEGER,

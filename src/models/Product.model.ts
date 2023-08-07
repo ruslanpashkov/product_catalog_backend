@@ -6,6 +6,7 @@ import {
   Column,
   DataType,
   ForeignKey,
+  HasMany,
   HasOne,
   Model,
   Table,
@@ -119,8 +120,8 @@ export class Product extends Model {
   })
     itemAccessory: Accessory | null;
 
-  @HasOne(() => BasketProducts, {
+  @HasMany(() => BasketProducts, {
     onDelete: 'RESTRICT',
   })
-    basketProduct: BasketProducts | null;
+    basketProduct: BasketProducts[] | null;
 }
