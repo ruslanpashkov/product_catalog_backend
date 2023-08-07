@@ -33,6 +33,30 @@ class ProductController {
     res.status(200).json(formattedProducts);
   };
 
+  getCountProducts: Controller = async (req, res) => {
+    const { category } = req.query;
+
+    if (!category) {
+      res.status(400).json(
+        { message: 'Missing required category parameter' }
+      );
+
+      return;
+    }
+
+    const normalizeCategory = String(category);
+
+    const count = await productService.getCountProducts(normalizeCategory);
+
+    if (!count) {
+      res.status(404).json({ message: 'Count not found' });
+
+      return;
+    }
+
+    res.status(200).json(count);
+  };
+
   getProductsByDiscount: Controller = async (req, res) => {
     const countProductsPerCategory = 4;
 
@@ -123,7 +147,6 @@ class ProductController {
 
     res.status(200).json(uniquesProducts);
   };
-
 }
 
 export const productController = ProductController.getInstance();
