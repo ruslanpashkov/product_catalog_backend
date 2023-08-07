@@ -1,7 +1,6 @@
 'use strict';
 
 import { phoneService } from '../services/phone.service.js';
-// import { productService } from '../services/product.service.js';
 import { Controller } from '../types.js';
 import { formatSingleProduct, getPaginationInfo } from '../utils/helpers.js';
 

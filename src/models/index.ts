@@ -1,6 +1,6 @@
 import { Accessory } from './Accessory.model.js';
 import { Basket } from './Basket.model.js';
-import { BasketDevice } from './BasketDevice.model.js';
+import { BasketProducts } from './BasketProducts.model.js';
 import { Capacity } from './Capacity.model.js';
 import { Category } from './Category.model.js';
 import { Color } from './Color.model.js';
@@ -27,5 +27,5 @@ export const models = [
   Accessory,
   User,
   Basket,
-  BasketDevice,
+  BasketProducts,
 ];

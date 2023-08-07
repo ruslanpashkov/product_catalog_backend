@@ -13,11 +13,11 @@ import { Basket } from './Basket.model.js';
 import { Product } from './Product.model.js';
 
 @Table({
-  tableName: 'basket_devices',
+  tableName: 'basketProducts',
   timestamps: false,
 })
 
-export class BasketDevice extends Model {
+export class BasketProducts extends Model {
   @Column({
     type: DataType.INTEGER,
   })
@@ -35,6 +35,11 @@ export class BasketDevice extends Model {
     type: DataType.INTEGER,
   })
     basketId: number;
+
+  // @HasMany(() => Product, {
+  //   onDelete: 'CASCADE',
+  // })
+  //   descriptions: Product[] | null;
 
   @BelongsTo(() => Basket, {
     onDelete: 'CASCADE',

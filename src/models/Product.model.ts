@@ -11,7 +11,7 @@ import {
   Table,
 } from 'sequelize-typescript';
 import { Accessory } from './Accessory.model.js';
-import { BasketDevice } from './BasketDevice.model.js';
+import { BasketProducts } from './BasketProducts.model.js';
 import { Category } from './Category.model.js';
 import { Color } from './Color.model.js';
 import { Phone } from './Phone.model.js';
@@ -119,8 +119,8 @@ export class Product extends Model {
   })
     itemAccessory: Accessory | null;
 
-  @HasOne(() => BasketDevice, {
+  @HasOne(() => BasketProducts, {
     onDelete: 'RESTRICT',
   })
-    basketDevice: BasketDevice | null;
+    basketProduct: BasketProducts | null;
 }
