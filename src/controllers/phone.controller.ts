@@ -84,9 +84,6 @@ class PhoneController {
       colors
     );
 
-    // const similarProducts = await productService.getSimilarProductsByPrice(phoneId, 12);
-
-    // res.status(200).json({ phone: formattedPhone, similarProducts});
     res.status(200).json(formattedPhone);
   };
 }
