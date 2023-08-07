@@ -1,6 +1,7 @@
 'use strict';
 
-import { AllowNull,
+import {
+  AllowNull,
   BelongsTo,
   Column,
   DataType,
@@ -8,8 +9,8 @@ import { AllowNull,
   Model,
   Table
 } from 'sequelize-typescript';
-import { Namespace } from './Namespace.model.js';
 import { Capacity } from './Capacity.model.js';
+import { Namespace } from './Namespace.model.js';
 
 @Table({
   tableName: 'namespacesCapacities',

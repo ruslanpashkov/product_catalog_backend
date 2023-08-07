@@ -1,16 +1,16 @@
 'use strict';
 
 import {
+  AllowNull,
   Column,
   DataType,
+  HasMany,
   Model,
-  AllowNull,
   Table,
   Unique,
-  HasMany,
 } from 'sequelize-typescript';
-import { ImagesColor } from './ImagesColor.model.js';
 import { Description } from './Description.model.js';
+import { ImagesColor } from './ImagesColor.model.js';
 import { NamespaceCapacity } from './NamespaceCapacity.model.js';
 
 @Table({

@@ -1,20 +1,21 @@
 'use strict';
 
 import {
+  AllowNull,
+  BelongsTo,
   Column,
   DataType,
-  Model,
-  AllowNull,
-  Table,
   ForeignKey,
-  BelongsTo,
   HasOne,
+  Model,
+  Table,
 } from 'sequelize-typescript';
-import { Category } from './Category.model.js';
-import { Phone } from './Phone.model.js';
-import { Color } from './Color.model.js';
-import { Tablet } from './Tablet.model.js';
 import { Accessory } from './Accessory.model.js';
+import { BasketDevice } from './BasketDevice.model.js';
+import { Category } from './Category.model.js';
+import { Color } from './Color.model.js';
+import { Phone } from './Phone.model.js';
+import { Tablet } from './Tablet.model.js';
 
 @Table({
   tableName: 'products',
@@ -117,4 +118,9 @@ export class Product extends Model {
     onDelete: 'CASCADE',
   })
     itemAccessory: Accessory | null;
+
+  @HasOne(() => BasketDevice, {
+    onDelete: 'RESTRICT',
+  })
+    basketDevice: BasketDevice | null;
 }

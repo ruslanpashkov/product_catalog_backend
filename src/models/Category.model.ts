@@ -1,10 +1,10 @@
 'use strict';
 
 import {
+  AllowNull,
   Column,
   DataType,
   Model,
-  AllowNull,
   Table,
   Unique,
 } from 'sequelize-typescript';

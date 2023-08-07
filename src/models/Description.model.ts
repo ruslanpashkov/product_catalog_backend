@@ -1,12 +1,12 @@
 'use strict';
 
 import {
+  AllowNull,
   Column,
   DataType,
-  Model,
-  AllowNull,
-  Table,
   ForeignKey,
+  Model,
+  Table,
 } from 'sequelize-typescript';
 import { Namespace } from './Namespace.model.js';
 

@@ -1,6 +1,14 @@
 'use strict';
 
-import { AllowNull, Column, DataType, HasMany, Model, Table, Unique } from 'sequelize-typescript';
+import {
+  AllowNull,
+  Column,
+  DataType,
+  HasMany,
+  Model,
+  Table,
+  Unique,
+} from 'sequelize-typescript';
 import { NamespaceCapacity } from './NamespaceCapacity.model.js';
 
 @Table({

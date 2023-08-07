@@ -1,16 +1,16 @@
 'use strict';
 
 import {
+  AllowNull,
+  BelongsTo,
   Column,
   DataType,
-  Model,
-  AllowNull,
-  Table,
   ForeignKey,
-  BelongsTo,
+  Model,
+  Table,
 } from 'sequelize-typescript';
-import { Namespace } from './Namespace.model.js';
 import { Color } from './Color.model.js';
+import { Namespace } from './Namespace.model.js';
 
 @Table({
   tableName: 'imagesColor',

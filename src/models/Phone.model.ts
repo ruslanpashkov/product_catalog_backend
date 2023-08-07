@@ -1,18 +1,18 @@
 'use strict';
 
 import {
-  Column,
-  Unique,
-  DataType,
-  Model,
   AllowNull,
-  Table,
-  ForeignKey,
   BelongsTo,
+  Column,
+  DataType,
+  ForeignKey,
+  Model,
   PrimaryKey,
+  Table,
+  Unique,
 } from 'sequelize-typescript';
-import { Product } from './Product.model.js';
 import { Namespace } from './Namespace.model.js';
+import { Product } from './Product.model.js';
 
 @Table({
   tableName: 'phones',
