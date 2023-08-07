@@ -4,6 +4,7 @@ import { Sequelize } from 'sequelize-typescript';
 import { Category } from '../models/Category.model.js';
 import { Product } from '../models/Product.model.js';
 import { commonProductsAttributesOptions, commonProductsIncludeOptions } from '../utils/constants.js';
+import { Op } from 'sequelize';
 
 class ProductService {
   private static instance: ProductService | null = null;
@@ -64,6 +65,56 @@ class ProductService {
     });
 
     return newProducts;
+  }
+
+  async getRecommended(
+    price: number,
+    fullPrice: number,
+    categoryId: number,
+    priceLimit: number,
+    limit: number,
+  ) {
+    const byPricePromise = Product.findAll({
+      include: commonProductsIncludeOptions,
+      attributes: commonProductsAttributesOptions,
+      where: {
+        price: {
+          [Op.between]: [price - priceLimit, price + priceLimit]
+        }
+      },
+      order: Sequelize.literal('RANDOM()'),
+      limit,
+    });
+
+    const byFullPricePromise = Product.findAll({
+      include: commonProductsIncludeOptions,
+      attributes: commonProductsAttributesOptions,
+      where: {
+        price: {
+          [Op.between]: [fullPrice - priceLimit, fullPrice + priceLimit]
+        }
+      },
+      order: Sequelize.literal('RANDOM()'),
+      limit,
+    });
+
+    const byCategoryPromise = Product.findAll({
+      include: commonProductsIncludeOptions,
+      attributes: commonProductsAttributesOptions,
+      where: {
+        categoryId
+      },
+      order: Sequelize.literal('RANDOM()'),
+      limit,
+    });
+
+    const [recommendedByPrice, recommendedByFullPrice, recommendedByCategory] = await Promise.all([
+      byPricePromise,
+      byFullPricePromise,
+      byCategoryPromise
+    ]);
+
+    return { recommendedByPrice, recommendedByFullPrice, recommendedByCategory };
   }
 }
 

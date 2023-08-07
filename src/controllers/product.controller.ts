@@ -1,8 +1,9 @@
 'use strict';
 
+import { Product } from '../models/Product.model.js';
 import { productService } from '../services/product.service.js';
 import { Controller } from '../types.js';
-import { formatMultipleProducts } from '../utils/helpers.js';
+import { formatMultipleProducts, getUniqueItems } from '../utils/helpers.js';
 
 class ProductController {
   private static instance: ProductController | null = null;
@@ -63,6 +64,66 @@ class ProductController {
 
     res.status(200).json(formattedProducts);
   };
+
+  getRecommendedProducts: Controller = async (req, res) => {
+    const { price, fullPrice, categoryId } = req.query;
+
+    if (!price) {
+      res.status(400).json(
+        { message: 'Missing required price parameter' }
+      );
+
+      return;
+    }
+
+    if (!fullPrice) {
+      res.status(400).json(
+        { message: 'Missing required fullPrice parameter' }
+      );
+
+      return;
+    }
+
+    if (!categoryId) {
+      res.status(400).json(
+        { message: 'Missing required categoryId parameter' }
+      );
+
+      return;
+    }
+
+    const normalizePrice = Number(price);
+    const normalizeFullPrice = Number(fullPrice);
+    const normalizeCategoryId = Number(categoryId);
+    const priceLimit = 200;
+    const limit = 4;
+
+    const recomendedProducts = await productService.getRecommended(
+      normalizePrice,
+      normalizeFullPrice,
+      normalizeCategoryId,
+      priceLimit,
+      limit,
+    );
+
+    if (!recomendedProducts) {
+      res.status(404).json({ message: 'Products not found' });
+
+      return;
+    }
+
+    const allRecommendedProducts = [
+      ...recomendedProducts.recommendedByPrice,
+      ...recomendedProducts.recommendedByFullPrice,
+      ...recomendedProducts.recommendedByCategory,
+    ];
+
+    const formattedProducts = formatMultipleProducts(allRecommendedProducts);
+    const uniquesProducts = getUniqueItems<Product>(formattedProducts, 'id');
+
+    res.status(200).json(uniquesProducts);
+  };
+
 }
 
 export const productController = ProductController.getInstance();

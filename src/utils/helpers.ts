@@ -8,6 +8,20 @@ import { Product } from '../models/Product.model.js';
 import { OrderItem } from 'sequelize';
 import { ItemJSON } from '../types.js';
 
+export const getUniqueItems = <T>(array: T[], key: keyof T) => {
+  const uniques = new Set();
+
+  return array.filter(item => {
+    if (!uniques.has(item[key])) {
+      uniques.add(item[key]);
+
+      return true;
+    }
+
+    return false;
+  });
+};
+
 export const getPaginationInfo = (req: Request) => {
   const { page, limit } = req.query;
 
@@ -59,12 +73,15 @@ export const formatSingleProduct = (
     cell: itemJSON.cell,
     namespaceId: itemJSON.namespaceId,
     name: itemJSON.product.name,
+    itemId: itemJSON.product.id,
     fullPrice: itemJSON.product.fullPrice,
     price: itemJSON.product.price,
     ram: itemJSON.product.ram,
     screen: itemJSON.product.screen,
     capacity: itemJSON.product.capacity,
     colorId: itemJSON.product.colorId,
+    color: itemJSON.product.color.title,
+    categoryId: itemJSON.product.categoryId,
     images,
     capacityAvailable,
     descriptions,

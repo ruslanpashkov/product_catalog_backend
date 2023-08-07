@@ -66,7 +66,14 @@ class AccessoryService {
         {
           model: Product,
           as: 'product',
-          attributes: { exclude: ['createdAt', 'id', 'year', 'image', 'categoryId'] }
+          attributes: { exclude: ['createdAt', 'year', 'image'] },
+          include: [
+            {
+              model: Color,
+              as: 'color',
+              attributes: ['title']
+            }
+          ]
         }
       ],
       attributes: { exclude: ['createdAt'] }

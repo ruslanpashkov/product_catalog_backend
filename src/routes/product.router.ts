@@ -8,3 +8,4 @@ export const productRouter = express.Router();
 productRouter.get('/', productController.getAllProducts);
 productRouter.get('/discount', productController.getProductsByDiscount);
 productRouter.get('/new', productController.getProductsByNew);
+productRouter.get('/recommended', productController.getRecommendedProducts);

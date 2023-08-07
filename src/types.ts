@@ -3,6 +3,7 @@ import { Request, Response } from 'express';
 export type Controller = (req: Request, res: Response) => void;
 
 interface ItemProduct {
+  id: number,
   name: string;
   fullPrice: number;
   price: number;
@@ -10,6 +11,10 @@ interface ItemProduct {
   screen: string;
   capacity: string;
   colorId: number;
+  categoryId: number;
+  color: {
+    title: string;
+  }
 }
 
 export interface ItemJSON {
@@ -20,5 +25,5 @@ export interface ItemJSON {
   zoom: string;
   cell: string;
   namespaceId: number;
-  product: ItemProduct
+  product: ItemProduct;
 }

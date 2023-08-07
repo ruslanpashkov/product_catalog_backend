@@ -1,6 +1,7 @@
 'use strict';
 
 import { phoneService } from '../services/phone.service.js';
+// import { productService } from '../services/product.service.js';
 import { Controller } from '../types.js';
 import { formatSingleProduct, getPaginationInfo } from '../utils/helpers.js';
 
@@ -21,7 +22,7 @@ class PhoneController {
   getPhones: Controller = async (req, res) => {
     const { initialLimit, offset } = getPaginationInfo(req);
 
-    const { sortBy } = req.query as { sortBy?: string } || { sortBy: 'Newest' };
+    const { sortBy } = req.query as { sortBy?: string } || { sortBy: 'newest' };
 
     const phones = await phoneService.getAll(offset, initialLimit, sortBy);
 
