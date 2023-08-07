@@ -1,6 +1,7 @@
 'use strict';
 
 import { phoneService } from '../services/phone.service.js';
+// import { productService } from '../services/product.service.js';
 import { Controller } from '../types.js';
 import { formatSingleProduct, getPaginationInfo } from '../utils/helpers.js';
 
@@ -83,6 +84,9 @@ class PhoneController {
       colors
     );
 
+    // const similarProducts = await productService.getSimilarProductsByPrice(phoneId, 12);
+
+    // res.status(200).json({ phone: formattedPhone, similarProducts});
     res.status(200).json(formattedPhone);
   };
 }

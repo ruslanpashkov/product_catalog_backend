@@ -4,6 +4,7 @@ import { Sequelize } from 'sequelize-typescript';
 import { Category } from '../models/Category.model.js';
 import { Product } from '../models/Product.model.js';
 import { commonProductsAttributesOptions, commonProductsIncludeOptions } from '../utils/constants.js';
+import { Phone } from '../models/Phone.model.js';
 
 class ProductService {
   private static instance: ProductService | null = null;
@@ -64,6 +65,29 @@ class ProductService {
     });
 
     return newProducts;
+  }
+
+  async getSimilarProductsByPrice(productId: string, limit: number) {
+    const product = await Product.findByPk(productId, {
+      attributes: ['fullPrice']
+    });
+
+    const similarProducts = await Product.findAll({
+      where: {
+        fullPrice: product?.fullPrice,
+      },
+      include: [
+        {
+          model: Phone,
+          as: 'itemPhone',
+          attributes: ['id'],
+        },
+      ],
+      attributes: { exclude: ['createdAt'] },
+      limit,
+    });
+
+    return similarProducts;
   }
 }
 

@@ -66,7 +66,7 @@ class PhoneService {
         {
           model: Product,
           as: 'product',
-          attributes: { exclude: ['createdAt', 'id', 'year', 'image', 'categoryId'] }
+          attributes: { exclude: ['createdAt', 'year', 'image', 'categoryId'] }
         }
       ],
       attributes: { exclude: ['createdAt'] }

@@ -59,6 +59,7 @@ export const formatSingleProduct = (
     cell: itemJSON.cell,
     namespaceId: itemJSON.namespaceId,
     name: itemJSON.product.name,
+    // itemId: itemJSON.product.id,
     fullPrice: itemJSON.product.fullPrice,
     price: itemJSON.product.price,
     ram: itemJSON.product.ram,
