@@ -59,7 +59,10 @@ class ProductController {
   };
 
   getProducntsByNew: Controller = async (req, res) => {
-    const newProducts = await productService.getAll();
+    const limitProducts: number = 10;
+    const sortOption: [string, string][] = [['year', 'DESC']];
+
+    const newProducts = await productService.getAll(limitProducts, sortOption);
 
     if (!newProducts) {
       res.status(404).json({ message: 'No new products found' });
@@ -67,16 +70,30 @@ class ProductController {
       return;
     }
 
-    newProducts.sort((productA, productB) => {
-      return productB.toJSON().year - productA.toJSON().year;
-    });
-
-    const latestProducts = newProducts.slice(0, 10);
-
-    const formattedProducts = formatMultipleProducts(latestProducts);
+    const formattedProducts = formatMultipleProducts(newProducts);
 
     res.status(200).json(formattedProducts);
   };
+
+  // getProducntsByNew: Controller = async (req, res) => {
+  //   const newProducts = await productService.getAll();
+
+  //   if (!newProducts) {
+  //     res.status(404).json({ message: 'No new products found' });
+
+  //     return;
+  //   }
+
+  //   newProducts.sort((productA, productB) => {
+  //     return productB.toJSON().year - productA.toJSON().year;
+  //   });
+
+  //   const latestProducts = newProducts.slice(0, 10);
+
+  //   const formattedProducts = formatMultipleProducts(latestProducts);
+
+  //   res.status(200).json(formattedProducts);
+  // };
 }
 
 export const productController = ProductController.getInstance();
