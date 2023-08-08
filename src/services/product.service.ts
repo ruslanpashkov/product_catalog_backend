@@ -136,6 +136,21 @@ class ProductService {
 
     return { recommendedByPrice, recommendedByFullPrice, recommendedByCategory };
   }
+
+  async getBySearch(query: string, count: number) {
+    return Product.findAll({
+      include: commonProductsIncludeOptions,
+      attributes: commonProductsAttributesOptions,
+      where: Sequelize.where(
+        Sequelize.fn('REPLACE', Sequelize.col('name'), ' ', ''),
+        {
+          [Op.iLike]: `%${query}%`,
+        }
+      ),
+      order: [['name', 'ASC']],
+      limit: count,
+    });
+  }
 }
 
 export const productService = ProductService.getInstance();
