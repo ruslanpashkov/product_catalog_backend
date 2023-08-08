@@ -90,7 +90,7 @@ class ProductController {
   };
 
   getRecommendedProducts: Controller = async (req, res) => {
-    const { price, fullPrice, categoryId } = req.query;
+    const { price, fullPrice, category } = req.query;
 
     if (!price) {
       res.status(400).json(
@@ -108,9 +108,9 @@ class ProductController {
       return;
     }
 
-    if (!categoryId) {
+    if (!category) {
       res.status(400).json(
-        { message: 'Missing required categoryId parameter' }
+        { message: 'Missing required category parameter' }
       );
 
       return;
@@ -118,14 +118,25 @@ class ProductController {
 
     const normalizePrice = Number(price);
     const normalizeFullPrice = Number(fullPrice);
-    const normalizeCategoryId = Number(categoryId);
+    const normalizeCategory = String(category);
     const priceLimit = 200;
     const limit = 4;
+
+    //! that part will change next time (it will be refactor)
+    const validCategories = ['phones', 'tablets', 'accessories'];
+
+    if (!validCategories.includes(normalizeCategory)) {
+      res.status(400).json(
+        { message: 'Invalid category parameter' }
+      );
+
+      return;
+    }
 
     const recomendedProducts = await productService.getRecommended(
       normalizePrice,
       normalizeFullPrice,
-      normalizeCategoryId,
+      normalizeCategory,
       priceLimit,
       limit,
     );

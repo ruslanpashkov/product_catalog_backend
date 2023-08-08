@@ -7,6 +7,24 @@ import { Description } from '../models/Description.model.js';
 import { Product } from '../models/Product.model.js';
 import { OrderItem } from 'sequelize';
 import { ItemJSON } from '../types.js';
+import { Namespace } from '../models/Namespace.model.js';
+
+export const getIncludeOptions = (
+  namespaceId: number,
+  colorId: number,
+  capacity: string,
+) => {
+  return [
+    {
+      model: Namespace,
+      where: { id: namespaceId },
+    },
+    {
+      model: Product,
+      where: { colorId, capacity },
+    },
+  ];
+};
 
 export const getUniqueItems = <T>(array: T[], key: keyof T) => {
   const uniques = new Set();
@@ -35,14 +53,14 @@ export const getPaginationInfo = (req: Request) => {
 
 export const generateSortingOrder = (sortBy: string | string[] | undefined) => {
   if (sortBy === 'highestPrice') {
-    return [['fullPrice', 'DESC']] as OrderItem[];
+    return [['fullPrice', 'DESC'], ['id', 'ASC']] as OrderItem[];
   }
 
   if (sortBy === 'lowestPrice') {
-    return [['fullPrice', 'ASC']] as OrderItem[];
+    return [['fullPrice', 'ASC'], ['id', 'ASC']] as OrderItem[];
   }
 
-  return [['year', 'DESC']] as OrderItem[];
+  return [['year', 'DESC'], ['id', 'ASC']] as OrderItem[];
 };
 
 export const formatSingleProduct = (
@@ -79,9 +97,8 @@ export const formatSingleProduct = (
     ram: itemJSON.product.ram,
     screen: itemJSON.product.screen,
     capacity: itemJSON.product.capacity,
-    colorId: itemJSON.product.colorId,
     color: itemJSON.product.color.title,
-    categoryId: itemJSON.product.categoryId,
+    category: itemJSON.product.category.title,
     images,
     capacityAvailable,
     descriptions,
