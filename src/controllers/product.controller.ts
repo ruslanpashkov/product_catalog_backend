@@ -158,6 +158,27 @@ class ProductController {
 
     res.status(200).json(uniquesProducts);
   };
+
+  getProductsBySearch: Controller = async (req, res) => {
+    const { query } = req.query;
+
+    if (!query) {
+      res.status(404).json(
+        { message: 'Missing required query parameter' }
+      );
+
+      return;
+    }
+
+    const normalizeQuery = String(query).replace(/\s/g, '').toLowerCase();
+    const count = 4;
+
+    const products = await productService.getBySearch(normalizeQuery, count);
+
+    const formattedProducts = formatMultipleProducts(products);
+
+    res.status(200).json(formattedProducts);
+  };
 }
 
 export const productController = ProductController.getInstance();

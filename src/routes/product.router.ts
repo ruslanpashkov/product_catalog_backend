@@ -10,3 +10,4 @@ productRouter.get('/discount', productController.getProductsByDiscount);
 productRouter.get('/new', productController.getProductsByNew);
 productRouter.get('/recommended', productController.getRecommendedProducts);
 productRouter.get('/count', productController.getCountProducts);
+productRouter.get('/search', productController.getProductsBySearch);
