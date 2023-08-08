@@ -1,6 +1,7 @@
 'use strict';
 
 import {
+  AllowNull,
   BelongsTo,
   Column,
   DataType,
@@ -17,7 +18,14 @@ import { User } from './User.model.js';
 })
 
 export class Basket extends Model {
+  @AllowNull(false)
+  @Column({
+    type: DataType.DATE,
+  })
+    createdAt: Date;
+
   @Unique
+  @AllowNull(false)
   @ForeignKey(() => User)
   @Column({
     type: DataType.INTEGER,
