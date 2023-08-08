@@ -27,6 +27,16 @@ class ProductService {
     });
   }
 
+  async getCountProducts(category: string) {
+    const currentCategory = await Category.findOne({
+      where: { title: category },
+    });
+
+    return Product.count({
+      where: { categoryId: currentCategory?.id },
+    });
+  }
+
   async getDiscountProductsPerCategory(countPerCategory: number) {
     const categories = await Category.findAll({
       attributes: ['id'],
