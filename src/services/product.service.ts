@@ -80,10 +80,16 @@ class ProductService {
   async getRecommended(
     price: number,
     fullPrice: number,
-    categoryId: number,
+    category: string,
     priceLimit: number,
     limit: number,
   ) {
+    const currentCategory = await Category.findOne({
+      where: { title: category }
+    });
+
+    const categoryId = currentCategory?.dataValues.id;
+
     const byPricePromise = Product.findAll({
       include: commonProductsIncludeOptions,
       attributes: commonProductsAttributesOptions,

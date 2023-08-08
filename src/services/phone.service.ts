@@ -66,13 +66,18 @@ class PhoneService {
         {
           model: Product,
           as: 'product',
-          attributes: { exclude: ['createdAt', 'year', 'image'] },
+          attributes: { exclude: ['createdAt', 'year', 'image', 'categoryId'] },
           include: [
             {
               model: Color,
               as: 'color',
               attributes: ['title']
-            }
+            },
+            {
+              model: Category,
+              as: 'category',
+              attributes: ['title']
+            },
           ]
         }
       ],

@@ -1,4 +1,6 @@
 import { Request, Response } from 'express';
+import { Category } from './models/Category.model';
+import { Color } from './models/Color.model';
 
 export type Controller = (req: Request, res: Response) => void;
 
@@ -10,11 +12,8 @@ interface ItemProduct {
   ram: string;
   screen: string;
   capacity: string;
-  colorId: number;
-  categoryId: number;
-  color: {
-    title: string;
-  }
+  color: Color,
+  category: Category;
 }
 
 export interface ItemJSON {
