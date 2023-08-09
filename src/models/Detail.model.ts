@@ -6,6 +6,7 @@ import {
   Column,
   DataType,
   ForeignKey,
+  HasOne,
   Model,
   PrimaryKey,
   Table,
@@ -15,10 +16,10 @@ import { Namespace } from './Namespace.model.js';
 import { Product } from './Product.model.js';
 
 @Table({
-  tableName: 'phones',
+  tableName: 'details',
   timestamps: false,
 })
-export class Phone extends Model {
+export class Detail extends Model {
   @AllowNull(false)
   @Column({
     type: DataType.DATE,
@@ -26,6 +27,7 @@ export class Phone extends Model {
     createdAt: Date;
 
   @AllowNull(false)
+  @Unique
   @PrimaryKey
   @Column({
     type: DataType.STRING,
@@ -69,18 +71,8 @@ export class Phone extends Model {
   })
     namespaceId: number;
 
-  @AllowNull(false)
-  @Unique
-  @ForeignKey(() => Product)
-  @Column({
-    type: DataType.INTEGER,
-  })
-    productId: number;
-
-  @BelongsTo(() => Product, {
-    onDelete: 'CASCADE',
-    foreignKey: 'productId',
-    targetKey: 'id',
+  @HasOne(() => Product, {
+    onDelete: 'CASCADE'
   })
     product: Product | null;
 

@@ -138,5 +138,97 @@
   {
     "namespaceId": 14,
     "capacityId": 6
+  },
+  {
+    "namespaceId": 20,
+    "capacityId": 1
+  },
+  {
+    "namespaceId": 20,
+    "capacityId": 2
+  },
+  {
+    "namespaceId": 20,
+    "capacityId": 4
+  },
+  {
+    "namespaceId": 20,
+    "capacityId": 6
+  },
+  {
+    "namespaceId": 20,
+    "capacityId": 7
+  },
+  {
+    "namespaceId": 21,
+    "capacityId": 2
+  },
+  {
+    "namespaceId": 21,
+    "capacityId": 3
+  },
+  {
+    "namespaceId": 22,
+    "capacityId": 3
+  },
+  {
+    "namespaceId": 22,
+    "capacityId": 2
+  },
+  {
+    "namespaceId": 23,
+    "capacityId": 1
+  },
+  {
+    "namespaceId": 23,
+    "capacityId": 5
+  },
+  {
+    "namespaceId": 24,
+    "capacityId": 2
+  },
+  {
+    "namespaceId": 24,
+    "capacityId": 3
+  },
+  {
+    "namespaceId": 15,
+    "capacityId": 8
+  },
+  {
+    "namespaceId": 15,
+    "capacityId": 9
+  },
+  {
+    "namespaceId": 16,
+    "capacityId": 10
+  },
+  {
+    "namespaceId": 16,
+    "capacityId": 11
+  },
+  {
+    "namespaceId": 17,
+    "capacityId": 10
+  },
+  {
+    "namespaceId": 17,
+    "capacityId": 11
+  },
+  {
+    "namespaceId": 18,
+    "capacityId": 10
+  },
+  {
+    "namespaceId": 18,
+    "capacityId": 11
+  },
+  {
+    "namespaceId": 19,
+    "capacityId": 10
+  },
+  {
+    "namespaceId": 19,
+    "capacityId": 11
   }
 ]

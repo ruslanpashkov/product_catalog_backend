@@ -7,16 +7,13 @@ import {
   DataType,
   ForeignKey,
   HasMany,
-  HasOne,
   Model,
   Table,
 } from 'sequelize-typescript';
-import { Accessory } from './Accessory.model.js';
 import { BasketProducts } from './BasketProducts.model.js';
 import { Category } from './Category.model.js';
 import { Color } from './Color.model.js';
-import { Phone } from './Phone.model.js';
-import { Tablet } from './Tablet.model.js';
+import { Detail } from './Detail.model.js';
 
 @Table({
   tableName: 'products',
@@ -105,20 +102,17 @@ export class Product extends Model {
   })
     color: Color | null;
 
-  @HasOne(() => Phone, {
-    onDelete: 'CASCADE',
+  @AllowNull(false)
+  @ForeignKey(() => Detail)
+  @Column({
+    type: DataType.STRING
   })
-    itemPhone: Phone | null;
+    detailId: string;
 
-  @HasOne(() => Tablet, {
-    onDelete: 'CASCADE',
+  @BelongsTo(() => Detail, {
+    onDelete: 'CASCADE'
   })
-    itemTablet: Tablet | null;
-
-  @HasOne(() => Accessory, {
-    onDelete: 'CASCADE',
-  })
-    itemAccessory: Accessory | null;
+    detail: Detail | null;
 
   @HasMany(() => BasketProducts, {
     onDelete: 'RESTRICT',

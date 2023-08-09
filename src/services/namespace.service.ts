@@ -1,10 +1,9 @@
 'use srtict';
 
-import { Accessory } from '../models/Accessory.model.js';
 import { Color } from '../models/Color.model.js';
-import { Phone } from '../models/Phone.model.js';
-import { Tablet } from '../models/Tablet.model.js';
-import { getIncludeOptions } from '../utils/helpers.js';
+import { Detail } from '../models/Detail.model.js';
+import { Namespace } from '../models/Namespace.model.js';
+import { Product } from '../models/Product.model.js';
 
 class NamespaceService {
   private static instance: NamespaceService | null = null;
@@ -20,7 +19,7 @@ class NamespaceService {
     return NamespaceService.instance;
   }
 
-  async getPhoneByQueries(
+  async getDeviceByQueries(
     namespaceId: number,
     color: string,
     capacity: string
@@ -29,67 +28,24 @@ class NamespaceService {
       where: { title: color }
     });
 
-    const includeOptions = getIncludeOptions(
-      namespaceId,
-      currentColor?.dataValues.id,
-      capacity
-    );
+    const colorId = currentColor?.dataValues.id;
 
-    const phone = await Phone.findOne({
-      include: includeOptions
+    const phone = await Detail.findOne({
+      include: [
+        {
+          model: Namespace,
+          where: { id: namespaceId },
+        },
+        {
+          model: Product,
+          where: { colorId, capacity },
+        },
+      ]
     });
 
-    const phoneId = phone?.dataValues.id;
+    const deviceId = phone?.dataValues.id;
 
-    return phoneId;
-  }
-
-  async getTabletByQueries(
-    namespaceId: number,
-    color: string,
-    capacity: string
-  ) {
-    const currentColor = await Color.findOne({
-      where: { title: color }
-    });
-
-    const includeOptions = getIncludeOptions(
-      namespaceId,
-      currentColor?.dataValues.id,
-      capacity
-    );
-
-    const tablet = await Tablet.findOne({
-      include: includeOptions
-    });
-
-    const tabletId = tablet?.dataValues.id;
-
-    return tabletId;
-  }
-
-  async getAccessoryByQueries(
-    namespaceId: number,
-    color: string,
-    capacity: string
-  ) {
-    const currentColor = await Color.findOne({
-      where: { title: color }
-    });
-
-    const includeOptions = getIncludeOptions(
-      namespaceId,
-      currentColor?.dataValues.id,
-      capacity
-    );
-
-    const accessory = await Accessory.findOne({
-      include: includeOptions
-    });
-
-    const accessoryId = accessory?.dataValues.id;
-
-    return accessoryId;
+    return deviceId;
   }
 }
 

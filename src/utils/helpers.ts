@@ -1,30 +1,10 @@
 'use strict';
 
 import { Request } from 'express';
-import { ImagesColor } from '../models/ImagesColor.model.js';
-import { Capacity } from '../models/Capacity.model.js';
-import { Description } from '../models/Description.model.js';
 import { Product } from '../models/Product.model.js';
 import { OrderItem } from 'sequelize';
-import { ItemJSON } from '../types.js';
-import { Namespace } from '../models/Namespace.model.js';
-
-export const getIncludeOptions = (
-  namespaceId: number,
-  colorId: number,
-  capacity: string,
-) => {
-  return [
-    {
-      model: Namespace,
-      where: { id: namespaceId },
-    },
-    {
-      model: Product,
-      where: { colorId, capacity },
-    },
-  ];
-};
+import { FullProduct } from '../types.js';
+import { Category } from '../models/Category.model.js';
 
 export const getUniqueItems = <T>(array: T[], key: keyof T) => {
   const uniques = new Set();
@@ -64,12 +44,18 @@ export const generateSortingOrder = (sortBy: string | string[] | undefined) => {
 };
 
 export const formatSingleProduct = (
-  itemJSON: ItemJSON,
-  imagesColor: ImagesColor[],
-  capacities: Capacity[],
-  descriptions: Description[],
-  colors: ImagesColor[],
+  fullProduct: FullProduct,
 ) => {
+  const {
+    product,
+    imagesColor,
+    capacities,
+    descriptions,
+    colors
+  } = fullProduct;
+
+  const productJSON = product?.toJSON();
+
   const images = imagesColor.map(imageColor => (
     imageColor.toJSON().imagePath
   ));
@@ -83,22 +69,22 @@ export const formatSingleProduct = (
   ));
 
   return {
-    id: itemJSON.id,
-    resolution: itemJSON.resolution,
-    processor: itemJSON.processor,
-    camera: itemJSON.camera,
-    zoom: itemJSON.zoom,
-    cell: itemJSON.cell,
-    namespaceId: itemJSON.namespaceId,
-    name: itemJSON.product.name,
-    itemId: itemJSON.product.id,
-    fullPrice: itemJSON.product.fullPrice,
-    price: itemJSON.product.price,
-    ram: itemJSON.product.ram,
-    screen: itemJSON.product.screen,
-    capacity: itemJSON.product.capacity,
-    color: itemJSON.product.color.title,
-    category: itemJSON.product.category.title,
+    id: productJSON.detailId,
+    resolution: productJSON.detail.resolution,
+    processor: productJSON.detail.processor,
+    camera: productJSON.detail.camera,
+    zoom: productJSON.detail.zoom,
+    cell: productJSON.detail.cell,
+    namespaceId: productJSON.detail.namespaceId,
+    name: productJSON.name,
+    itemId: productJSON.id,
+    fullPrice: productJSON.fullPrice,
+    price: productJSON.price,
+    ram: productJSON.ram,
+    screen: productJSON.screen,
+    capacity: productJSON.capacity,
+    color: productJSON.color.title,
+    category: productJSON.category.title,
     images,
     capacityAvailable,
     descriptions,
@@ -109,35 +95,23 @@ export const formatSingleProduct = (
 export const formatMultipleProducts = (products: Product[]) => {
   return products.map(product => {
     const {
-      itemPhone,
-      itemTablet,
-      itemAccessory,
       category,
+      detailId,
       ...rest
     } = product.toJSON();
 
-    const itemType = {
-      itemId: '',
-    };
-
-    if (itemPhone) {
-      itemType.itemId = itemPhone.id;
-    }
-
-    if (itemTablet) {
-      itemType.itemId = itemTablet.id;
-    }
-
-    if (itemAccessory) {
-      itemType.itemId = itemAccessory.id;
-    }
-
-    const result = {
+    return {
       ...rest,
+      itemId: detailId,
       category: category.title,
-      ...itemType
     };
-
-    return result;
   });
+};
+
+export const checkValidCategory = async (category: string) => {
+  const allCategories = await Category.findAll();
+
+  const cateogories = allCategories.map(category => category.toJSON().title);
+
+  return cateogories.includes(category);
 };

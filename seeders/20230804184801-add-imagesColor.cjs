@@ -1,13 +1,13 @@
 'use strict';
 
-const descriptionsAccessory = require('./20230804170109-add-descriptions-accessory-data.json');
-const TABLE_NAME = 'descriptions';
+const imagesColor = require('./20230804184801-add-imagesColor-data.json');
+const TABLE_NAME = 'imagesColor';
 
 module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.bulkInsert(
       TABLE_NAME,
-      descriptionsAccessory,
+      imagesColor,
     );
   },
 
