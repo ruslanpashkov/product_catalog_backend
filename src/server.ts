@@ -4,6 +4,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import express from 'express';
 import path from 'path';
+import cookieParser from 'cookie-parser';
 import { productRouter } from './routes/product.router.js';
 import { initDB } from './utils/initDB.js';
 import { userRouter } from './routes/user.router.js';
@@ -26,6 +27,7 @@ export const createServer = () => {
 
   initDB();
   app.use(cors(corsOptions));
+  app.use(cookieParser());
   app.use('/img', express.static(path.join('img')));
   app.use('/products', express.json(), productRouter);
   app.use('/user', express.json(), userRouter);
