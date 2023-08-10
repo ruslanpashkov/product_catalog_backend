@@ -1195,6 +1195,26 @@
     "colorId": 4
   },
   {
+    "imagePath": "img/tablets/apple-ipad-air-4th-gen/sky-blue/00.webp",
+    "namespaceId": 21,
+    "colorId": 19
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-air-4th-gen/sky-blue/01.webp",
+    "namespaceId": 21,
+    "colorId": 19
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-air-4th-gen/sky-blue/02.webp",
+    "namespaceId": 21,
+    "colorId": 19
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-air-4th-gen/sky-blue/03.webp",
+    "namespaceId": 21,
+    "colorId": 19
+  },
+  {
     "imagePath": "img/tablets/apple-ipad-mini-6th-gen/spacegray/00.webp",
     "namespaceId": 22,
     "colorId": 7
