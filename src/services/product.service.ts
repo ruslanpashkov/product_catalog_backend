@@ -175,14 +175,6 @@ class ProductService {
       }
     }));
 
-    const individualCharConditions = query
-      .split('')
-      .map(char => ({
-        name: {
-          [Op.iLike]: `%${char}%`
-        }
-      }));
-
     return Product.findAll({
       include: [
         {
@@ -196,9 +188,6 @@ class ProductService {
         [Op.or]: [
           {
             [Op.and]: nameConditions
-          },
-          {
-            [Op.and]: individualCharConditions
           },
           Sequelize.json({ name: { [Op.iLike]: `%${query}%` } })
         ]

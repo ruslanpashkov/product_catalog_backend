@@ -196,7 +196,7 @@ class ProductController {
       return;
     }
 
-    const normalizeSortBy = String(sortBy);
+    const normalizeSortBy = String(sortBy).toLowerCase();
     const normalizeCategory = String(category).toLowerCase();
 
     const isValidCategory = await checkValidCategory(normalizeCategory);
