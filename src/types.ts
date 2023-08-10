@@ -1,3 +1,5 @@
+'use strict';
+
 import { Request, Response } from 'express';
 import { Product } from './models/Product.model';
 import { ImagesColor } from './models/ImagesColor.model';

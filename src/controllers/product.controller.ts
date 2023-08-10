@@ -196,12 +196,10 @@ class ProductController {
       return;
     }
 
-    const normalizeSortBy = String(sortBy).toLowerCase();
+    const normalizeSortBy = String(sortBy);
     const normalizeCategory = String(category).toLowerCase();
 
     const isValidCategory = await checkValidCategory(normalizeCategory);
-
-    console.log(123, 'isValidCategory', isValidCategory);
 
     if (!isValidCategory) {
       res.status(404).json(
