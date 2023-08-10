@@ -271,6 +271,10 @@ class ProductService {
       attributes: { exclude: ['createdAt', 'year', 'categoryId'] },
     });
 
+    if (!product) {
+      return;
+    }
+
     const { colorId, detail } = product?.dataValues || {};
     const { namespaceId } = detail.dataValues;
 
