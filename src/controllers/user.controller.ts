@@ -30,6 +30,7 @@ class UserController {
 
       const userData = await userService.createUser(email, password, lastName, firstName);
 
+      // that for future
       // res.cookie('token', userData.token, {
       //   maxAge: 24 * 60 * 60, httpOnly: true,
       // });
@@ -53,6 +54,7 @@ class UserController {
       }
       const userData = await userService.loginUser(email, password);
 
+      // that for future
       // res.cookie('token', userData.token, {
       //   maxAge: 24 * 60 * 60, httpOnly: true,
       // });

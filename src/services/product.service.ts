@@ -198,7 +198,6 @@ class ProductService {
   }
 
   async getProductsByCategory(
-
     offset: number,
     limit: number,
     sortBy: string | undefined,
