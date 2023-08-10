@@ -10,6 +10,7 @@ import { Capacity } from '../models/Capacity.model.js';
 import { Description } from '../models/Description.model.js';
 import { NamespaceCapacity } from '../models/NamespaceCapacity.model.js';
 import { Color } from '../models/Color.model.js';
+import { Namespace } from '../models/Namespace.model.js';
 
 class ProductService {
   private static instance: ProductService | null = null;
@@ -248,6 +249,13 @@ class ProductService {
           model: Detail,
           as: 'detail',
           attributes: { exclude: ['createdAt', 'id'] },
+          include: [
+            {
+              model: Namespace,
+              as: 'namespace',
+              attributes: ['title']
+            }
+          ]
         },
         {
           model: Color,

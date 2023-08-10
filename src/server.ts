@@ -6,7 +6,6 @@ import express from 'express';
 import path from 'path';
 import { productRouter } from './routes/product.router.js';
 import { initDB } from './utils/initDB.js';
-import { namespaceRouter } from './routes/namespace.router.js';
 import { userRouter } from './routes/user.router.js';
 
 dotenv.config();
@@ -29,7 +28,6 @@ export const createServer = () => {
   app.use(cors(corsOptions));
   app.use('/img', express.static(path.join('img')));
   app.use('/products', express.json(), productRouter);
-  app.use('/namespaces', express.json(), namespaceRouter);
   app.use('/user', express.json(), userRouter);
 
   app.use('/', (_, res) => {

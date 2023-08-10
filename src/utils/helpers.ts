@@ -75,7 +75,7 @@ export const formatSingleProduct = (
     camera: productJSON.detail.camera,
     zoom: productJSON.detail.zoom,
     cell: productJSON.detail.cell,
-    namespaceId: productJSON.detail.namespaceId,
+    namespace: productJSON.detail.namespace.title,
     name: productJSON.name,
     itemId: productJSON.id,
     fullPrice: productJSON.fullPrice,
