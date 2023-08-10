@@ -1,6 +1,6 @@
 'use strict';
 
-const TABLE_NAME = 'baskets';
+const TABLE_NAME = 'orders';
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
@@ -15,7 +15,6 @@ module.exports = {
         userId: {
           type: Sequelize.INTEGER,
           allowNull: false,
-          unique: true,
           references: {
             model: 'users',
             key: 'id',

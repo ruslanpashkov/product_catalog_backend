@@ -1,5 +1,5 @@
-import { Basket } from './Basket.model.js';
-import { BasketProducts } from './BasketProducts.model.js';
+import { Order } from './Order.model.js';
+import { OrderProducts } from './OrderProducts.model.js';
 import { Capacity } from './Capacity.model.js';
 import { Category } from './Category.model.js';
 import { Color } from './Color.model.js';
@@ -22,6 +22,6 @@ export const models = [
   NamespaceCapacity,
   Detail,
   User,
-  Basket,
-  BasketProducts,
+  Order,
+  OrderProducts,
 ];

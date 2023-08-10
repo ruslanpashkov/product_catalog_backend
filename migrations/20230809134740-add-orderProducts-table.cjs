@@ -1,6 +1,6 @@
 'use strict';
 
-const TABLE_NAME = 'basketProducts';
+const TABLE_NAME = 'orderProducts';
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
@@ -29,11 +29,11 @@ module.exports = {
           },
           onDelete: 'CASCADE',
         },
-        basketId: {
+        orderId: {
           type: Sequelize.INTEGER,
           allowNull: false,
           references: {
-            model: 'baskets',
+            model: 'orders',
             key: 'id',
           },
           onDelete: 'CASCADE',

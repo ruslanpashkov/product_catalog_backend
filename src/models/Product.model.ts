@@ -10,7 +10,7 @@ import {
   Model,
   Table,
 } from 'sequelize-typescript';
-import { BasketProducts } from './BasketProducts.model.js';
+import { OrderProducts } from './OrderProducts.model.js';
 import { Category } from './Category.model.js';
 import { Color } from './Color.model.js';
 import { Detail } from './Detail.model.js';
@@ -114,8 +114,8 @@ export class Product extends Model {
   })
     detail: Detail | null;
 
-  @HasMany(() => BasketProducts, {
+  @HasMany(() => OrderProducts, {
     onDelete: 'RESTRICT',
   })
-    basketProduct: BasketProducts[] | null;
+    basketProduct: OrderProducts[] | null;
 }
