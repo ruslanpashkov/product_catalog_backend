@@ -80,6 +80,7 @@ class UserService {
 
   private normalizeUser(user: User){
     return {
+      id: user.dataValues.id,
       email: user.dataValues.email,
       firstName: user.dataValues.firstName,
       lastName: user.dataValues.lastName,

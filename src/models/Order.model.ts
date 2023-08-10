@@ -5,10 +5,10 @@ import {
   BelongsTo,
   Column,
   DataType,
+  Default,
   ForeignKey,
   Model,
   Table,
-  Unique,
 } from 'sequelize-typescript';
 import { User } from './User.model.js';
 
@@ -17,14 +17,14 @@ import { User } from './User.model.js';
   timestamps: false,
 })
 
-export class Basket extends Model {
+export class Order extends Model {
   @AllowNull(false)
+  @Default(DataType.NOW)
   @Column({
     type: DataType.DATE,
   })
     createdAt: Date;
 
-  @Unique
   @AllowNull(false)
   @ForeignKey(() => User)
   @Column({

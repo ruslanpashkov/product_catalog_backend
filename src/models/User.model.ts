@@ -10,7 +10,7 @@ import {
   Table,
   Unique,
 } from 'sequelize-typescript';
-import { Basket } from './Basket.model.js';
+import { Order } from './Order.model.js';
 
 @Table({
   tableName: 'users',
@@ -57,8 +57,8 @@ export class User extends Model {
   })
     role: string;
 
-  @HasOne(() => Basket, {
+  @HasOne(() => Order, {
     onDelete: 'CASCADE'
   })
-    basket: Basket | null;
+    basket: Order | null;
 }

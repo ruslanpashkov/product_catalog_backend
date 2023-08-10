@@ -8,6 +8,7 @@ import cookieParser from 'cookie-parser';
 import { productRouter } from './routes/product.router.js';
 import { initDB } from './utils/initDB.js';
 import { userRouter } from './routes/user.router.js';
+// import { orderRouter } from './routes/order.router.js';
 
 dotenv.config();
 
@@ -31,6 +32,7 @@ export const createServer = () => {
   app.use('/img', express.static(path.join('img')));
   app.use('/products', express.json(), productRouter);
   app.use('/user', express.json(), userRouter);
+  // app.use('/checkout', express.json(), orderRouter);
 
   app.use('/', (_, res) => {
     res.send('Hello world, it is HTML Hooligans');

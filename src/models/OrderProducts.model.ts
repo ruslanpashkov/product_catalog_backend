@@ -5,12 +5,13 @@ import {
   BelongsTo,
   Column,
   DataType,
+  Default,
   ForeignKey,
   Min,
   Model,
   Table,
 } from 'sequelize-typescript';
-import { Basket } from './Basket.model.js';
+import { Order } from './Order.model.js';
 import { Product } from './Product.model.js';
 
 @Table({
@@ -18,8 +19,9 @@ import { Product } from './Product.model.js';
   timestamps: false,
 })
 
-export class BasketProducts extends Model {
+export class OrderProducts extends Model {
   @AllowNull(false)
+  @Default(DataType.NOW)
   @Column({
     type: DataType.DATE,
   })
@@ -40,18 +42,18 @@ export class BasketProducts extends Model {
     productId: number;
 
   @AllowNull(false)
-  @ForeignKey(() => Basket)
+  @ForeignKey(() => Order)
   @Column({
     type: DataType.INTEGER,
   })
-    basketId: number;
+    orderId: number;
 
-  @BelongsTo(() => Basket, {
+  @BelongsTo(() => Order, {
     onDelete: 'CASCADE',
-    foreignKey: 'basketId',
+    foreignKey: 'orderId',
     targetKey: 'id',
   })
-    basket: Basket | null;
+    order: Order | null;
 
   @BelongsTo(() => Product, {
     onDelete: 'CASCADE',
