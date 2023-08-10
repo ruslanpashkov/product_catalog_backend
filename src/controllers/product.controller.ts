@@ -70,7 +70,7 @@ class ProductController {
       return;
     }
 
-    const normalizeCategory = String(category);
+    const normalizeCategory = String(category).toLowerCase();
 
     const isValidCategory = await checkValidCategory(normalizeCategory);
 
@@ -122,7 +122,7 @@ class ProductController {
 
     const normalizePrice = Number(price);
     const normalizeFullPrice = Number(fullPrice);
-    const normalizeCategory = String(category);
+    const normalizeCategory = String(category).toLowerCase();
     const priceLimit = 200;
     const limit = 4;
 
@@ -197,7 +197,7 @@ class ProductController {
     }
 
     const normalizeSortBy = String(sortBy);
-    const normalizeCategory = String(category);
+    const normalizeCategory = String(category).toLowerCase();
 
     const isValidCategory = await checkValidCategory(normalizeCategory);
 
@@ -230,7 +230,9 @@ class ProductController {
   getProductByDeviceId: Controller = async (req, res) => {
     const { deviceId } = req.params;
 
-    const productData = await productService.getByDeviceId(deviceId);
+    const normalizeDeviceId = String(deviceId).toLowerCase();
+
+    const productData = await productService.getByDeviceId(normalizeDeviceId);
 
     if (!productData) {
       res.status(404).json({ message: `Device with id ${deviceId} not found` });
