@@ -1,6 +1,6 @@
 'use strict';
 
-const TABLE_NAME = 'accessories';
+const TABLE_NAME = 'details';
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
@@ -14,15 +14,18 @@ module.exports = {
         },
         resolution: {
           type: Sequelize.STRING,
-          allowNull: false,
         },
         processor: {
           type: Sequelize.STRING,
-          allowNull: false,
+        },
+        camera: {
+          type: Sequelize.STRING,
+        },
+        zoom: {
+          type: Sequelize.STRING,
         },
         cell: {
           type: Sequelize.ARRAY(Sequelize.STRING),
-          allowNull: false
         },
         namespaceId: {
           type: Sequelize.INTEGER,
@@ -33,17 +36,6 @@ module.exports = {
           },
           onUpdate: 'CASCADE',
           onDelete: 'RESTRICT',
-        },
-        productId: {
-          type: Sequelize.INTEGER,
-          allowNull: false,
-          unique: true,
-          references: {
-            model: 'products',
-            key: 'id',
-          },
-          onUpdate: 'CASCADE',
-          onDelete: 'CASCADE',
         },
         createdAt: {
           type: Sequelize.DATE,

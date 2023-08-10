@@ -1,13 +1,13 @@
 'use strict';
 
-const phones = require('./20230802170329-add-phones-data.json');
-const TABLE_NAME = 'phones';
+const namespacesCapacities = require('./20230804162913-add-namespacesCapacities-data.json');
+const TABLE_NAME = 'namespacesCapacities';
 
 module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.bulkInsert(
       TABLE_NAME,
-      phones,
+      namespacesCapacities,
     );
   },
 

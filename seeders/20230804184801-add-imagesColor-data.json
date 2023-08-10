@@ -1103,5 +1103,485 @@
     "imagePath": "img/phones/apple-iphone-14-pro/gold/04.webp",
     "namespaceId": 11,
     "colorId": 2
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-pro-11-2021/spacegray/00.webp",
+    "namespaceId": 20,
+    "colorId": 7
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-pro-11-2021/spacegray/01.webp",
+    "namespaceId": 20,
+    "colorId": 7
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-pro-11-2021/spacegray/02.webp",
+    "namespaceId": 20,
+    "colorId": 7
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-pro-11-2021/silver/00.webp",
+    "namespaceId": 20,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-pro-11-2021/silver/01.webp",
+    "namespaceId": 20,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-pro-11-2021/silver/02.webp",
+    "namespaceId": 20,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-air-4th-gen/rose-gold/00.webp",
+    "namespaceId": 21,
+    "colorId": 12
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-air-4th-gen/rose-gold/01.webp",
+    "namespaceId": 21,
+    "colorId": 12
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-air-4th-gen/rose-gold/02.webp",
+    "namespaceId": 21,
+    "colorId": 12
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-air-4th-gen/rose-gold/03.webp",
+    "namespaceId": 21,
+    "colorId": 12
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-air-4th-gen/silver/00.webp",
+    "namespaceId": 21,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-air-4th-gen/silver/01.webp",
+    "namespaceId": 21,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-air-4th-gen/silver/02.webp",
+    "namespaceId": 21,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-air-4th-gen/silver/03.webp",
+    "namespaceId": 21,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-air-4th-gen/green/00.webp",
+    "namespaceId": 21,
+    "colorId": 4
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-air-4th-gen/green/01.webp",
+    "namespaceId": 21,
+    "colorId": 4
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-air-4th-gen/green/02.webp",
+    "namespaceId": 21,
+    "colorId": 4
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-air-4th-gen/green/03.webp",
+    "namespaceId": 21,
+    "colorId": 4
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-mini-6th-gen/spacegray/00.webp",
+    "namespaceId": 22,
+    "colorId": 7
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-mini-6th-gen/spacegray/01.webp",
+    "namespaceId": 22,
+    "colorId": 7
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-mini-6th-gen/spacegray/02.webp",
+    "namespaceId": 22,
+    "colorId": 7
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-mini-6th-gen/starlight/00.webp",
+    "namespaceId": 22,
+    "colorId": 20
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-mini-6th-gen/starlight/01.webp",
+    "namespaceId": 22,
+    "colorId": 20
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-mini-6th-gen/starlight/02.webp",
+    "namespaceId": 22,
+    "colorId": 20
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-mini-6th-gen/pink/00.webp",
+    "namespaceId": 22,
+    "colorId": 16
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-mini-6th-gen/pink/01.webp",
+    "namespaceId": 22,
+    "colorId": 16
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-mini-6th-gen/pink/02.webp",
+    "namespaceId": 22,
+    "colorId": 16
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-10-2-2020/gold/00.webp",
+    "namespaceId": 23,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-10-2-2020/gold/01.webp",
+    "namespaceId": 23,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-10-2-2020/gold/02.webp",
+    "namespaceId": 23,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-10-2-2020/gold/03.webp",
+    "namespaceId": 23,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-10-2-2020/silver/00.webp",
+    "namespaceId": 23,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-10-2-2020/silver/01.webp",
+    "namespaceId": 23,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-10-2-2020/silver/02.webp",
+    "namespaceId": 23,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-10-2-2020/silver/03.webp",
+    "namespaceId": 23,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-10-2-2020/spacegray/00.webp",
+    "namespaceId": 23,
+    "colorId": 7
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-10-2-2020/spacegray/01.webp",
+    "namespaceId": 23,
+    "colorId": 7
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-10-2-2020/spacegray/02.webp",
+    "namespaceId": 23,
+    "colorId": 7
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-10-2-2020/spacegray/03.webp",
+    "namespaceId": 23,
+    "colorId": 7
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-mini-5th-gen/silver/00.webp",
+    "namespaceId": 24,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-mini-5th-gen/silver/01.webp",
+    "namespaceId": 24,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-mini-5th-gen/spacegray/00.webp",
+    "namespaceId": 24,
+    "colorId": 7
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-mini-5th-gen/spacegray/01.webp",
+    "namespaceId": 24,
+    "colorId": 7
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-mini-5th-gen/gold/00.webp",
+    "namespaceId": 24,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/tablets/apple-ipad-mini-5th-gen/gold/01.webp",
+    "namespaceId": 24,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-3/space-gray/00.webp",
+    "namespaceId": 15,
+    "colorId": 7
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-3/space-gray/01.webp",
+    "namespaceId": 15,
+    "colorId": 7
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-3/space-gray/02.webp",
+    "namespaceId": 15,
+    "colorId": 7
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-3/gold/00.webp",
+    "namespaceId": 15,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-3/gold/01.webp",
+    "namespaceId": 15,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-3/gold/02.webp",
+    "namespaceId": 15,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-3/silver/00.webp",
+    "namespaceId": 15,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-3/silver/01.webp",
+    "namespaceId": 15,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-3/silver/02.webp",
+    "namespaceId": 15,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/space-gray/00.webp",
+    "namespaceId": 16,
+    "colorId": 7
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/space-gray/01.webp",
+    "namespaceId": 16,
+    "colorId": 7
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/space-gray/02.webp",
+    "namespaceId": 16,
+    "colorId": 7
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/silver/00.webp",
+    "namespaceId": 16,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/silver/01.webp",
+    "namespaceId": 16,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/silver/02.webp",
+    "namespaceId": 16,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/gold/00.webp",
+    "namespaceId": 16,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/gold/01.webp",
+    "namespaceId": 16,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/gold/02.webp",
+    "namespaceId": 16,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/blue/00.webp",
+    "namespaceId": 16,
+    "colorId": 15
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/blue/01.webp",
+    "namespaceId": 16,
+    "colorId": 15
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/blue/02.webp",
+    "namespaceId": 16,
+    "colorId": 15
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/red/00.webp",
+    "namespaceId": 16,
+    "colorId": 8
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/red/01.webp",
+    "namespaceId": 16,
+    "colorId": 8
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-6/red/02.webp",
+    "namespaceId": 16,
+    "colorId": 8
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-5/silver/00.webp",
+    "namespaceId": 17,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-5/silver/01.webp",
+    "namespaceId": 17,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-5/silver/02.webp",
+    "namespaceId": 17,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-5/gold/00.webp",
+    "namespaceId": 17,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-5/gold/01.webp",
+    "namespaceId": 17,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-5/gold/02.webp",
+    "namespaceId": 17,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-5/space-gray/00.webp",
+    "namespaceId": 17,
+    "colorId": 7
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-5/space-gray/01.webp",
+    "namespaceId": 17,
+    "colorId": 7
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-5/space-gray/02.webp",
+    "namespaceId": 17,
+    "colorId": 7
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-4/silver/00.webp",
+    "namespaceId": 18,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-4/silver/01.webp",
+    "namespaceId": 18,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-4/silver/02.webp",
+    "namespaceId": 18,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-4/gold/00.webp",
+    "namespaceId": 18,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-4/gold/01.webp",
+    "namespaceId": 18,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-4/gold/02.webp",
+    "namespaceId": 18,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-4/space-gray/00.webp",
+    "namespaceId": 18,
+    "colorId": 20
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-4/space-gray/01.webp",
+    "namespaceId": 18,
+    "colorId": 20
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-series-4/space-gray/02.webp",
+    "namespaceId": 18,
+    "colorId": 20
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-se/silver/00.webp",
+    "namespaceId": 19,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-se/silver/01.webp",
+    "namespaceId": 19,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-se/silver/02.webp",
+    "namespaceId": 19,
+    "colorId": 6
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-se/gold/00.webp",
+    "namespaceId": 19,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-se/gold/01.webp",
+    "namespaceId": 19,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-se/gold/02.webp",
+    "namespaceId": 19,
+    "colorId": 2
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-se/space-gray/00.webp",
+    "namespaceId": 19,
+    "colorId": 7
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-se/space-gray/01.webp",
+    "namespaceId": 19,
+    "colorId": 7
+  },
+  {
+    "imagePath": "img/accessories/apple-watch-se/space-gray/02.webp",
+    "namespaceId": 19,
+    "colorId": 7
   }
 ]

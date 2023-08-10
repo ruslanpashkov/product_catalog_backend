@@ -1,5 +1,6 @@
 [
   {
+    "detailId": "apple-iphone-7-32gb-black",
     "name": "Apple iPhone 7 32GB Black",
     "fullPrice": 400,
     "price": 375,
@@ -12,6 +13,7 @@
     "colorId": 1
   },
   {
+    "detailId": "apple-iphone-7-plus-32gb-black",
     "name": "Apple iPhone 7 Plus 32GB Black",
     "fullPrice": 540,
     "price": 500,
@@ -24,6 +26,7 @@
     "colorId": 1
   },
   {
+    "detailId": "apple-iphone-8-64gb-gold",
     "name": "Apple iPhone 8 64GB Gold",
     "fullPrice": 600,
     "price": 550,
@@ -36,6 +39,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-iphone-11-64gb-black",
     "name": "Apple iPhone 11 64GB Black",
     "fullPrice": 932,
     "price": 880,
@@ -48,6 +52,7 @@
     "colorId": 1
   },
   {
+    "detailId": "apple-iphone-11-128gb-yellow",
     "name": "Apple iPhone 11 128GB Yellow",
     "fullPrice": 1100,
     "price": 1050,
@@ -60,6 +65,7 @@
     "colorId": 3
   },
   {
+    "detailId": "apple-iphone-11-256gb-green",
     "name": "Apple iPhone 11 256GB Green",
     "fullPrice": 1172,
     "price": 1115,
@@ -72,6 +78,7 @@
     "colorId": 4
   },
   {
+    "detailId": "apple-iphone-11-pro-64gb-gold",
     "name": "Apple iPhone 11 Pro 64GB Gold",
     "fullPrice": 1312,
     "price": 1270,
@@ -84,6 +91,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-iphone-11-pro-256gb-midnightgreen",
     "name": "Apple iPhone 11 Pro 256GB Midnight green",
     "fullPrice": 1640,
     "price": 1570,
@@ -96,6 +104,7 @@
     "colorId": 5
   },
   {
+    "detailId": "apple-iphone-11-pro-512gb-silver",
     "name": "Apple iPhone 11 Pro 512GB Silver",
     "fullPrice": 1880,
     "price": 1780,
@@ -108,6 +117,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-iphone-11-pro-max-64gb-space-gray",
     "name": "Apple iPhone 11 Pro Max 64GB Spacegray",
     "fullPrice": 1480,
     "price": 1400,
@@ -120,6 +130,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-iphone-11-pro-max-256gb-gold",
     "name": "Apple iPhone 11 Pro Max 256GB Gold",
     "fullPrice": 1776,
     "price": 1680,
@@ -132,6 +143,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-iphone-11-pro-max-512gb-space-gray",
     "name": "Apple iPhone 11 Pro Max 512GB Spacegray",
     "fullPrice": 2020,
     "price": 1930,
@@ -144,6 +156,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-iphone-xr-64gb-red",
     "name": "Apple iPhone XR 64GB Red",
     "fullPrice": 712,
     "price": 670,
@@ -156,6 +169,7 @@
     "colorId": 8
   },
   {
+    "detailId": "apple-iphone-xr-128gb-white",
     "name": "Apple iPhone XR 128GB White",
     "fullPrice": 880,
     "price": 815,
@@ -168,6 +182,7 @@
     "colorId": 9
   },
   {
+    "detailId": "apple-iphone-xs-64gb-space-gray",
     "name": "Apple iPhone XS 64GB Spacegray",
     "fullPrice": 760,
     "price": 720,
@@ -180,6 +195,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-iphone-xs-max-64gb-gold",
     "name": "Apple iPhone XS Max 64GB Gold",
     "fullPrice": 960,
     "price": 900,
@@ -192,6 +208,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-iphone-xs-max-256gb-silver",
     "name": "Apple iPhone XS Max 256GB Silver",
     "fullPrice": 1080,
     "price": 1000,
@@ -204,6 +221,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-iphone-7-32gb-gold",
     "name": "Apple iPhone 7 32GB Gold",
     "fullPrice": 400,
     "price": 375,
@@ -216,6 +234,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-iphone-7-plus-32gb-silver",
     "name": "Apple iPhone 7 Plus 32GB Silver",
     "fullPrice": 540,
     "price": 500,
@@ -228,6 +247,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-iphone-8-64gb-space-gray",
     "name": "Apple iPhone 8 64GB Space Gray",
     "fullPrice": 600,
     "price": 550,
@@ -240,6 +260,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-iphone-11-64gb-green",
     "name": "Apple iPhone 11 64GB Green",
     "fullPrice": 932,
     "price": 880,
@@ -252,6 +273,7 @@
     "colorId": 4
   },
   {
+    "detailId": "apple-iphone-11-128gb-purple",
     "name": "Apple iPhone 11 128GB Purple",
     "fullPrice": 1100,
     "price": 1050,
@@ -264,6 +286,7 @@
     "colorId": 10
   },
   {
+    "detailId": "apple-iphone-11-256gb-yellow",
     "name": "Apple iPhone 11 256GB Yellow",
     "fullPrice": 1172,
     "price": 1115,
@@ -276,6 +299,7 @@
     "colorId": 3
   },
   {
+    "detailId": "apple-iphone-11-pro-256gb-gold",
     "name": "Apple iPhone 11 Pro 256GB Gold",
     "fullPrice": 1640,
     "price": 1570,
@@ -288,6 +312,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-iphone-11-pro-512gb-space-gray",
     "name": "Apple iPhone 11 Pro 512GB Spacegray",
     "fullPrice": 1880,
     "price": 1780,
@@ -300,6 +325,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-iphone-11-pro-max-64gb-silver",
     "name": "Apple iPhone 11 Pro Max 64GB Silver",
     "fullPrice": 1480,
     "price": 1400,
@@ -312,6 +338,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-iphone-11-pro-max-256gb-midnightgreen",
     "name": "Apple iPhone 11 Pro Max 256GB Midnightgreen",
     "fullPrice": 1776,
     "price": 1680,
@@ -324,6 +351,7 @@
     "colorId": 5
   },
   {
+    "detailId": "apple-iphone-11-pro-max-512gb-silver",
     "name": "Apple iPhone 11 Pro Max 512GB Silver",
     "fullPrice": 2020,
     "price": 1930,
@@ -336,6 +364,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-iphone-xr-64gb-white",
     "name": "Apple iPhone XR 64GB White",
     "fullPrice": 712,
     "price": 670,
@@ -348,6 +377,7 @@
     "colorId": 9
   },
   {
+    "detailId": "apple-iphone-xr-128gb-coral",
     "name": "Apple iPhone XR 128GB Coral",
     "fullPrice": 880,
     "price": 815,
@@ -360,6 +390,7 @@
     "colorId": 11
   },
   {
+    "detailId": "apple-iphone-xs-64gb-gold",
     "name": "Apple iPhone XS 64GB Gold",
     "fullPrice": 760,
     "price": 720,
@@ -372,6 +403,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-iphone-xs-256gb-space-gray",
     "name": "Apple iPhone XS 256GB Spacegray",
     "fullPrice": 960,
     "price": 900,
@@ -384,6 +416,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-iphone-xs-max-64gb-silver",
     "name": "Apple iPhone XS Max 64GB Silver",
     "fullPrice": 960,
     "price": 900,
@@ -396,6 +429,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-iphone-xs-max-256gb-gold",
     "name": "Apple iPhone XS Max 256GB Gold",
     "fullPrice": 1080,
     "price": 1000,
@@ -408,6 +442,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-iphone-7-32gb-rose-gold",
     "name": "Apple iPhone 7 32GB Rosegold",
     "fullPrice": 400,
     "price": 375,
@@ -420,6 +455,7 @@
     "colorId": 12
   },
   {
+    "detailId": "apple-iphone-11-64gb-purple",
     "name": "Apple iPhone 11 64GB Purple",
     "fullPrice": 932,
     "price": 880,
@@ -432,6 +468,7 @@
     "colorId": 10
   },
   {
+    "detailId": "apple-iphone-11-64gb-red",
     "name": "Apple iPhone 11 64GB Red",
     "fullPrice": 932,
     "price": 880,
@@ -444,6 +481,7 @@
     "colorId": 8
   },
   {
+    "detailId": "apple-iphone-11-128gb-black",
     "name": "Apple iPhone 11 128GB Black",
     "fullPrice": 1100,
     "price": 1050,
@@ -456,6 +494,7 @@
     "colorId": 1
   },
   {
+    "detailId": "apple-iphone-11-256gb-red",
     "name": "Apple iPhone 11 256GB Red",
     "fullPrice": 1172,
     "price": 1115,
@@ -468,6 +507,7 @@
     "colorId": 8
   },
   {
+    "detailId": "apple-iphone-11-pro-64gb-midnightgreen",
     "name": "Apple iPhone 11 Pro 64GB Midnight green",
     "fullPrice": 1312,
     "price": 1270,
@@ -480,6 +520,7 @@
     "colorId": 5
   },
   {
+    "detailId": "apple-iphone-11-pro-256gb-silver",
     "name": "Apple iPhone 11 Pro 256GB Silver",
     "fullPrice": 1640,
     "price": 1570,
@@ -492,6 +533,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-iphone-11-pro-512gb-gold",
     "name": "Apple iPhone 11 Pro 512GB Gold",
     "fullPrice": 1880,
     "price": 1780,
@@ -504,6 +546,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-iphone-11-pro-max-64gb-midnightgreen",
     "name": "Apple iPhone 11 Pro Max 64GB Midnightgreen",
     "fullPrice": 1480,
     "price": 1400,
@@ -516,6 +559,7 @@
     "colorId": 5
   },
   {
+    "detailId": "apple-iphone-11-pro-max-256gb-space-gray",
     "name": "Apple iPhone 11 Pro Max 256GB Spacegray",
     "fullPrice": 1776,
     "price": 1680,
@@ -528,6 +572,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-iphone-xr-64gb-coral",
     "name": "Apple iPhone XR 64GB Coral",
     "fullPrice": 712,
     "price": 670,
@@ -540,6 +585,7 @@
     "colorId": 11
   },
   {
+    "detailId": "apple-iphone-xr-128gb-red",
     "name": "Apple iPhone XR 128GB Red",
     "fullPrice": 880,
     "price": 815,
@@ -552,6 +598,7 @@
     "colorId": 8
   },
   {
+    "detailId": "apple-iphone-xs-256gb-gold",
     "name": "Apple iPhone XS 256GB Gold",
     "fullPrice": 960,
     "price": 900,
@@ -564,6 +611,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-iphone-xs-max-64gb-space-gray",
     "name": "Apple iPhone XS Max 64GB Spacegray",
     "fullPrice": 960,
     "price": 900,
@@ -576,6 +624,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-iphone-7-plus-32gb-rose-gold",
     "name": "Apple iPhone 7 Plus 32GB Rosegold",
     "fullPrice": 540,
     "price": 500,
@@ -588,6 +637,7 @@
     "colorId": 12
   },
   {
+    "detailId": "apple-iphone-11-64gb-white",
     "name": "Apple iPhone 11 64GB White",
     "fullPrice": 932,
     "price": 880,
@@ -600,6 +650,7 @@
     "colorId": 9
   },
   {
+    "detailId": "apple-iphone-11-128gb-green",
     "name": "Apple iPhone 11 128GB Green",
     "fullPrice": 1100,
     "price": 1050,
@@ -612,6 +663,7 @@
     "colorId": 4
   },
   {
+    "detailId": "apple-iphone-11-128gb-white",
     "name": "Apple iPhone 11 128GB White",
     "fullPrice": 1100,
     "price": 1050,
@@ -624,6 +676,7 @@
     "colorId": 9
   },
   {
+    "detailId": "apple-iphone-11-256gb-black",
     "name": "Apple iPhone 11 256GB Black",
     "fullPrice": 1172,
     "price": 1115,
@@ -636,6 +689,7 @@
     "colorId": 1
   },
   {
+    "detailId": "apple-iphone-11-256gb-white",
     "name": "Apple iPhone 11 256GB White",
     "fullPrice": 1172,
     "price": 1115,
@@ -648,6 +702,7 @@
     "colorId": 9
   },
   {
+    "detailId": "apple-iphone-11-pro-64gb-space-gray",
     "name": "Apple iPhone 11 Pro 64GB Spacegray",
     "fullPrice": 1312,
     "price": 1270,
@@ -660,6 +715,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-iphone-11-pro-512gb-midnightgreen",
     "name": "Apple iPhone 11 Pro 512GB Midnight green",
     "fullPrice": 1880,
     "price": 1780,
@@ -672,6 +728,7 @@
     "colorId": 5
   },
   {
+    "detailId": "apple-iphone-11-pro-max-64gb-gold",
     "name": "Apple iPhone 11 Pro Max 64GB Gold",
     "fullPrice": 1480,
     "price": 1400,
@@ -684,6 +741,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-iphone-11-pro-max-256gb-silver",
     "name": "Apple iPhone 11 Pro Max 256GB Silver",
     "fullPrice": 1776,
     "price": 1680,
@@ -696,6 +754,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-iphone-11-pro-max-512gb-midnightgreen",
     "name": "Apple iPhone 11 Pro Max 512GB Midnightgreen",
     "fullPrice": 2020,
     "price": 1930,
@@ -708,6 +767,7 @@
     "colorId": 5
   },
   {
+    "detailId": "apple-iphone-xr-128gb-yellow",
     "name": "Apple iPhone XR 128GB Yellow",
     "fullPrice": 880,
     "price": 815,
@@ -720,6 +780,7 @@
     "colorId": 3
   },
   {
+    "detailId": "apple-iphone-7-32gb-silver",
     "name": "Apple iPhone 7 32GB Silver",
     "fullPrice": 400,
     "price": 375,
@@ -732,6 +793,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-iphone-11-256gb-purple",
     "name": "Apple iPhone 11 256GB Purple",
     "fullPrice": 1172,
     "price": 1115,
@@ -744,6 +806,7 @@
     "colorId": 10
   },
   {
+    "detailId": "apple-iphone-11-pro-max-512gb-gold",
     "name": "Apple iPhone 11 Pro Max 512GB Gold",
     "fullPrice": 2020,
     "price": 1930,
@@ -756,6 +819,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-iphone-11-64gb-yellow",
     "name": "Apple iPhone 11 64GB Yellow",
     "fullPrice": 932,
     "price": 880,
@@ -768,6 +832,7 @@
     "colorId": 3
   },
   {
+    "detailId": "apple-iphone-11-pro-256gb-space-gray",
     "name": "Apple iPhone 11 Pro 256GB Spacegray",
     "fullPrice": 1640,
     "price": 1570,
@@ -780,6 +845,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-iphone-8-64gb-silver",
     "name": "Apple iPhone 8 64GB Silver",
     "fullPrice": 600,
     "price": 550,
@@ -792,6 +858,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-iphone-11-128gb-red",
     "name": "Apple iPhone 11 128GB Red",
     "fullPrice": 1100,
     "price": 1050,
@@ -804,6 +871,7 @@
     "colorId": 8
   },
   {
+    "detailId": "apple-iphone-xs-max-256gb-space-gray",
     "name": "Apple iPhone XS Max 256GB Spacegray",
     "fullPrice": 1080,
     "price": 1000,
@@ -816,6 +884,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-iphone-7-plus-32gb-gold",
     "name": "Apple iPhone 7 Plus 32GB Gold",
     "fullPrice": 540,
     "price": 500,
@@ -828,6 +897,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-iphone-11-pro-64gb-silver",
     "name": "Apple iPhone 11 Pro 64GB Silver",
     "fullPrice": 1312,
     "price": 1270,
@@ -840,6 +910,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-iphone-xr-64gb-yellow",
     "name": "Apple iPhone XR 64GB Yellow",
     "fullPrice": 712,
     "price": 670,
@@ -852,6 +923,7 @@
     "colorId": 3
   },
   {
+    "detailId": "apple-iphone-14-128gb-midnight",
     "name": "Apple iPhone 14 128GB Midnight",
     "fullPrice": 1056,
     "price": 980,
@@ -864,6 +936,7 @@
     "colorId": 13
   },
   {
+    "detailId": "apple-iphone-14-256gb-midnight",
     "name": "Apple iPhone 14 256GB Midnight",
     "fullPrice": 1200,
     "price": 1120,
@@ -876,6 +949,7 @@
     "colorId": 13
   },
   {
+    "detailId": "apple-iphone-14-512gb-midnight",
     "name": "Apple iPhone 14 512GB Midnight",
     "fullPrice": 1500,
     "price": 1420,
@@ -888,6 +962,7 @@
     "colorId": 13
   },
   {
+    "detailId": "apple-iphone-14-128gb-yellow",
     "name": "Apple iPhone 14 128GB Yellow",
     "fullPrice": 1056,
     "price": 980,
@@ -900,6 +975,7 @@
     "colorId": 3
   },
   {
+    "detailId": "apple-iphone-14-256gb-yellow",
     "name": "Apple iPhone 14 256GB Yellow",
     "fullPrice": 1200,
     "price": 1120,
@@ -912,6 +988,7 @@
     "colorId": 3
   },
   {
+    "detailId": "apple-iphone-14-512gb-yellow",
     "name": "Apple iPhone 14 512GB Yellow",
     "fullPrice": 1500,
     "price": 1420,
@@ -924,6 +1001,7 @@
     "colorId": 3
   },
   {
+    "detailId": "apple-iphone-14-128gb-purple",
     "name": "Apple iPhone 14 128GB Purple",
     "fullPrice": 1056,
     "price": 980,
@@ -936,6 +1014,7 @@
     "colorId": 10
   },
   {
+    "detailId": "apple-iphone-14-256gb-purple",
     "name": "Apple iPhone 14 256GB Purple",
     "fullPrice": 1200,
     "price": 1120,
@@ -948,6 +1027,7 @@
     "colorId": 10
   },
   {
+    "detailId": "apple-iphone-14-512gb-purple",
     "name": "Apple iPhone 14 512GB Purple",
     "fullPrice": 1500,
     "price": 1420,
@@ -960,6 +1040,7 @@
     "colorId": 10
   },
   {
+    "detailId": "apple-iphone-14-pro-128gb-spaceblack",
     "name": "Apple iPhone 14 Pro 128GB Space Black",
     "fullPrice": 1156,
     "price": 1068,
@@ -972,6 +1053,7 @@
     "colorId": 14
   },
   {
+    "detailId": "apple-iphone-14-pro-256gb-spaceblack",
     "name": "Apple iPhone 14 Pro 256GB Space Black",
     "fullPrice": 1300,
     "price": 1220,
@@ -984,6 +1066,7 @@
     "colorId": 14
   },
   {
+    "detailId": "apple-iphone-14-pro-512gb-spaceblack",
     "name": "Apple iPhone 14 Pro 512GB Space Black",
     "fullPrice": 1600,
     "price": 1530,
@@ -996,6 +1079,7 @@
     "colorId": 14
   },
   {
+    "detailId": "apple-iphone-14-pro-1tb-spaceblack",
     "name": "Apple iPhone 14 Pro 1TB Space Black",
     "fullPrice": 1740,
     "price": 1520,
@@ -1008,6 +1092,7 @@
     "colorId": 14
   },
   {
+    "detailId": "apple-iphone-12-64gb-purple",
     "name": "Apple iPhone 12 64GB Purple",
     "fullPrice": 810,
     "price": 740,
@@ -1020,6 +1105,7 @@
     "colorId": 10
   },
   {
+    "detailId": "apple-iphone-12-128gb-purple",
     "name": "Apple iPhone 12 128GB Purple",
     "fullPrice": 880,
     "price": 800,
@@ -1032,6 +1118,7 @@
     "colorId": 10
   },
   {
+    "detailId": "apple-iphone-12-256gb-purple",
     "name": "Apple iPhone 12 256GB Purple",
     "fullPrice": 1020,
     "price": 940,
@@ -1044,6 +1131,7 @@
     "colorId": 10
   },
   {
+    "detailId": "apple-iphone-12-64gb-white",
     "name": "Apple iPhone 12 64GB White",
     "fullPrice": 810,
     "price": 740,
@@ -1056,6 +1144,7 @@
     "colorId": 9
   },
   {
+    "detailId": "apple-iphone-12-128gb-white",
     "name": "Apple iPhone 12 128GB White",
     "fullPrice": 880,
     "price": 800,
@@ -1068,6 +1157,7 @@
     "colorId": 9
   },
   {
+    "detailId": "apple-iphone-12-256gb-white",
     "name": "Apple iPhone 12 256GB White",
     "fullPrice": 1020,
     "price": 940,
@@ -1080,6 +1170,7 @@
     "colorId": 9
   },
   {
+    "detailId": "apple-iphone-12-64gb-red",
     "name": "Apple iPhone 12 64GB Red",
     "fullPrice": 810,
     "price": 740,
@@ -1092,6 +1183,7 @@
     "colorId": 8
   },
   {
+    "detailId": "apple-iphone-12-128gb-red",
     "name": "Apple iPhone 12 128GB Red",
     "fullPrice": 880,
     "price": 800,
@@ -1104,6 +1196,7 @@
     "colorId": 8
   },
   {
+    "detailId": "apple-iphone-12-256gb-red",
     "name": "Apple iPhone 12 256GB Red",
     "fullPrice": 1020,
     "price": 940,
@@ -1116,6 +1209,7 @@
     "colorId": 8
   },
   {
+    "detailId": "apple-iphone-12-64gb-black",
     "name": "Apple iPhone 12 64GB Black",
     "fullPrice": 810,
     "price": 740,
@@ -1128,6 +1222,7 @@
     "colorId": 1
   },
   {
+    "detailId": "apple-iphone-12-128gb-black",
     "name": "Apple iPhone 12 128GB Black",
     "fullPrice": 880,
     "price": 800,
@@ -1140,6 +1235,7 @@
     "colorId": 1
   },
   {
+    "detailId": "apple-iphone-12-256gb-black",
     "name": "Apple iPhone 12 256GB Black",
     "fullPrice": 1020,
     "price": 940,
@@ -1152,6 +1248,7 @@
     "colorId": 1
   },
   {
+    "detailId": "apple-iphone-13-mini-64gb-blue",
     "name": "Apple iPhone 13 Pro 64GB Blue",
     "fullPrice": 890,
     "price": 760,
@@ -1164,6 +1261,7 @@
     "colorId": 15
   },
   {
+    "detailId": "apple-iphone-13-mini-128gb-blue",
     "name": "Apple iPhone 13 Mini 128GB Blue",
     "fullPrice": 900,
     "price": 820,
@@ -1176,6 +1274,7 @@
     "colorId": 15
   },
   {
+    "detailId": "apple-iphone-13-mini-256gb-blue",
     "name": "Apple iPhone 13 Mini 256GB Blue",
     "fullPrice": 1120,
     "price": 1040,
@@ -1188,6 +1287,7 @@
     "colorId": 15
   },
   {
+    "detailId": "apple-iphone-13-mini-64gb-white",
     "name": "Apple iPhone 13 Pro 64GB White",
     "fullPrice": 890,
     "price": 760,
@@ -1200,6 +1300,7 @@
     "colorId": 9
   },
   {
+    "detailId": "apple-iphone-13-mini-128gb-white",
     "name": "Apple iPhone 13 Pro 128GB White",
     "fullPrice": 900,
     "price": 820,
@@ -1212,6 +1313,7 @@
     "colorId": 9
   },
   {
+    "detailId": "apple-iphone-13-mini-256gb-white",
     "name": "Apple iPhone 13 Pro 256GB White",
     "fullPrice": 1120,
     "price": 1040,
@@ -1224,6 +1326,7 @@
     "colorId": 9
   },
   {
+    "detailId": "apple-iphone-13-mini-64gb-pink",
     "name": "Apple iPhone 13 Pro 64GB Pink",
     "fullPrice": 890,
     "price": 760,
@@ -1236,6 +1339,7 @@
     "colorId": 16
   },
   {
+    "detailId": "apple-iphone-13-mini-128gb-pink",
     "name": "Apple iPhone 13 Pro 128GB Pink",
     "fullPrice": 900,
     "price": 820,
@@ -1248,6 +1352,7 @@
     "colorId": 16
   },
   {
+    "detailId": "apple-iphone-13-mini-256gb-pink",
     "name": "Apple iPhone 13 Pro 256GB Pink",
     "fullPrice": 1120,
     "price": 1040,
@@ -1260,6 +1365,7 @@
     "colorId": 16
   },
   {
+    "detailId": "apple-iphone-13-mini-64gb-midnight",
     "name": "Apple iPhone 13 Pro 64GB Midnight",
     "fullPrice": 890,
     "price": 760,
@@ -1272,6 +1378,7 @@
     "colorId": 13
   },
   {
+    "detailId": "apple-iphone-13-mini-128gb-midnight",
     "name": "Apple iPhone 13 Pro 128GB Midnight",
     "fullPrice": 900,
     "price": 820,
@@ -1284,6 +1391,7 @@
     "colorId": 13
   },
   {
+    "detailId": "apple-iphone-13-mini-256gb-midnight",
     "name": "Apple iPhone 13 Pro 256GB Midnight",
     "fullPrice": 1120,
     "price": 1040,
@@ -1296,6 +1404,7 @@
     "colorId": 13
   },
   {
+    "detailId": "apple-iphone-13-pro-max-128gb-sierrablue",
     "name": "Apple iPhone 13 Pro Max 128GB Sierra Blue",
     "fullPrice": 1156,
     "price": 1068,
@@ -1308,6 +1417,7 @@
     "colorId": 17
   },
   {
+    "detailId": "apple-iphone-13-pro-max-256gb-sierrablue",
     "name": "Apple iPhone 13 Pro Max 256GB Sierra Blue",
     "fullPrice": 1300,
     "price": 1220,
@@ -1320,6 +1430,7 @@
     "colorId": 17
   },
   {
+    "detailId": "apple-iphone-13-pro-max-512gb-sierrablue",
     "name": "Apple iPhone 13 Pro Max 512GB Sierra Blue",
     "fullPrice": 1600,
     "price": 1530,
@@ -1332,6 +1443,7 @@
     "colorId": 17
   },
   {
+    "detailId": "apple-iphone-13-pro-max-1tb-sierrablue",
     "name": "Apple iPhone 13 Pro Max 1TB Sierra Blue",
     "fullPrice": 1740,
     "price": 1520,
@@ -1344,6 +1456,7 @@
     "colorId": 17
   },
   {
+    "detailId": "apple-iphone-13-pro-max-128gb-gold",
     "name": "Apple iPhone 13 Pro Max 128GB Gold",
     "fullPrice": 1156,
     "price": 1068,
@@ -1356,6 +1469,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-iphone-13-pro-max-256gb-gold",
     "name": "Apple iPhone 13 Pro Max 256GB Gold",
     "fullPrice": 1300,
     "price": 1220,
@@ -1368,6 +1482,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-iphone-13-pro-max-512gb-gold",
     "name": "Apple iPhone 13 Pro Max 512GB Gold",
     "fullPrice": 1600,
     "price": 1530,
@@ -1380,6 +1495,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-iphone-13-pro-max-1tb-gold",
     "name": "Apple iPhone 13 Pro Max 1TB Gold",
     "fullPrice": 1740,
     "price": 1520,
@@ -1392,6 +1508,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-iphone-13-pro-max-128gb-graphite",
     "name": "Apple iPhone 13 Pro Max 128GB Graphite",
     "fullPrice": 1156,
     "price": 1068,
@@ -1404,6 +1521,7 @@
     "colorId": 18
   },
   {
+    "detailId": "apple-iphone-13-pro-max-256gb-graphite",
     "name": "Apple iPhone 13 Pro Max 256GB Graphite",
     "fullPrice": 1300,
     "price": 1220,
@@ -1416,6 +1534,7 @@
     "colorId": 18
   },
   {
+    "detailId": "apple-iphone-13-pro-max-512gb-graphite",
     "name": "Apple iPhone 13 Pro Max 512GB Graphite",
     "fullPrice": 1600,
     "price": 1530,
@@ -1428,6 +1547,7 @@
     "colorId": 18
   },
   {
+    "detailId": "apple-iphone-13-pro-max-1tb-graphite",
     "name": "Apple iPhone 13 Pro Max 1TB Graphite",
     "fullPrice": 1740,
     "price": 1520,
@@ -1440,6 +1560,7 @@
     "colorId": 18
   },
   {
+    "detailId": "apple-watch-series-3-38mm-space-gray",
     "name": "Apple Watch Series 3 38mm Space Gray",
     "fullPrice": 199,
     "price": 169,
@@ -1449,9 +1570,10 @@
     "year": 2017,
     "image": "img/accessories/apple-watch-series-3/space-gray/00.webp",
     "categoryId": 3,
-    "colorId": 19
+    "colorId": 7
   },
   {
+    "detailId": "apple-watch-series-3-42mm-space-gray",
     "name": "Apple Watch Series 3 42mm Space Gray",
     "fullPrice": 250,
     "price": 219,
@@ -1461,9 +1583,10 @@
     "year": 2017,
     "image": "img/accessories/apple-watch-series-3/space-gray/00.webp",
     "categoryId": 3,
-    "colorId": 19
+    "colorId": 7
   },
   {
+    "detailId": "apple-watch-series-3-38mm-gold",
     "name": "Apple Watch Series 3 38mm Gold",
     "fullPrice": 199,
     "price": 169,
@@ -1476,6 +1599,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-watch-series-3-42mm-gold",
     "name": "Apple Watch Series 3 42mm Gold",
     "fullPrice": 250,
     "price": 219,
@@ -1488,6 +1612,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-watch-series-3-38mm-silver",
     "name": "Apple Watch Series 3 38mm Silver",
     "fullPrice": 199,
     "price": 169,
@@ -1500,6 +1625,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-watch-series-3-42mm-silver",
     "name": "Apple Watch Series 3 42mm Silver",
     "fullPrice": 250,
     "price": 219,
@@ -1512,6 +1638,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-watch-series-6-40mm-space-gray",
     "name": "Apple Watch Series 6 40mm Space Gray",
     "fullPrice": 399,
     "price": 329,
@@ -1521,9 +1648,10 @@
     "year": 2020,
     "image": "img/accessories/apple-watch-series-6/space-gray/00.webp",
     "categoryId": 3,
-    "colorId": 19
+    "colorId": 7
   },
   {
+    "detailId": "apple-watch-series-6-44mm-space-gray",
     "name": "Apple Watch Series 6 44mm Space Gray",
     "fullPrice": 429,
     "price": 359,
@@ -1533,9 +1661,10 @@
     "year": 2020,
     "image": "img/accessories/apple-watch-series-6/space-gray/00.webp",
     "categoryId": 3,
-    "colorId": 19
+    "colorId": 7
   },
   {
+    "detailId": "apple-watch-series-6-40mm-silver",
     "name": "Apple Watch Series 6 40mm Silver",
     "fullPrice": 399,
     "price": 329,
@@ -1548,6 +1677,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-watch-series-6-44mm-silver",
     "name": "Apple Watch Series 6 44mm Silver",
     "fullPrice": 429,
     "price": 359,
@@ -1560,6 +1690,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-watch-series-6-40mm-gold",
     "name": "Apple Watch Series 6 40mm Gold",
     "fullPrice": 399,
     "price": 329,
@@ -1572,6 +1703,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-watch-series-6-44mm-gold",
     "name": "Apple Watch Series 6 44mm Gold",
     "fullPrice": 429,
     "price": 359,
@@ -1584,6 +1716,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-watch-series-6-40mm-blue",
     "name": "Apple Watch Series 6 40mm Blue",
     "fullPrice": 399,
     "price": 329,
@@ -1596,6 +1729,7 @@
     "colorId": 15
   },
   {
+    "detailId": "apple-watch-series-6-44mm-blue",
     "name": "Apple Watch Series 6 44mm Blue",
     "fullPrice": 429,
     "price": 359,
@@ -1608,6 +1742,7 @@
     "colorId": 15
   },
   {
+    "detailId": "apple-watch-series-6-40mm-red",
     "name": "Apple Watch Series 6 40mm Red",
     "fullPrice": 399,
     "price": 329,
@@ -1620,6 +1755,7 @@
     "colorId": 8
   },
   {
+    "detailId": "apple-watch-series-6-44mm-red",
     "name": "Apple Watch Series 6 44mm Red",
     "fullPrice": 429,
     "price": 359,
@@ -1632,6 +1768,7 @@
     "colorId": 8
   },
   {
+    "detailId": "apple-watch-series-5-40mm-silver",
     "name": "Apple Watch Series 5 40mm Silver",
     "fullPrice": 399,
     "price": 299,
@@ -1644,6 +1781,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-watch-series-5-44mm-silver",
     "name": "Apple Watch Series 5 44mm Silver",
     "fullPrice": 429,
     "price": 399,
@@ -1656,6 +1794,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-watch-series-5-40mm-gold",
     "name": "Apple Watch Series 5 40mm Gold",
     "fullPrice": 399,
     "price": 299,
@@ -1668,6 +1807,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-watch-series-5-44mm-gold",
     "name": "Apple Watch Series 5 44mm Gold",
     "fullPrice": 429,
     "price": 399,
@@ -1680,6 +1820,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-watch-series-5-40mm-space-gray",
     "name": "Apple Watch Series 5 40mm Space Gray",
     "fullPrice": 399,
     "price": 299,
@@ -1689,9 +1830,10 @@
     "year": 2019,
     "image": "img/accessories/apple-watch-series-5/space-gray/00.webp",
     "categoryId": 3,
-    "colorId": 20
+    "colorId": 7
   },
   {
+    "detailId": "apple-watch-series-5-44mm-space-gray",
     "name": "Apple Watch Series 5 44mm Space Gray",
     "fullPrice": 429,
     "price": 399,
@@ -1701,9 +1843,10 @@
     "year": 2019,
     "image": "img/accessories/apple-watch-series-5/space-gray/00.webp",
     "categoryId": 3,
-    "colorId": 20
+    "colorId": 7
   },
   {
+    "detailId": "apple-watch-series-4-40mm-silver",
     "name": "Apple Watch Series 4 40mm Silver",
     "fullPrice": 399,
     "price": 349,
@@ -1716,6 +1859,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-watch-series-4-44mm-silver",
     "name": "Apple Watch Series 4 44mm Silver",
     "fullPrice": 429,
     "price": 379,
@@ -1728,6 +1872,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-watch-series-4-40mm-gold",
     "name": "Apple Watch Series 4 40mm Gold",
     "fullPrice": 399,
     "price": 349,
@@ -1740,6 +1885,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-watch-series-4-44mm-gold",
     "name": "Apple Watch Series 4 44mm Gold",
     "fullPrice": 429,
     "price": 379,
@@ -1752,6 +1898,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-watch-series-4-40mm-space-gray",
     "name": "Apple Watch Series 4 40mm Space Gray",
     "fullPrice": 399,
     "price": 349,
@@ -1761,9 +1908,10 @@
     "year": 2019,
     "image": "img/accessories/apple-watch-series-4/space-gray/00.webp",
     "categoryId": 3,
-    "colorId": 20
+    "colorId": 7
   },
   {
+    "detailId": "apple-watch-series-4-44mm-space-gray",
     "name": "Apple Watch Series 4 44mm Space Gray",
     "fullPrice": 429,
     "price": 379,
@@ -1773,9 +1921,10 @@
     "year": 2019,
     "image": "img/accessories/apple-watch-series-4/space-gray/00.webp",
     "categoryId": 3,
-    "colorId": 20
+    "colorId": 7
   },
   {
+    "detailId": "apple-watch-se-40mm-silver",
     "name": "Apple Watch SE 40mm Silver",
     "fullPrice": 279,
     "price": 249,
@@ -1788,6 +1937,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-watch-se-44mm-silver",
     "name": "Apple Watch SE 44mm Silver",
     "fullPrice": 309,
     "price": 279,
@@ -1800,6 +1950,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-watch-se-40mm-gold",
     "name": "Apple Watch SE 40mm Gold",
     "fullPrice": 279,
     "price": 259,
@@ -1812,6 +1963,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-watch-se-44mm-gold",
     "name": "Apple Watch SE 44mm Gold",
     "fullPrice": 309,
     "price": 289,
@@ -1824,6 +1976,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-watch-se-40mm-space-gray",
     "name": "Apple Watch SE 40mm Space Gray",
     "fullPrice": 279,
     "price": 259,
@@ -1833,9 +1986,10 @@
     "year": 2020,
     "image": "img/accessories/apple-watch-se/space-gray/00.webp",
     "categoryId": 3,
-    "colorId": 19
+    "colorId": 7
   },
   {
+    "detailId": "apple-watch-se-44mm-space-gray",
     "name": "Apple Watch SE 44mm Space Gray",
     "fullPrice": 309,
     "price": 289,
@@ -1845,9 +1999,10 @@
     "year": 2020,
     "image": "img/accessories/apple-watch-se/space-gray/00.webp",
     "categoryId": 3,
-    "colorId": 19
+    "colorId": 7
   },
   {
+    "detailId": "apple-ipad-pro-11-2021-128gb-space-gray",
     "name": "Apple iPad Pro 11 (2021) 128GB Space Gray",
     "capacity": "128GB",
     "fullPrice": 799,
@@ -1860,6 +2015,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-ipad-pro-11-2021-128gb-silver",
     "name": "Apple iPad Pro 11 (2021) 128GB Silver",
     "capacity": "128GB",
     "fullPrice": 799,
@@ -1872,6 +2028,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-ipad-pro-11-2021-256gb-space-gray",
     "name": "Apple iPad Pro 11 (2021) 256GB Space Gray",
     "capacity": "256GB",
     "fullPrice": 829,
@@ -1884,6 +2041,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-ipad-pro-11-2021-256gb-silver",
     "name": "Apple iPad Pro 11 (2021) 256GB Silver",
     "capacity": "256GB",
     "fullPrice": 829,
@@ -1896,6 +2054,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-ipad-pro-11-2021-512gb-space-gray",
     "name": "Apple iPad Pro 11 (2021) 512GB Space Gray",
     "capacity": "512GB",
     "fullPrice": 869,
@@ -1908,6 +2067,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-ipad-pro-11-2021-512gb-silver",
     "name": "Apple iPad Pro 11 (2021) 512GB Silver",
     "capacity": "512GB",
     "fullPrice": 869,
@@ -1920,6 +2080,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-ipad-pro-11-2021-1tb-space-gray",
     "name": "Apple iPad Pro 11 (2021) 1TB Space Gray",
     "capacity": "1TB",
     "fullPrice": 899,
@@ -1932,6 +2093,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-ipad-pro-11-2021-1tb-silver",
     "name": "Apple iPad Pro 11 (2021) 1TB Silver",
     "capacity": "1TB",
     "fullPrice": 899,
@@ -1944,6 +2106,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-ipad-pro-11-2021-2tb-space-gray",
     "name": "Apple iPad Pro 11 (2021) 2TB Space Gray",
     "capacity": "2TB",
     "fullPrice": 999,
@@ -1956,6 +2119,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-ipad-pro-11-2021-2tb-silver",
     "name": "Apple iPad Pro 11 (2021) 2TB Silver",
     "capacity": "2TB",
     "fullPrice": 999,
@@ -1968,6 +2132,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-ipad-air-4th-gen-256gb-rose-gold",
     "name": "Apple iPad Air (4th Gen) 256GB Rose Gold",
     "capacity": "256GB",
     "fullPrice": 749,
@@ -1977,9 +2142,10 @@
     "ram": "4GB",
     "year": 2020,
     "categoryId": 2,
-    "colorId": 21
+    "colorId": 12
   },
   {
+    "detailId": "apple-ipad-air-4th-gen-64gb-rose-gold",
     "name": "Apple iPad Air (4th Gen) 64GB Rose Gold",
     "capacity": "64GB",
     "fullPrice": 599,
@@ -1989,9 +2155,10 @@
     "ram": "4GB",
     "year": 2020,
     "categoryId": 2,
-    "colorId": 21
+    "colorId": 12
   },
   {
+    "detailId": "apple-ipad-air-4th-gen-256gb-silver",
     "name": "Apple iPad Air (4th Gen) 256GB Silver",
     "capacity": "256GB",
     "fullPrice": 749,
@@ -2004,6 +2171,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-ipad-air-4th-gen-64gb-silver",
     "name": "Apple iPad Air (4th Gen) 64GB Silver",
     "capacity": "64GB",
     "fullPrice": 599,
@@ -2016,6 +2184,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-ipad-air-4th-gen-256gb-green",
     "name": "Apple iPad Air (4th Gen) 256GB Green",
     "capacity": "256GB",
     "fullPrice": 749,
@@ -2028,6 +2197,7 @@
     "colorId": 4
   },
   {
+    "detailId": "apple-ipad-air-4th-gen-64gb-green",
     "name": "Apple iPad Air (4th Gen) 64GB Green",
     "capacity": "64GB",
     "fullPrice": 599,
@@ -2040,6 +2210,7 @@
     "colorId": 4
   },
   {
+    "detailId": "apple-ipad-air-4th-gen-256gb-sky-blue",
     "name": "Apple iPad Air (4th Gen) 256GB Sky Blue",
     "capacity": "256GB",
     "fullPrice": 749,
@@ -2049,9 +2220,10 @@
     "ram": "4GB",
     "year": 2020,
     "categoryId": 2,
-    "colorId": 22
+    "colorId": 19
   },
   {
+    "detailId": "apple-ipad-air-4th-gen-64gb-sky-blue",
     "name": "Apple iPad Air (4th Gen) 64GB Sky Blue",
     "capacity": "64GB",
     "fullPrice": 599,
@@ -2061,9 +2233,10 @@
     "ram": "4GB",
     "year": 2020,
     "categoryId": 2,
-    "colorId": 22
+    "colorId": 19
   },
   {
+    "detailId": "apple-ipad-mini-6th-gen-256gb-space-gray",
     "name": "Apple iPad Mini (6th Gen) 256GB Space Gray",
     "capacity": "256GB",
     "fullPrice": 649,
@@ -2076,6 +2249,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-ipad-mini-6th-gen-64gb-space-gray",
     "name": "Apple iPad Mini (6th Gen) 64GB Space Gray",
     "capacity": "64GB",
     "fullPrice": 499,
@@ -2088,6 +2262,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-ipad-mini-6th-gen-256gb-starlight",
     "name": "Apple iPad Mini (6th Gen) 256GB Starlight",
     "capacity": "256GB",
     "fullPrice": 649,
@@ -2097,9 +2272,10 @@
     "ram": "4GB",
     "year": 2021,
     "categoryId": 2,
-    "colorId": 23
+    "colorId": 20
   },
   {
+    "detailId": "apple-ipad-mini-6th-gen-64gb-starlight",
     "name": "Apple iPad Mini (6th Gen) 64GB Starlight",
     "capacity": "64GB",
     "fullPrice": 499,
@@ -2109,9 +2285,10 @@
     "ram": "4GB",
     "year": 2021,
     "categoryId": 2,
-    "colorId": 23
+    "colorId": 20
   },
   {
+    "detailId": "apple-ipad-mini-6th-gen-256gb-pink",
     "name": "Apple iPad Mini (6th Gen) 256GB Pink",
     "capacity": "256GB",
     "fullPrice": 649,
@@ -2124,6 +2301,7 @@
     "colorId": 16
   },
   {
+    "detailId": "apple-ipad-mini-6th-gen-64gb-pink",
     "name": "Apple iPad Mini (6th Gen) 64GB Pink",
     "capacity": "64GB",
     "fullPrice": 499,
@@ -2136,6 +2314,7 @@
     "colorId": 16
   },
   {
+    "detailId": "apple-ipad-10-2-2020-128gb-gold",
     "name": "Apple iPad 10.2 (2020) 128GB Gold",
     "capacity": "128GB",
     "fullPrice": 429,
@@ -2148,6 +2327,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-ipad-10-2-2020-32gb-gold",
     "name": "Apple iPad 10.2 (2020) 32GB Gold",
     "capacity": "32GB",
     "fullPrice": 329,
@@ -2160,6 +2340,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-ipad-10-2-2020-128gb-silver",
     "name": "Apple iPad 10.2 (2020) 128GB Silver",
     "capacity": "128GB",
     "fullPrice": 429,
@@ -2172,6 +2353,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-ipad-10-2-2020-32gb-silver",
     "name": "Apple iPad 10.2 (2020) 32GB Silver",
     "capacity": "32GB",
     "fullPrice": 329,
@@ -2184,6 +2366,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-ipad-10-2-2020-128gb-space-gray",
     "name": "Apple iPad 10.2 (2020) 128GB Space Gray",
     "capacity": "128GB",
     "fullPrice": 429,
@@ -2196,6 +2379,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-ipad-10-2-2020-32gb-space-gray",
     "name": "Apple iPad 10.2 (2020) 32GB Space Gray",
     "capacity": "32GB",
     "fullPrice": 329,
@@ -2208,6 +2392,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-ipad-mini-5th-gen-256gb-silver",
     "name": "Apple iPad Mini (5th Gen) 256GB Silver",
     "capacity": "256GB",
     "fullPrice": 549,
@@ -2220,6 +2405,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-ipad-mini-5th-gen-64gb-silver",
     "name": "Apple iPad Mini (5th Gen) 64GB Silver",
     "capacity": "64GB",
     "fullPrice": 549,
@@ -2232,6 +2418,7 @@
     "colorId": 6
   },
   {
+    "detailId": "apple-ipad-mini-5th-gen-256gb-space-gray",
     "name": "Apple iPad Mini (5th Gen) 256GB Space Gray",
     "capacity": "256GB",
     "fullPrice": 549,
@@ -2244,6 +2431,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-ipad-mini-5th-gen-64gb-space-gray",
     "name": "Apple iPad Mini (5th Gen) 64GB Space Gray",
     "capacity": "64GB",
     "fullPrice": 549,
@@ -2256,6 +2444,7 @@
     "colorId": 7
   },
   {
+    "detailId": "apple-ipad-mini-5th-gen-256gb-gold",
     "name": "Apple iPad Mini (5th Gen) 256GB Gold",
     "capacity": "256GB",
     "fullPrice": 549,
@@ -2268,6 +2457,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-ipad-mini-5th-gen-64gb-gold",
     "name": "Apple iPad Mini (5th Gen) 64GB Gold",
     "capacity": "64GB",
     "fullPrice": 549,
@@ -2280,6 +2470,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-iphone-14-pro-128gb-gold",
     "name": "Apple iPhone 14 Pro 128GB Gold",
     "fullPrice": 1156,
     "price": 1068,
@@ -2292,6 +2483,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-iphone-14-pro-256gb-gold",
     "name": "Apple iPhone 14 Pro 256GB Gold",
     "fullPrice": 1300,
     "price": 1220,
@@ -2304,6 +2496,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-iphone-14-pro-512gb-gold",
     "name": "Apple iPhone 14 Pro 512GB Gold",
     "fullPrice": 1600,
     "price": 1530,
@@ -2316,6 +2509,7 @@
     "colorId": 2
   },
   {
+    "detailId": "apple-iphone-14-pro-1tb-gold",
     "name": "Apple iPhone 14 Pro 1TB Gold",
     "fullPrice": 1740,
     "price": 1520,

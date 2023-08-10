@@ -17,7 +17,6 @@ export const initDB = () => {
     dialectOptions: {
       ssl: true,
     },
-    //! that line just for watch logs in console, after correct install DB we will delete it
     logging: console.log,
   });
 };

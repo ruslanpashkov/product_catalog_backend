@@ -65,6 +65,17 @@ module.exports = {
           onUpdate: 'CASCADE',
           onDelete: 'RESTRICT',
         },
+        detailId: {
+          type: Sequelize.STRING,
+          allowNull: false,
+          unique: true,
+          references: {
+            model: 'details',
+            key: 'id'
+          },
+          onUpdate: 'CASCADE',
+          onDelete: 'RESTRICT',
+        },
         createdAt: {
           type: Sequelize.DATE,
           allowNull: false,
