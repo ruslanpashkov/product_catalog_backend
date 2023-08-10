@@ -4,6 +4,7 @@ import {
   AllowNull,
   Column,
   DataType,
+  Default,
   HasOne,
   Model,
   Table,
@@ -18,6 +19,7 @@ import { Basket } from './Basket.model.js';
 
 export class User extends Model {
   @AllowNull(false)
+  @Default(DataType.NOW)
   @Column({
     type: DataType.DATE,
   })
@@ -51,6 +53,7 @@ export class User extends Model {
   @AllowNull(false)
   @Column({
     type: DataType.STRING,
+    defaultValue: 'user'
   })
     role: string;
 
