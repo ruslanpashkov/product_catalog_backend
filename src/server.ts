@@ -21,6 +21,10 @@ export const createServer = (): express.Application => {
 
   initDB();
 
+  app.use('/', (req, res) => {
+    res.send('Hello from Express!');
+  });
+
   app.use(cors(corsOptions));
   app.use('/img', express.static(path.join('img')));
   app.use('/products', express.json(), productRouter);
