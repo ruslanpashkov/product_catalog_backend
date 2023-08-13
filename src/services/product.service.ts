@@ -1,16 +1,16 @@
 'use strict';
 
-import { Category } from '../models/Category.model.js';
-import { Product } from '../models/Product.model.js';
 import { Op, Sequelize } from 'sequelize';
-import { generateSortingOrder } from '../utils/helpers.js';
+import { Capacity } from '../models/Capacity.model.js';
+import { Category } from '../models/Category.model.js';
+import { Color } from '../models/Color.model.js';
+import { Description } from '../models/Description.model.js';
 import { Detail } from '../models/Detail.model.js';
 import { ImagesColor } from '../models/ImagesColor.model.js';
-import { Capacity } from '../models/Capacity.model.js';
-import { Description } from '../models/Description.model.js';
-import { NamespaceCapacity } from '../models/NamespaceCapacity.model.js';
-import { Color } from '../models/Color.model.js';
 import { Namespace } from '../models/Namespace.model.js';
+import { NamespaceCapacity } from '../models/NamespaceCapacity.model.js';
+import { Product } from '../models/Product.model.js';
+import { generateSortingOrder } from '../utils/helpers.js';
 
 class ProductService {
   private static instance: ProductService | null = null;
@@ -37,8 +37,8 @@ class ProductService {
           {
             model: Category,
             as: 'category',
-            attributes: ['title']
-          }
+            attributes: ['title'],
+          },
         ],
         attributes: { exclude: ['createdAt', 'year', 'categoryId', 'colorId'] },
         where: { categoryId: category.id },
@@ -46,7 +46,7 @@ class ProductService {
         order: [
           [
             Sequelize.literal('100 * ("fullPrice" - "price") / "fullPrice"'),
-            'DESC'
+            'DESC',
           ],
         ],
       });
@@ -67,8 +67,8 @@ class ProductService {
         {
           model: Category,
           as: 'category',
-          attributes: ['title']
-        }
+          attributes: ['title'],
+        },
       ],
       attributes: { exclude: ['createdAt', 'year', 'categoryId', 'colorId'] },
       order: [['year', 'DESC']],
@@ -96,7 +96,7 @@ class ProductService {
     limit: number,
   ) {
     const currentCategory = await Category.findOne({
-      where: { title: category }
+      where: { title: category },
     });
 
     const categoryId = currentCategory?.dataValues.id;
@@ -106,14 +106,14 @@ class ProductService {
         {
           model: Category,
           as: 'category',
-          attributes: ['title']
-        }
+          attributes: ['title'],
+        },
       ],
       attributes: { exclude: ['createdAt', 'year', 'categoryId', 'colorId'] },
       where: {
         price: {
-          [Op.between]: [price - priceLimit, price + priceLimit]
-        }
+          [Op.between]: [price - priceLimit, price + priceLimit],
+        },
       },
       order: Sequelize.literal('RANDOM()'),
       limit,
@@ -124,14 +124,14 @@ class ProductService {
         {
           model: Category,
           as: 'category',
-          attributes: ['title']
-        }
+          attributes: ['title'],
+        },
       ],
       attributes: { exclude: ['createdAt', 'year', 'categoryId', 'colorId'] },
       where: {
         price: {
-          [Op.between]: [fullPrice - priceLimit, fullPrice + priceLimit]
-        }
+          [Op.between]: [fullPrice - priceLimit, fullPrice + priceLimit],
+        },
       },
       order: Sequelize.literal('RANDOM()'),
       limit,
@@ -142,13 +142,11 @@ class ProductService {
         {
           model: Category,
           as: 'category',
-          attributes: ['title']
-        }
+          attributes: ['title'],
+        },
       ],
       attributes: { exclude: ['createdAt', 'year', 'categoryId', 'colorId'] },
-      where: {
-        categoryId
-      },
+      where: { categoryId },
       order: Sequelize.literal('RANDOM()'),
       limit,
     });
@@ -171,8 +169,8 @@ class ProductService {
 
     const nameConditions = keywords.map(keyword => ({
       name: {
-        [Op.iLike]: `%${keyword}%`
-      }
+        [Op.iLike]: `%${keyword}%`,
+      },
     }));
 
     return Product.findAll({
@@ -180,17 +178,17 @@ class ProductService {
         {
           model: Category,
           as: 'category',
-          attributes: ['title']
+          attributes: ['title'],
         },
       ],
       attributes: { exclude: ['createdAt', 'year', 'categoryId', 'colorId'] },
       where: {
         [Op.or]: [
           {
-            [Op.and]: nameConditions
+            [Op.and]: nameConditions,
           },
-          Sequelize.json({ name: { [Op.iLike]: `%${query}%` } })
-        ]
+          Sequelize.json({ name: { [Op.iLike]: `%${query}%` } }),
+        ],
       },
       order: [['name', 'ASC']],
       limit: count,
@@ -215,14 +213,14 @@ class ProductService {
       where: { categoryId: currentCategory?.id },
       order: sortingOrder,
       attributes: {
-        exclude: ['createdAt', 'year', 'categoryId', 'colorId',]
+        exclude: ['createdAt', 'year', 'categoryId', 'colorId'],
       },
       include: [
         {
           model: Category,
           as: 'category',
-          attributes: ['title']
-        }
+          attributes: ['title'],
+        },
       ],
     });
 
@@ -241,20 +239,20 @@ class ProductService {
             {
               model: Namespace,
               as: 'namespace',
-              attributes: ['title']
-            }
-          ]
+              attributes: ['title'],
+            },
+          ],
         },
         {
           model: Color,
           as: 'color',
-          attributes: ['title']
+          attributes: ['title'],
         },
         {
           model: Category,
           as: 'category',
-          attributes: ['title']
-        }
+          attributes: ['title'],
+        },
       ],
       attributes: { exclude: ['createdAt', 'year', 'categoryId'] },
     });
@@ -268,7 +266,7 @@ class ProductService {
 
     const imagesColorPromise = ImagesColor.findAll({
       where: { namespaceId, colorId },
-      attributes: ['imagePath']
+      attributes: ['imagePath'],
     });
 
     const colorsPromise = ImagesColor.findAll({
@@ -277,11 +275,11 @@ class ProductService {
         {
           model: Color,
           as: 'color',
-          attributes: ['title']
-        }
+          attributes: ['title'],
+        },
       ],
       where: { namespaceId },
-      group: ['colorId', 'color.id']
+      group: ['colorId', 'color.id'],
     });
 
     const capacitiesPromise = Capacity.findAll({
@@ -290,7 +288,7 @@ class ProductService {
           model: NamespaceCapacity,
           as: 'namespaceCapacities',
           where: { namespaceId },
-          attributes: []
+          attributes: [],
         },
       ],
       attributes: ['capacity'],
@@ -298,7 +296,7 @@ class ProductService {
 
     const descriptionsPromise = Description.findAll({
       where: { namespaceId },
-      attributes: ['title', 'text']
+      attributes: ['title', 'text'],
     });
 
     const [

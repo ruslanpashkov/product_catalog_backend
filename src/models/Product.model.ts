@@ -6,11 +6,9 @@ import {
   Column,
   DataType,
   ForeignKey,
-  HasMany,
   Model,
-  Table,
+  Table
 } from 'sequelize-typescript';
-import { OrderProducts } from './OrderProducts.model.js';
 import { Category } from './Category.model.js';
 import { Color } from './Color.model.js';
 import { Detail } from './Detail.model.js';
@@ -105,17 +103,12 @@ export class Product extends Model {
   @AllowNull(false)
   @ForeignKey(() => Detail)
   @Column({
-    type: DataType.STRING
+    type: DataType.STRING,
   })
     detailId: string;
 
   @BelongsTo(() => Detail, {
-    onDelete: 'CASCADE'
+    onDelete: 'CASCADE',
   })
     detail: Detail | null;
-
-  @HasMany(() => OrderProducts, {
-    onDelete: 'RESTRICT',
-  })
-    basketProduct: OrderProducts[] | null;
 }

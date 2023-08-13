@@ -60,7 +60,7 @@ export class Detail extends Model {
 
   @AllowNull(false)
   @Column({
-    type: DataType.ARRAY(DataType.STRING)
+    type: DataType.ARRAY(DataType.STRING),
   })
     cell: string[];
 
@@ -72,7 +72,7 @@ export class Detail extends Model {
     namespaceId: number;
 
   @HasOne(() => Product, {
-    onDelete: 'CASCADE'
+    onDelete: 'CASCADE',
   })
     product: Product | null;
 

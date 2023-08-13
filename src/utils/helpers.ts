@@ -1,10 +1,10 @@
 'use strict';
 
 import { Request } from 'express';
-import { Product } from '../models/Product.model.js';
 import { OrderItem } from 'sequelize';
-import { FullProduct } from '../types.js';
 import { Category } from '../models/Category.model.js';
+import { Product } from '../models/Product.model.js';
+import { FullProduct } from '../types.js';
 
 export const getUniqueItems = <T>(array: T[], key: keyof T) => {
   const uniques = new Set();
@@ -111,7 +111,7 @@ export const formatMultipleProducts = (products: Product[]) => {
 export const checkValidCategory = async (category: string) => {
   const allCategories = await Category.findAll();
 
-  const cateogories = allCategories.map(category => category.toJSON().title);
+  const categories = allCategories.map(category => category.toJSON().title);
 
-  return cateogories.includes(category);
+  return categories.includes(category);
 };

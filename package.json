@@ -2,7 +2,7 @@
   "name": "product_catalog_backend",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://github.com/html-hooliganz/product_catalog_backend",
+  "homepage": "https://github.com/ruslanpashkov/product_catalog_backend",
   "description": "",
   "type": "module",
   "main": "index.ts",
@@ -54,10 +54,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/html-hooliganz/product_catalog_backend.git"
+    "url": "git+https://github.com/ruslanpashkov/product_catalog_backend.git"
   },
   "bugs": {
-    "url": "https://github.com/html-hooliganz/product_catalog_backend/issues"
+    "url": "https://github.com/ruslanpashkov/product_catalog_backend/issues"
   },
   "lint-staged": {
     "*.{ts}": "npm run lint"

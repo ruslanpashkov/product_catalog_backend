@@ -1,8 +1,8 @@
 'use strict';
 
+import dotenv from 'dotenv';
 import { Sequelize } from 'sequelize-typescript';
 import { models } from '../models/index.js';
-import dotenv from 'dotenv';
 
 dotenv.config();
 

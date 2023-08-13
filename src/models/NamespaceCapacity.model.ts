@@ -14,7 +14,7 @@ import { Namespace } from './Namespace.model.js';
 
 @Table({
   tableName: 'namespacesCapacities',
-  timestamps: false
+  timestamps: false,
 })
 
 export class NamespaceCapacity extends Model {

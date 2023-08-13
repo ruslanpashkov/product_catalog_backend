@@ -8,7 +8,7 @@ import {
   formatMultipleProducts,
   formatSingleProduct,
   getPaginationInfo,
-  getUniqueItems,
+  getUniqueItems
 } from '../utils/helpers.js';
 
 class ProductController {
@@ -27,13 +27,12 @@ class ProductController {
 
   getProductsByDiscount: Controller = async (req, res) => {
     const countProductsPerCategory = 4;
-
     const discountProducts = await productService.getDiscountProductsPerCategory(
       countProductsPerCategory
     );
 
     if (!discountProducts) {
-      res.status(404).json({ message: 'No discounted products found' });
+      res.status(404).json({ message: 'No products found' });
 
       return;
     }
@@ -45,11 +44,10 @@ class ProductController {
 
   getProductsByNew: Controller = async (req, res) => {
     const countProductsPerCategory = 12;
-
     const newProducts = await productService.getNewProducts(countProductsPerCategory);
 
     if (!newProducts) {
-      res.status(404).json({ message: 'No new products found' });
+      res.status(404).json({ message: 'No products found' });
 
       return;
     }
@@ -63,21 +61,16 @@ class ProductController {
     const { category } = req.query;
 
     if (!category) {
-      res.status(404).json(
-        { message: 'Missing required category parameter' }
-      );
+      res.status(400).json({ message: 'Category is required' });
 
       return;
     }
 
     const normalizeCategory = String(category).toLowerCase();
-
     const isValidCategory = await checkValidCategory(normalizeCategory);
 
     if (!isValidCategory) {
-      res.status(404).json(
-        { message: `Invalid category parameter '${category}'` }
-      );
+      res.status(400).json({ message: 'Invalid category' });
 
       return;
     }
@@ -85,7 +78,7 @@ class ProductController {
     const count = await productService.getCountProducts(normalizeCategory);
 
     if (!count) {
-      res.status(404).json({ message: 'Count not found' });
+      res.status(404).json({ message: 'No products found' });
 
       return;
     }
@@ -97,25 +90,19 @@ class ProductController {
     const { price, fullPrice, category } = req.query;
 
     if (!price) {
-      res.status(404).json(
-        { message: 'Missing required price parameter' }
-      );
+      res.status(404).json({ message: 'Missing required price parameter' });
 
       return;
     }
 
     if (!fullPrice) {
-      res.status(404).json(
-        { message: 'Missing required fullPrice parameter' }
-      );
+      res.status(404).json({ message: 'Missing required fullPrice parameter' });
 
       return;
     }
 
     if (!category) {
-      res.status(404).json(
-        { message: 'Missing required category parameter' }
-      );
+      res.status(404).json({ message: 'Missing required category parameter' });
 
       return;
     }
@@ -125,18 +112,15 @@ class ProductController {
     const normalizeCategory = String(category).toLowerCase();
     const priceLimit = 200;
     const limit = 4;
-
     const isValidCategory = await checkValidCategory(normalizeCategory);
 
     if (!isValidCategory) {
-      res.status(404).json(
-        { message: `Invalid category parameter '${category}'` }
-      );
+      res.status(400).json({ message: 'Invalid category' });
 
       return;
     }
 
-    const recomendedProducts = await productService.getRecommended(
+    const recommendedProducts = await productService.getRecommended(
       normalizePrice,
       normalizeFullPrice,
       normalizeCategory,
@@ -144,16 +128,16 @@ class ProductController {
       limit,
     );
 
-    if (!recomendedProducts) {
-      res.status(404).json({ message: 'Recommended products not found' });
+    if (!recommendedProducts) {
+      res.status(404).json({ message: 'No products found' });
 
       return;
     }
 
     const allRecommendedProducts = [
-      ...recomendedProducts.recommendedByPrice,
-      ...recomendedProducts.recommendedByFullPrice,
-      ...recomendedProducts.recommendedByCategory,
+      ...recommendedProducts.recommendedByPrice,
+      ...recommendedProducts.recommendedByFullPrice,
+      ...recommendedProducts.recommendedByCategory,
     ];
 
     const formattedProducts = formatMultipleProducts(allRecommendedProducts);
@@ -166,18 +150,14 @@ class ProductController {
     const { query } = req.query;
 
     if (!query) {
-      res.status(404).json(
-        { message: 'Missing required query parameter' }
-      );
+      res.status(404).json({ message: 'Missing required query parameter' });
 
       return;
     }
 
     const normalizeQuery = String(query).trim();
     const count = 4;
-
     const products = await productService.getBySearch(normalizeQuery, count);
-
     const formattedProducts = formatMultipleProducts(products);
 
     res.status(200).json(formattedProducts);
@@ -185,26 +165,20 @@ class ProductController {
 
   getProductsByCategory:Controller = async (req, res) => {
     const { initialLimit, offset } = getPaginationInfo(req);
-
     const { sortBy, category } = req.query;
 
     if (!category) {
-      res.status(404).json(
-        { message: 'Missing required category parameter' }
-      );
+      res.status(404).json({ message: 'Missing required category parameter' });
 
       return;
     }
 
     const normalizeSortBy = String(sortBy);
     const normalizeCategory = String(category).toLowerCase();
-
     const isValidCategory = await checkValidCategory(normalizeCategory);
 
     if (!isValidCategory) {
-      res.status(404).json(
-        { message: `Invalid category parameter '${category}'` }
-      );
+      res.status(400).json({ message: 'Invalid category' });
 
       return;
     }
@@ -217,7 +191,9 @@ class ProductController {
     );
 
     if (!products) {
-      res.status(404).json({ message: 'Products not found' });
+      res.status(404).json({ message: 'No products found' });
+
+      return;
     }
 
     const formattedProducts = formatMultipleProducts(products.rows);
@@ -229,11 +205,10 @@ class ProductController {
     const { deviceId } = req.params;
 
     const normalizeDeviceId = String(deviceId).toLowerCase();
-
     const productData = await productService.getByDeviceId(normalizeDeviceId);
 
     if (!productData) {
-      res.status(404).json({ message: `Device with id ${deviceId} not found` });
+      res.status(404).json({ message: 'No product found' });
 
       return;
     }

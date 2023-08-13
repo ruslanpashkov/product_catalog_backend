@@ -31,7 +31,7 @@ export class Capacity extends Model {
     capacity: string;
 
   @HasMany(() => NamespaceCapacity, {
-    onDelete: 'SET NULL'
+    onDelete: 'SET NULL',
   })
     namespaceCapacities: NamespaceCapacity[] | null;
 }
