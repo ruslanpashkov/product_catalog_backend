@@ -208,7 +208,7 @@ class ProductController {
     const productData = await productService.getByDeviceId(normalizeDeviceId);
 
     if (!productData) {
-      res.status(404).json({ message: 'No product found' });
+      res.status(404).json({ message: `Product with ID '${deviceId}' not found` });
 
       return;
     }
