@@ -7,6 +7,9 @@
   "type": "module",
   "main": "index.ts",
   "scripts": {
+    "migrations-up": "npx sequelize db:migrate",
+    "seeders-up": "npx sequelize db:seed:all",
+    "migrations-seeders": "npm run migrations-up && npm run seeders-up",
     "format": "prettier --write . --ignore-path .gitignore",
     "lint": "eslint --ext .ts --ignore-path .gitignore .",
     "build": "swc src -d dist",
